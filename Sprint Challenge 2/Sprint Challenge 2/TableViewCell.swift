@@ -6,8 +6,5 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var leftSwatch: UIView!
     @IBOutlet weak var rightSwatch: UIView!
     @IBOutlet weak var crayonNameLabel: UILabel!
-    @IBOutlet weak var crayonImage : UIImage!
-    
-    
-    
+    @IBOutlet weak var crayonImageView: UIImageView!
 }

@@ -133,6 +133,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="crayonImageView" destination="ejL-ur-ESK" id="xvj-lB-sVR"/>
+                                    <outlet property="crayonNameLabel" destination="XyB-yS-5X4" id="Gve-hI-kEr"/>
+                                    <outlet property="leftSwatch" destination="GQF-MA-H4U" id="3Eh-6f-krQ"/>
+                                    <outlet property="rightSwatch" destination="Qlx-ZB-0kz" id="8zn-si-Gez"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ag4-H2-ba2"/>
                                 </connections>
                             </tableViewCell>
