@@ -42,8 +42,11 @@ class DetailViewController: UIViewController {
     
         detailImageView?.image = crayon.image
         detailColorLabel?.text = crayon.name
-        colorInfoLabel?.text = crayon.name
-        
+        colorInfoLabel?.text =
+        """
+        R:\((r * 100).rounded() / 100) G:\((g * 100).rounded() / 100) B:\((b * 100).rounded() / 100)
+        R:\(Int(r * 255)) G:\(Int(g * 255)) B:\(Int(b * 255))
+        """
         updateViews()
         
     }
@@ -56,4 +59,6 @@ class DetailViewController: UIViewController {
     }
     
 }
+
+
 
