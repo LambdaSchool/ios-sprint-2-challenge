@@ -18,29 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="157" id="FRL-cQ-Typ" customClass="CrayonTableViewCell" customModule="ios_sprint_2_challenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="157"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="459" id="ntr-z7-Ziv" customClass="CrayonTableViewCell" customModule="ios_sprint_2_challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="459"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FRL-cQ-Typ" id="he6-vB-iQB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="156.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ntr-z7-Ziv" id="cTl-0e-O7q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="458.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gve-YA-fo5">
-                                            <rect key="frame" x="137.5" y="28.5" width="100" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="91B-aH-cbb"/>
-                                                <constraint firstAttribute="width" constant="100" id="t4Z-1X-VDS"/>
-                                            </constraints>
-                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="buh-71-P63">
+                                            <rect key="frame" x="116" y="111" width="143" height="237"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlT-TT-yuu">
+                                                    <rect key="frame" x="41.5" y="0.0" width="60" height="38"/>
+                                                    <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-gE-d4c">
+                                                    <rect key="frame" x="0.0" y="71" width="143" height="166"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Gve-YA-fo5" firstAttribute="centerX" secondItem="he6-vB-iQB" secondAttribute="centerX" id="CK2-x6-l6b"/>
-                                        <constraint firstItem="Gve-YA-fo5" firstAttribute="centerY" secondItem="he6-vB-iQB" secondAttribute="centerY" id="klx-In-aHp"/>
+                                        <constraint firstItem="buh-71-P63" firstAttribute="top" secondItem="cTl-0e-O7q" secondAttribute="topMargin" constant="100" id="2T3-Rt-GBJ"/>
+                                        <constraint firstItem="buh-71-P63" firstAttribute="leading" secondItem="cTl-0e-O7q" secondAttribute="leadingMargin" constant="100" id="CFB-tU-0lI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="buh-71-P63" secondAttribute="trailing" constant="100" id="bEW-bh-yYx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="buh-71-P63" secondAttribute="bottom" constant="100" id="jKR-1o-dSj"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cellImage" destination="Gve-YA-fo5" id="PbV-bg-7iR"/>
-                                    <segue destination="zzN-68-KPl" kind="show" id="7aZ-3R-CCU"/>
+                                    <outlet property="cellImage" destination="jYm-gE-d4c" id="6XN-AW-Fai"/>
+                                    <outlet property="colorLabel" destination="rlT-TT-yuu" id="BB2-EU-tpS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,16 +73,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-qL-M7x">
-                                <rect key="frame" x="90" y="244" width="195" height="243"/>
+                                <rect key="frame" x="90" y="200" width="195" height="287"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62S-mC-Uav">
-                                        <rect key="frame" x="41.5" y="0.0" width="112.5" height="57.5"/>
+                                        <rect key="frame" x="41.5" y="0.0" width="112.5" height="101.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wA0-2J-oaf">
-                                        <rect key="frame" x="0.0" y="130.5" width="195" height="112.5"/>
+                                        <rect key="frame" x="0.0" y="174.5" width="195" height="112.5"/>
                                     </imageView>
                                 </subviews>
                             </stackView>

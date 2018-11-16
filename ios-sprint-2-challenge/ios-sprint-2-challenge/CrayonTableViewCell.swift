@@ -5,7 +5,6 @@ class CrayonTableViewCell: UITableViewCell {
     
     @IBOutlet var cellImage: UIImageView!
     
-    weak var delegate: CrayonTableViewCellDelegate?
-    
+    @IBOutlet weak var colorLabel: UILabel!
     
 }

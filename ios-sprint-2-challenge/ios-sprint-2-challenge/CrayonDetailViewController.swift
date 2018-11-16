@@ -13,5 +13,7 @@ class CrayonDetailViewController: UIViewController {
         
         guard let crayon = crayon else { return }
         label.text = crayon.name
+        imageView.image = crayon.image
+    
     }
 }
