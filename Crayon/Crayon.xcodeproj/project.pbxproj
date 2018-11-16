@@ -15,6 +15,7 @@
 		D1975D7E219F21F900E8E02B /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1975D7C219F21F900E8E02B /* CrayonModel.swift */; };
 		D1975D7F219F21F900E8E02B /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1975D7D219F21F900E8E02B /* Crayon.swift */; };
 		D1975D81219F23E500E8E02B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1975D80219F23E500E8E02B /* DetailViewController.swift */; };
+		D1975D83219F247800E8E02B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1975D82219F247800E8E02B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D1975D7C219F21F900E8E02B /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
 		D1975D7D219F21F900E8E02B /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
 		D1975D80219F23E500E8E02B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D1975D82219F247800E8E02B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D1975D7C219F21F900E8E02B /* CrayonModel.swift */,
 				D1975D6E219F21B200E8E02B /* Main.storyboard */,
 				D1975D80219F23E500E8E02B /* DetailViewController.swift */,
+				D1975D82219F247800E8E02B /* TableViewCell.swift */,
 				D1975D71219F21B200E8E02B /* Assets.xcassets */,
 				D1975D73219F21B200E8E02B /* LaunchScreen.storyboard */,
 				D1975D76219F21B200E8E02B /* Info.plist */,
@@ -147,6 +150,7 @@
 				D1975D6D219F21B200E8E02B /* ViewController.swift in Sources */,
 				D1975D7E219F21F900E8E02B /* CrayonModel.swift in Sources */,
 				D1975D81219F23E500E8E02B /* DetailViewController.swift in Sources */,
+				D1975D83219F247800E8E02B /* TableViewCell.swift in Sources */,
 				D1975D6B219F21B200E8E02B /* AppDelegate.swift in Sources */,
 				D1975D7F219F21F900E8E02B /* Crayon.swift in Sources */,
 			);
