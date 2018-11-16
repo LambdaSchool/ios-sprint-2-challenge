@@ -17,6 +17,7 @@
 		2C224610219F2C1A00DB7CC1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22460F219F2C1A00DB7CC1 /* TableViewCell.swift */; };
 		2C224612219F2C3000DB7CC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C224611219F2C3000DB7CC1 /* TableViewController.swift */; };
 		2C224614219F2C6E00DB7CC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */; };
+		2C9E932D219F7D6B00780410 /* ReusableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E932C219F7D6B00780410 /* ReusableHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2C22460F219F2C1A00DB7CC1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2C224611219F2C3000DB7CC1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2C9E932C219F7D6B00780410 /* ReusableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				2C224600219F234E00DB7CC1 /* LaunchScreen.storyboard */,
 				2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */,
 				2C22460B219F23C400DB7CC1 /* Crayon.swift */,
+				2C9E932C219F7D6B00780410 /* ReusableHeaderView.xib */,
 				2C224603219F234E00DB7CC1 /* Info.plist */,
 			);
 			path = "Color List";
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E932D219F7D6B00780410 /* ReusableHeaderView.xib in Resources */,
 				2C224602219F234E00DB7CC1 /* LaunchScreen.storyboard in Resources */,
 				2C2245FF219F234E00DB7CC1 /* Assets.xcassets in Resources */,
 				2C2245FD219F232E00DB7CC1 /* Main.storyboard in Resources */,

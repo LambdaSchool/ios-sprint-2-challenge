@@ -10,7 +10,16 @@ import Foundation
 import UIKit
 
 class TableViewController: UITableViewController {
+
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        var label = UILabel()
+        label.text = "Hello"
+        label.textColor = UIColor.white
+        label.backgroundColor = UIColor.black
+        label.textAlignment = UITextPosition
+        return label
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(CrayonHelper.shared.rowCountFor(section: section))
@@ -21,7 +30,7 @@ class TableViewController: UITableViewController {
         print(CrayonHelper.shared.sectionCount)
         return CrayonHelper.shared.sectionCount
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("Unable to dequeue cell of proper type")}
         

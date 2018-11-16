@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 protocol TableViewCellDelegate: class {
     func tappedButton(on cell: TableViewCell)
 }
