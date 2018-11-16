@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="300" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="SvK-wK-Vz8">
             <objects>
-                <viewController id="eCF-EB-USR" sceneMemberID="viewController">
+                <viewController id="eCF-EB-USR" customClass="DetailViewController" customModule="Crayon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRm-rk-spH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
