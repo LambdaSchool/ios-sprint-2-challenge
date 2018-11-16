@@ -5,6 +5,37 @@ class CrayonTableViewController: UITableViewController {
     
     let reuseIdentifier = "cell"
     
+    var crayons: [UIImage] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        for i in 1...122 {
+            guard let image = UIImage(named: "Image\(i)") else { fatalError( "Could not load image") }
+            crayons.append(image)
+            
+        }
+    }
+    
+//    func tappedLikeButton(on cell: CrayonTableViewCell) {
+//        guard let indexPath = tableView?.indexPath(for: cell)
+//            else { fatalError("Cell does not exist") }
+//
+////        crayons[indexPath.row].isLiked.toggle()
+//
+//        var newButtonTitle: String
+//        if crayons[indexPath.row].isLiked {
+//            newButtonTitle = "🤢"
+//        } else {
+//            newButtonTitle = "😍"
+//        }
+//
+//
+//        //Didn't have time to finish this.
+          //Throwing error on the code we were already given in the CrayonModel and won't run?? 
+//
+//    }
+//
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CrayonHelper.shared.sectionCount
     }
@@ -41,7 +72,7 @@ class CrayonTableViewController: UITableViewController {
         let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
         destination.crayon = crayon
     }
-        
+    
     
     
 }

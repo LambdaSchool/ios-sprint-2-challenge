@@ -7,4 +7,11 @@ class CrayonTableViewCell: UITableViewCell {
     
     @IBOutlet weak var colorLabel: UILabel!
     
+    weak var delegate: CrayonTableViewCellDelegate?
+    
+    @IBAction func toggle(_ sender: Any) {
+        
+        delegate?.tappedButton(on: self)
+    }
+    
 }

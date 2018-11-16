@@ -19,6 +19,7 @@
 		87386DDB219F274700DF1CF6 /* CrayonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87386DDA219F274700DF1CF6 /* CrayonTableViewCell.swift */; };
 		87386DDF219F2B2B00DF1CF6 /* CrayonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87386DDE219F2B2B00DF1CF6 /* CrayonDetailViewController.swift */; };
 		87386DE5219F416F00DF1CF6 /* CrayonTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87386DE4219F416F00DF1CF6 /* CrayonTableViewCellDelegate.swift */; };
+		87386DE7219F454C00DF1CF6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87386DE6219F454C00DF1CF6 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		87386DDA219F274700DF1CF6 /* CrayonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonTableViewCell.swift; sourceTree = "<group>"; };
 		87386DDE219F2B2B00DF1CF6 /* CrayonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonDetailViewController.swift; sourceTree = "<group>"; };
 		87386DE4219F416F00DF1CF6 /* CrayonTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		87386DE6219F454C00DF1CF6 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				87386DBA219F222F00DF1CF6 /* AppDelegate.swift */,
 				87386DBE219F222F00DF1CF6 /* Main.storyboard */,
 				87386DD8219F261D00DF1CF6 /* CrayonTableViewController.swift */,
+				87386DE6219F454C00DF1CF6 /* DetailViewController.xib */,
 				87386DDE219F2B2B00DF1CF6 /* CrayonDetailViewController.swift */,
 				87386DE4219F416F00DF1CF6 /* CrayonTableViewCellDelegate.swift */,
 				87386DDA219F274700DF1CF6 /* CrayonTableViewCell.swift */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87386DD5219F22AC00DF1CF6 /* images in Resources */,
+				87386DE7219F454C00DF1CF6 /* DetailViewController.xib in Resources */,
 				87386DC5219F223000DF1CF6 /* LaunchScreen.storyboard in Resources */,
 				87386DD7219F237600DF1CF6 /* TableView.xib in Resources */,
 				87386DC0219F222F00DF1CF6 /* Main.storyboard in Resources */,
