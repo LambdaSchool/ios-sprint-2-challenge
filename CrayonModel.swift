@@ -178,4 +178,10 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // Method to change isLiked property for a passed crayon
+    func changeIsLiked(for crayon: Crayon){
+        crayon.isLiked = !crayon.isLiked
+        
+    }
 }
