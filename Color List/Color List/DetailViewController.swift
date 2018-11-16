@@ -1,9 +1,19 @@
-//
-//  DetailViewController.swift
-//  Color List
-//
-//  Created by Julian A. Fordyce on 11/16/18.
-//  Copyright © 2018 Julian A. Fordyce. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var colorNameLabel: UILabel!
+    
+    @IBOutlet weak var swatchView: UIView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+       // guard let character = Character else { return }
+        
+        cell.swatchView.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
+    }
+}
+

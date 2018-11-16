@@ -14,7 +14,9 @@
 		C4C36FA8219F218700D31B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C36FA6219F218700D31B91 /* LaunchScreen.storyboard */; };
 		C4C36FB0219F21BA00D31B91 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C36FAF219F21BA00D31B91 /* Crayon.swift */; };
 		C4C36FB2219F21C300D31B91 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C36FB1219F21C200D31B91 /* CrayonModel.swift */; };
-		C4C36FB4219F21D000D31B91 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C36FB3219F21D000D31B91 /* Crayons.xcassets */; };
+		C4C36FB6219F27E100D31B91 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C36FB5219F27E100D31B91 /* TableViewCell.swift */; };
+		C4C36FB8219F2AA000D31B91 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C36FB7219F2AA000D31B91 /* DetailViewController.swift */; };
+		C4C36FBC219F39D200D31B91 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C36FBB219F39D200D31B91 /* Crayons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		C4C36FA9219F218700D31B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C36FAF219F21BA00D31B91 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
 		C4C36FB1219F21C200D31B91 /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
-		C4C36FB3219F21D000D31B91 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
+		C4C36FB5219F27E100D31B91 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C4C36FB7219F2AA000D31B91 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C4C36FBB219F39D200D31B91 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Crayons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +64,15 @@
 		C4C36F9C219F218700D31B91 /* Color List */ = {
 			isa = PBXGroup;
 			children = (
-				C4C36FB3219F21D000D31B91 /* Crayons.xcassets */,
 				C4C36FB1219F21C200D31B91 /* CrayonModel.swift */,
+				C4C36FB7219F2AA000D31B91 /* DetailViewController.swift */,
 				C4C36FAF219F21BA00D31B91 /* Crayon.swift */,
 				C4C36F9D219F218700D31B91 /* AppDelegate.swift */,
 				C4C36F9F219F218700D31B91 /* TableViewController.swift */,
+				C4C36FB5219F27E100D31B91 /* TableViewCell.swift */,
 				C4C36FA1219F218700D31B91 /* Main.storyboard */,
 				C4C36FA4219F218700D31B91 /* Assets.xcassets */,
+				C4C36FBB219F39D200D31B91 /* Crayons.xcassets */,
 				C4C36FA6219F218700D31B91 /* LaunchScreen.storyboard */,
 				C4C36FA9219F218700D31B91 /* Info.plist */,
 			);
@@ -134,7 +140,7 @@
 				C4C36FA8219F218700D31B91 /* LaunchScreen.storyboard in Resources */,
 				C4C36FA5219F218700D31B91 /* Assets.xcassets in Resources */,
 				C4C36FA3219F218700D31B91 /* Main.storyboard in Resources */,
-				C4C36FB4219F21D000D31B91 /* Crayons.xcassets in Resources */,
+				C4C36FBC219F39D200D31B91 /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C36FB6219F27E100D31B91 /* TableViewCell.swift in Sources */,
 				C4C36FB0219F21BA00D31B91 /* Crayon.swift in Sources */,
 				C4C36FB2219F21C300D31B91 /* CrayonModel.swift in Sources */,
+				C4C36FB8219F2AA000D31B91 /* DetailViewController.swift in Sources */,
 				C4C36FA0219F218700D31B91 /* TableViewController.swift in Sources */,
 				C4C36F9E219F218700D31B91 /* AppDelegate.swift in Sources */,
 			);
