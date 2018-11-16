@@ -16,6 +16,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailViewImage: UIImageView!
     @IBOutlet weak var detailViewColorName: UILabel!
     
+    @IBOutlet weak var bottomButtonColor: UIButton!
+    @IBOutlet weak var topButtonColor: UIButton!
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let crayon = crayon else { return }
@@ -23,5 +27,26 @@ class DetailViewController: UIViewController {
         detailViewImage.image = crayon.image
         detailViewColorBox.backgroundColor = crayon.color
         self.view.backgroundColor = crayon.color
+        bottomButtonColor.backgroundColor = crayon.color
+        topButtonColor.backgroundColor = crayon.color
+        topButtonColor.setTitle("❤️", for: .normal)
+        bottomButtonColor.setTitle("🤔", for: .normal)
+        
     }
+    
+    
+
+    @IBAction func detailTopButton(_ sender: UIButton) {
+        
+    }
+ 
+    
+    
+    @IBAction func detailBottomButton(_ sender: UIButton) {
+    }
+    
+    
+    
+    @IBOutlet var detailBottomButton: UIView!
+    
 }

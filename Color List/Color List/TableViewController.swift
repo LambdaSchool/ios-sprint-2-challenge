@@ -11,6 +11,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(CrayonHelper.shared.rowCountFor(section: section))
         return CrayonHelper.shared.rowCountFor(section: section)
@@ -27,7 +28,7 @@ class TableViewController: UITableViewController {
         //Yes I know I'm killing kittens and I shouldn't. I'm Sorry.
         cell.tableViewCellLabel.text = CrayonHelper.shared.colorNameFor(indexPath: indexPath)
         cell.tableViewCellImage.image = UIImage(named: cell.tableViewCellLabel.text!)
-        cell.tableViewBackgroundColor.backgroundColor = UIColor(named: cell.tableViewCellLabel.text!)
+        cell.tableViewBackgroundColor.tintColor = UIColor(named: cell.tableViewCellLabel.text!)
         return cell
     }
     

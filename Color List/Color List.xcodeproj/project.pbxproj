@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0F51F4219F62FF0079D427 /* TableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F51F3219F62FF0079D427 /* TableViewCellDelegate.swift */; };
 		2C2245F8219F232E00DB7CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */; };
 		2C2245FD219F232E00DB7CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2245FB219F232E00DB7CC1 /* Main.storyboard */; };
 		2C2245FF219F234E00DB7CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2245FE219F234E00DB7CC1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0F51F3219F62FF0079D427 /* TableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellDelegate.swift; sourceTree = "<group>"; };
 		2C2245F4219F232E00DB7CC1 /* Color List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C2245FC219F232E00DB7CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */,
+				2C0F51F3219F62FF0079D427 /* TableViewCellDelegate.swift */,
 				2C224611219F2C3000DB7CC1 /* TableViewController.swift */,
 				2C224609219F23B300DB7CC1 /* CrayonModel.swift */,
 				2C2245FB219F232E00DB7CC1 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				2C22460A219F23B300DB7CC1 /* CrayonModel.swift in Sources */,
 				2C224610219F2C1A00DB7CC1 /* TableViewCell.swift in Sources */,
+				2C0F51F4219F62FF0079D427 /* TableViewCellDelegate.swift in Sources */,
 				2C2245F8219F232E00DB7CC1 /* AppDelegate.swift in Sources */,
 				2C224614219F2C6E00DB7CC1 /* DetailViewController.swift in Sources */,
 				2C224612219F2C3000DB7CC1 /* TableViewController.swift in Sources */,

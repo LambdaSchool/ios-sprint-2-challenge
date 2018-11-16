@@ -133,7 +133,13 @@ let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875
                         "Eggplant": #colorLiteral(red: 0.37890625, green: 0.25, blue: 0.31640625, alpha: 1.0),
 ]
 
-class CrayonHelper {
+class CrayonHelper: TableViewCellDelegate{
+    func tappedButton(on cell: TableViewCell) {
+        print("hello!")
+    }
+    
+    weak var tableView : UITableView?
+    
     static let shared = CrayonHelper()
     
     // Group color names by letter
@@ -145,6 +151,8 @@ class CrayonHelper {
     // Stored crayons
     private var crayons: [String: Crayon] = [:]
     
+    //var isThinking: Bool = true
+    
     // Model setup
     private init() {
         for (name, color) in crayonDictionary {
@@ -152,6 +160,7 @@ class CrayonHelper {
             sectionDictionary[first] = sectionDictionary[first, default: []] + [name]
             let crayon = Crayon(name: name, color: color, image: UIImage(named: name)!)
             crayons[name] = crayon
+            
         }
         sectionKeys = Array(sectionDictionary.keys).sorted()
     }
@@ -195,5 +204,9 @@ class CrayonHelper {
         return values[indexPath.row]
     }
     
-    
+   /* func tappedButton(on cell: TableViewCell) {
+        guard let indexPath = tableView?.indexPath(for: cell) else {fatalError("The cell does not exist(tappedButton)")}
+        // need to setup a property that sets emoji.
+        
+    }*/
 }
