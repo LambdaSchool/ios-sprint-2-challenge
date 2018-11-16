@@ -13,7 +13,6 @@ class DetailViewController: UIViewController {
         
        // guard let character = Character else { return }
         
-        cell.swatchView.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
     }
 }
 
