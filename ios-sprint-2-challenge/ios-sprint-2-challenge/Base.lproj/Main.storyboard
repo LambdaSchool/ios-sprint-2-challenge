@@ -18,51 +18,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="459" id="ntr-z7-Ziv" customClass="CrayonTableViewCell" customModule="ios_sprint_2_challenge" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="459" id="Us0-jX-AlJ" customClass="CrayonTableViewCell" customModule="ios_sprint_2_challenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="459"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ntr-z7-Ziv" id="cTl-0e-O7q">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Us0-jX-AlJ" id="nJe-ND-mDT">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="458.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="buh-71-P63">
-                                            <rect key="frame" x="116" y="111" width="143" height="237"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="D1p-Nr-iy7">
+                                            <rect key="frame" x="106" y="111" width="163" height="237"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlT-TT-yuu">
-                                                    <rect key="frame" x="41.5" y="0.0" width="60" height="38"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkW-0V-SD7">
+                                                    <rect key="frame" x="51.5" y="0.0" width="60" height="38"/>
                                                     <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-gE-d4c">
-                                                    <rect key="frame" x="0.0" y="71" width="143" height="166"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="31Q-Md-EPy">
+                                                    <rect key="frame" x="0.0" y="69" width="163" height="107"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nm-1v-Wjm">
+                                                    <rect key="frame" x="66.5" y="207" width="30" height="30"/>
+                                                    <state key="normal" title="Like"/>
+                                                    <connections>
+                                                        <action selector="toggle:" destination="Us0-jX-AlJ" eventType="touchUpInside" id="1qA-49-Y3G"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="buh-71-P63" firstAttribute="top" secondItem="cTl-0e-O7q" secondAttribute="topMargin" constant="100" id="2T3-Rt-GBJ"/>
-                                        <constraint firstItem="buh-71-P63" firstAttribute="leading" secondItem="cTl-0e-O7q" secondAttribute="leadingMargin" constant="100" id="CFB-tU-0lI"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="buh-71-P63" secondAttribute="trailing" constant="100" id="bEW-bh-yYx"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="buh-71-P63" secondAttribute="bottom" constant="100" id="jKR-1o-dSj"/>
+                                        <constraint firstItem="D1p-Nr-iy7" firstAttribute="leading" secondItem="nJe-ND-mDT" secondAttribute="leadingMargin" constant="90" id="2DX-6E-a3e"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="D1p-Nr-iy7" secondAttribute="bottom" constant="100" id="gPf-7A-rHB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="D1p-Nr-iy7" secondAttribute="trailing" constant="90" id="lAq-Ha-OdJ"/>
+                                        <constraint firstItem="D1p-Nr-iy7" firstAttribute="top" secondItem="nJe-ND-mDT" secondAttribute="topMargin" constant="100" id="mm8-wq-XE1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cellImage" destination="jYm-gE-d4c" id="6XN-AW-Fai"/>
-                                    <outlet property="colorLabel" destination="rlT-TT-yuu" id="BB2-EU-tpS"/>
+                                    <outlet property="cellImage" destination="31Q-Md-EPy" id="OCP-3p-7yH"/>
+                                    <outlet property="colorLabel" destination="SkW-0V-SD7" id="IHD-Hs-5nr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="fs3-OU-lT2" id="t0S-p6-f2O"/>
+                            <outlet property="dataSource" destination="eYY-qS-Xb1" id="2AP-Nf-YIc"/>
                             <outlet property="delegate" destination="fs3-OU-lT2" id="N5e-qc-vsn"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="fei-wr-nh7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggq-jg-ceO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="eYY-qS-Xb1" userLabel="Crayon Model"/>
             </objects>
-            <point key="canvasLocation" x="1037.5999999999999" y="142.57871064467767"/>
+            <point key="canvasLocation" x="983" y="132"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="mLX-Sn-HBL">
@@ -103,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zb-wS-vt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="143"/>
+            <point key="canvasLocation" x="1782" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wP-uT-FFj">
