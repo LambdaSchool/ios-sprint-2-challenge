@@ -74,72 +74,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-38-MdB" userLabel="likeButton">
-                                <rect key="frame" x="8" y="72" width="359" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="🧐"/>
-                                <state key="selected" title="♥️"/>
-                                <state key="highlighted" title="👍"/>
-                                <connections>
-                                    <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="bST-lo-TpG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECn-7w-zka" userLabel="likeButton">
-                                <rect key="frame" x="8" y="629" width="359" height="30"/>
-                                <state key="normal" title="🧐"/>
-                                <state key="selected" title="♥️"/>
-                                <connections>
-                                    <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="zrm-ha-Nrw"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-FM-n8d">
-                                <rect key="frame" x="97" y="139" width="181" height="389"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-1L-pBN">
+                                <rect key="frame" x="37" y="83" width="304" height="501"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hW9-6F-6qK">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="152.5"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-dx-bdc">
-                                        <rect key="frame" x="69.5" y="200.5" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-w1-rrX">
-                                        <rect key="frame" x="30" y="269" width="121" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofX-aE-cAE" userLabel="likeButton">
+                                        <rect key="frame" x="8" y="462.5" width="288" height="30.5"/>
+                                        <state key="normal" title="🧐"/>
+                                        <state key="selected" title="♥️"/>
+                                        <connections>
+                                            <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="ssZ-EA-ZAr"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="z0F-29-jb6">
+                                        <rect key="frame" x="97" y="57" width="110" height="389.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jqa-Zj-GfQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="153"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJm-US-fax">
+                                                <rect key="frame" x="34" y="201" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-TM-YZY">
+                                                <rect key="frame" x="30" y="269.5" width="50" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="amv-zt-7uh"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8282043147" green="0.076818768590000003" blue="0.041672013600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="g7B-wD-WHK"/>
+                                            <constraint firstItem="Jqa-Zj-GfQ" firstAttribute="leading" secondItem="z0F-29-jb6" secondAttribute="leading" id="LeZ-hv-440"/>
+                                            <constraint firstItem="fGo-TM-YZY" firstAttribute="leading" secondItem="z0F-29-jb6" secondAttribute="leading" constant="30" id="Vzz-DL-wAt"/>
                                         </constraints>
-                                    </imageView>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPC-nZ-dNo" userLabel="likeButton">
+                                        <rect key="frame" x="8" y="8" width="288" height="31.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="🧐"/>
+                                        <state key="selected" title="♥️"/>
+                                        <state key="highlighted" title="👍"/>
+                                        <connections>
+                                            <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="vzD-co-5ex"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.8282043147" green="0.076818768590000003" blue="0.041672013600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="hW9-6F-6qK" firstAttribute="leading" secondItem="pgU-FM-n8d" secondAttribute="leading" id="8Lh-m3-OON"/>
-                                    <constraint firstItem="fcP-w1-rrX" firstAttribute="leading" secondItem="pgU-FM-n8d" secondAttribute="leading" constant="30" id="rdx-tM-6rZ"/>
+                                    <constraint firstItem="z0F-29-jb6" firstAttribute="centerX" secondItem="PPC-nZ-dNo" secondAttribute="centerX" id="3Oq-Ji-RRK"/>
+                                    <constraint firstItem="ofX-aE-cAE" firstAttribute="leading" secondItem="2qo-XY-vL9" secondAttribute="leading" constant="8" id="PV7-2r-E3q"/>
+                                    <constraint firstItem="ofX-aE-cAE" firstAttribute="top" secondItem="z0F-29-jb6" secondAttribute="bottom" constant="16" id="RAJ-51-Puv"/>
+                                    <constraint firstItem="z0F-29-jb6" firstAttribute="top" secondItem="PPC-nZ-dNo" secondAttribute="bottom" constant="17.5" id="UXS-hx-XsX"/>
+                                    <constraint firstItem="z0F-29-jb6" firstAttribute="leading" secondItem="2qo-XY-vL9" secondAttribute="leading" constant="97" id="Wb1-kg-2fF"/>
+                                    <constraint firstItem="PPC-nZ-dNo" firstAttribute="leading" secondItem="2qo-XY-vL9" secondAttribute="leading" constant="8" id="XRR-db-eKC"/>
+                                    <constraint firstAttribute="bottom" secondItem="z0F-29-jb6" secondAttribute="bottom" constant="54.5" id="XkV-kO-Ia1"/>
+                                    <constraint firstItem="PPC-nZ-dNo" firstAttribute="top" secondItem="EWZ-1L-pBN" secondAttribute="top" constant="8" id="cnC-Yu-sCk"/>
+                                    <constraint firstItem="2qo-XY-vL9" firstAttribute="trailing" secondItem="PPC-nZ-dNo" secondAttribute="trailing" constant="8" id="eOT-FB-Cby"/>
+                                    <constraint firstItem="2qo-XY-vL9" firstAttribute="trailing" secondItem="ofX-aE-cAE" secondAttribute="trailing" constant="8" id="ezB-z9-ALh"/>
+                                    <constraint firstItem="2qo-XY-vL9" firstAttribute="bottom" secondItem="ofX-aE-cAE" secondAttribute="bottom" constant="8" id="kH3-gE-Wmj"/>
                                 </constraints>
-                            </stackView>
+                                <viewLayoutGuide key="safeArea" id="2qo-XY-vL9"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1355539177" green="1" blue="0.092983124309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ONK-01-Hho" firstAttribute="trailing" secondItem="ECn-7w-zka" secondAttribute="trailing" constant="8" id="0K6-06-t2f"/>
-                            <constraint firstItem="ONK-01-Hho" firstAttribute="bottom" secondItem="ECn-7w-zka" secondAttribute="bottom" constant="8" id="24D-PX-rut"/>
-                            <constraint firstItem="5z5-38-MdB" firstAttribute="leading" secondItem="ONK-01-Hho" secondAttribute="leading" constant="8" id="JVc-7p-wfm"/>
-                            <constraint firstItem="pgU-FM-n8d" firstAttribute="centerY" secondItem="B3r-7I-c0p" secondAttribute="centerY" id="RgS-fM-Fv2"/>
-                            <constraint firstItem="pgU-FM-n8d" firstAttribute="leading" secondItem="ONK-01-Hho" secondAttribute="leading" constant="97" id="Scw-Wi-MgN"/>
-                            <constraint firstItem="5z5-38-MdB" firstAttribute="top" secondItem="ONK-01-Hho" secondAttribute="top" constant="8" id="aPy-rb-uJy"/>
-                            <constraint firstItem="ECn-7w-zka" firstAttribute="leading" secondItem="ONK-01-Hho" secondAttribute="leading" constant="8" id="axD-DO-Oex"/>
-                            <constraint firstItem="pgU-FM-n8d" firstAttribute="centerX" secondItem="5z5-38-MdB" secondAttribute="centerX" id="eC5-0j-Ghs"/>
-                            <constraint firstItem="ONK-01-Hho" firstAttribute="trailing" secondItem="5z5-38-MdB" secondAttribute="trailing" constant="8" id="mA8-Rb-buc"/>
-                            <constraint firstItem="pgU-FM-n8d" firstAttribute="top" secondItem="5z5-38-MdB" secondAttribute="bottom" priority="750" constant="96" id="uIM-Ue-WRW"/>
+                            <constraint firstItem="EWZ-1L-pBN" firstAttribute="leading" secondItem="ONK-01-Hho" secondAttribute="leading" constant="37" id="GiE-OZ-nmq"/>
+                            <constraint firstItem="EWZ-1L-pBN" firstAttribute="top" secondItem="ONK-01-Hho" secondAttribute="top" constant="19" id="e7w-Rw-QFe"/>
+                            <constraint firstItem="EWZ-1L-pBN" firstAttribute="centerY" secondItem="B3r-7I-c0p" secondAttribute="centerY" id="m92-7c-DOq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ONK-01-Hho"/>
                     </view>
                     <connections>
-                        <outlet property="colorLabel" destination="fgD-dx-bdc" id="Kxi-8C-UJx"/>
-                        <outlet property="colorView" destination="hW9-6F-6qK" id="ZWb-sX-h4I"/>
-                        <outlet property="swatchView" destination="fcP-w1-rrX" id="oH5-Lf-4Gm"/>
-                        <outletCollection property="likeButtons" destination="5z5-38-MdB" collectionClass="NSMutableArray" id="7ts-DA-rAG"/>
-                        <outletCollection property="likeButtons" destination="ECn-7w-zka" collectionClass="NSMutableArray" id="U9L-ui-lWU"/>
+                        <outlet property="colorLabel" destination="lJm-US-fax" id="fqJ-1U-Q6l"/>
+                        <outlet property="colorView" destination="Jqa-Zj-GfQ" id="MRm-lg-7N7"/>
+                        <outlet property="swatchView" destination="fGo-TM-YZY" id="iDn-gc-fTU"/>
+                        <outletCollection property="likeButtons" destination="PPC-nZ-dNo" collectionClass="NSMutableArray" id="tn4-yh-09I"/>
+                        <outletCollection property="likeButtons" destination="ofX-aE-cAE" collectionClass="NSMutableArray" id="hOq-ZB-lXm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vnz-PW-ZMB" userLabel="First Responder" sceneMemberID="firstResponder"/>

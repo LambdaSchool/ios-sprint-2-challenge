@@ -25,7 +25,7 @@ class TableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        self.tableView.backgroundColor = UIColor.lightGray
+        self.tableView.backgroundColor = UIColor.black
         
     }
     

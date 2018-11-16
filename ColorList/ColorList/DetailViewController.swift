@@ -26,6 +26,8 @@ class DetailViewController: UIViewController {
         likeButtons[1].backgroundColor = crayon.color
         likeButtons[0].isSelected = crayon.isLiked
         likeButtons[1].isSelected = crayon.isLiked
+        view.backgroundColor = crayon.color
+        
     }
     
 }
