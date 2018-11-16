@@ -42,5 +42,15 @@ class TableViewController: UITableViewController {
         return CrayonHelper.shared.sectionTitles()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        guard let destination = segue.destination as? DetailViewController else {return} // could put fatal errors
+        
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        
+        destination.crayon = crayon
+    }
+    
 }
 
