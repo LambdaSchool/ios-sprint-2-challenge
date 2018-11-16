@@ -6,6 +6,8 @@ class DetailViewController: UIViewController {
     let thinker = "\u{1F914}"
     let heart = "\u{2764}"
     var crayon: Crayon?
+    var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
+    
     @IBOutlet weak var crayonImageView: UIImageView!
     @IBOutlet weak var crayonNameLabel: UILabel!
     @IBOutlet weak var crayonColorView: UIView!
@@ -34,12 +36,20 @@ class DetailViewController: UIViewController {
         crayonColorView.backgroundColor = crayon.color
         topBufferView.backgroundColor = crayon.color
         bottomBufferView.backgroundColor = crayon.color
+        crayonLiteralLabel.text = crayon.color.description
+        
+        updateLikeButton()
 
     }
     @IBAction func aBufferButtonClicked(_ sender: UIButton) {
         
         guard let crayon = crayon else {return}
-        crayon.isLiked = !crayon.isLiked
+        CrayonHelper.shared.changeIsLiked(for: crayon)
+        updateLikeButton()
+        
+    }
+    func updateLikeButton(){
+        guard let crayon = crayon else {return}
         if(crayon.isLiked) {
             topBufferButton.setTitle(heart, for: .normal)
             bottomBufferButton.setTitle(heart, for: .normal)
@@ -47,7 +57,6 @@ class DetailViewController: UIViewController {
             topBufferButton.setTitle(thinker, for: .normal)
             bottomBufferButton.setTitle(thinker, for: .normal)
         }
-        
     }
 
 }
