@@ -24,6 +24,20 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func viewDidLoad() {
+        self.tableView.backgroundColor = UIColor.lightGray
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 0
+        cell.layer.borderWidth = 10
+        cell.layer.shadowOffset = CGSize(width: -1, height: 1)
+        let borderColor = CrayonHelper.shared.crayonFor(indexPath: indexPath).color
+        cell.layer.borderColor = borderColor.cgColor
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.textAlignment = .center

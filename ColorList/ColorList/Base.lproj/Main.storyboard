@@ -101,6 +101,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.8282043147" green="0.076818768590000003" blue="0.041672013600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="hW9-6F-6qK" firstAttribute="leading" secondItem="pgU-FM-n8d" secondAttribute="leading" id="8Lh-m3-OON"/>
                                     <constraint firstItem="fcP-w1-rrX" firstAttribute="leading" secondItem="pgU-FM-n8d" secondAttribute="leading" constant="30" id="rdx-tM-6rZ"/>
