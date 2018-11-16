@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="nWR-bC-Pgd" customClass="TableViewCell" customModule="Crayon" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="180" id="nWR-bC-Pgd" customClass="TableViewCell" customModule="Crayon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nWR-bC-Pgd" id="wQh-2s-o2l">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-AG-zjK">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-AG-zjK">
                                             <rect key="frame" x="137.5" y="19" width="100" height="142"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeU-hM-pyn">
@@ -35,10 +35,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-zP-08L">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-zP-08L">
                                                     <rect key="frame" x="0.0" y="42" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="jF5-QX-aCu"/>
+                                            </constraints>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dp-U7-5CD">
                                             <rect key="frame" x="0.0" y="0.0" width="25" height="179.5"/>
@@ -56,15 +59,23 @@
                                         </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Xar-AG-zjK" secondAttribute="bottom" constant="8" id="6dj-0m-v3g"/>
                                         <constraint firstItem="8Dp-U7-5CD" firstAttribute="leading" secondItem="wQh-2s-o2l" secondAttribute="leading" id="7fY-P2-ZUR"/>
                                         <constraint firstItem="Xar-AG-zjK" firstAttribute="centerX" secondItem="wQh-2s-o2l" secondAttribute="centerX" id="Mrk-6Y-klm"/>
                                         <constraint firstAttribute="bottom" secondItem="EhX-1h-McR" secondAttribute="bottom" id="Sz8-jV-6Wf"/>
+                                        <constraint firstItem="Xar-AG-zjK" firstAttribute="top" secondItem="wQh-2s-o2l" secondAttribute="topMargin" constant="8" id="atW-V4-Vge"/>
                                         <constraint firstAttribute="bottom" secondItem="8Dp-U7-5CD" secondAttribute="bottom" id="d8c-bG-07d"/>
                                         <constraint firstItem="8Dp-U7-5CD" firstAttribute="top" secondItem="wQh-2s-o2l" secondAttribute="top" id="dfO-2x-AUc"/>
                                         <constraint firstItem="EhX-1h-McR" firstAttribute="top" secondItem="wQh-2s-o2l" secondAttribute="top" id="dnH-Io-EUv"/>
                                         <constraint firstAttribute="trailing" secondItem="EhX-1h-McR" secondAttribute="trailing" id="sSh-J8-XtX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leftViewBuffer" destination="8Dp-U7-5CD" id="cwt-zC-1Nt"/>
+                                    <outlet property="nameLabel" destination="yeU-hM-pyn" id="Glx-Vd-hZr"/>
+                                    <outlet property="rightViewBuffer" destination="EhX-1h-McR" id="8kg-fO-2HQ"/>
+                                    <outlet property="swatchView" destination="5Tq-zP-08L" id="mfk-BM-QmS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
