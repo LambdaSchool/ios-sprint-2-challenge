@@ -116,7 +116,7 @@
                                                         <rect key="frame" x="105" y="2" width="30" height="26"/>
                                                         <state key="normal" title="🤔"/>
                                                         <connections>
-                                                            <action selector="topBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="bx3-bw-XJY"/>
+                                                            <action selector="aBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="6r3-Uf-cdI"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -166,7 +166,7 @@
                                                         <rect key="frame" x="105" y="2" width="30" height="26"/>
                                                         <state key="normal" title="🤔"/>
                                                         <connections>
-                                                            <action selector="bottomBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="2k1-P0-E69"/>
+                                                            <action selector="aBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="NLA-Km-6HC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
