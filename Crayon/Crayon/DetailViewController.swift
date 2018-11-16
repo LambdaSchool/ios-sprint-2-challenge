@@ -28,33 +28,34 @@ class DetailViewController: UIViewController {
         topBufferView.backgroundColor = crayon.color
         bottomBufferView.backgroundColor = crayon.color
         crayonLiteralLabel.text = crayon.color.description
+        bottomBufferButton.titleLabel?.text = "🤔"
+        topBufferButton.titleLabel?.text = "🤔"
         
         if(crayon.isLiked) {
             bottomBufferButton.titleLabel?.text = "❤️"
             topBufferButton.titleLabel?.text = "❤️"
-        } else {
-            bottomBufferButton.titleLabel?.text = "🤔"
-            topBufferButton.titleLabel?.text = "🤔"
         }
         
     }
-    
-    @IBAction func bottom(_ sender: Any) {
-        
-        guard let person = person else {return}
-        guard let name = nameField.text, !name.isEmpty else {return}
-        person.name = name
-        print(person.name)
-        person.cohort = cohortField.text ?? ""
-        print(person.cohort)
-        
-        navigationController?.popViewController(animated: true)
-        
-        
+    @IBAction func topBufferButtonClicked(_ sender: UIButton) {
+        toggleLiked()
+    }
+    @IBAction func bottomBufferButtonClicked(_ sender: UIButton) {
+        toggleLiked()
     }
     
-    func toggleLiked {
+    func toggleLiked () {
         
+        guard let crayon = crayon else {return}
+        if(crayon.isLiked) {
+            crayon.isLiked = false
+            bottomBufferButton.titleLabel?.text = "🤔"
+            topBufferButton.titleLabel?.text = "🤔"
+        } else {
+            crayon.isLiked = true
+            bottomBufferButton.titleLabel?.text = "❤️"
+            topBufferButton.titleLabel?.text = "❤️"
+        }
     }
     
     
