@@ -75,6 +75,7 @@
                                     <outlet property="nameLabel" destination="yeU-hM-pyn" id="Glx-Vd-hZr"/>
                                     <outlet property="rightViewBuffer" destination="EhX-1h-McR" id="8kg-fO-2HQ"/>
                                     <outlet property="swatchView" destination="5Tq-zP-08L" id="mfk-BM-QmS"/>
+                                    <segue destination="eCF-EB-USR" kind="show" id="SSz-mM-DiI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
