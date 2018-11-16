@@ -17,17 +17,20 @@ class DetailViewController: UIViewController {
     
     @IBAction func likeButtonTapped(_ sender: Any) {
         updateViews()
-        
     }
     
     @IBAction func likeButtonTwoTapped(_ sender: Any) {
         updateViews()
     }
     
+    var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         guard let crayon = crayon else { return }
+        
+        crayon.color.getRed(&r, green: &g, blue: &b, alpha: nil)
         
         likeButton?.backgroundColor = crayon.color
         likeButton?.setTitle(crayon.buttonEmoji, for: .normal)
@@ -40,6 +43,7 @@ class DetailViewController: UIViewController {
         detailImageView?.image = crayon.image
         detailColorLabel?.text = crayon.name
         colorInfoLabel?.text = crayon.name
+        
         updateViews()
         
     }
