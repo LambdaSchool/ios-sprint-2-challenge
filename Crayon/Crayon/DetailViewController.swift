@@ -10,8 +10,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var crayonLiteralLabel: UILabel!
     @IBOutlet weak var topBufferView: UIView!
     @IBOutlet weak var bottomBufferView: UIView!
-    @IBOutlet weak var topBufferLabel: UILabel!
-    @IBOutlet weak var bottomBufferLabel: UILabel!
+    @IBOutlet weak var topBufferButton: UIButton!
+    @IBOutlet weak var bottomBufferButton: UIButton!
     @IBOutlet weak var inlaidView: UIView!
     @IBOutlet var detailView: UIView!
     
@@ -30,11 +30,11 @@ class DetailViewController: UIViewController {
         crayonLiteralLabel.text = crayon.color.description
         
         if(crayon.isLiked) {
-            bottomBufferLabel.text = "❤️"
-            topBufferLabel.text = "❤️"
+            bottomBufferButton.titleLabel?.text = "❤️"
+            topBufferButton.titleLabel?.text = "❤️"
         } else {
-            bottomBufferLabel.text = "🤔"
-            topBufferLabel.text = "🤔"
+            bottomBufferButton.titleLabel?.text = "🤔"
+            topBufferButton.titleLabel?.text = "🤔"
         }
         
     }
