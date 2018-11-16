@@ -124,7 +124,7 @@ let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875
                         "Eggplant": #colorLiteral(red: 0.37890625, green: 0.25, blue: 0.31640625, alpha: 1.0),
 ]
 
-class CrayonHelper {
+class CrayonHelper: CrayonTableViewCellDelegate, UITableViewDataSource, NSObject {
     static let shared = CrayonHelper()
     
     // Group color names by letter
@@ -137,7 +137,7 @@ class CrayonHelper {
     private var crayons: [String: Crayon] = [:]
     
     // Model setup
-    private init() {
+    private override init() {
         for (name, color) in crayonDictionary {
             let first = String(name.uppercased()[name.startIndex])
             sectionDictionary[first] = sectionDictionary[first, default: []] + [name]
@@ -179,8 +179,15 @@ class CrayonHelper {
         return crayons[colorName]!
     }
     
-    // I need to retrieve image
-
-    
-    // I need to return the array of images
+    func tappedLikeButton() {
+        likeButton.isLiked.toggle()
+        
+        var newButtonTitle: String
+        if crayons.isLiked {
+            newButtonTitle = "❤️"
+        } else {
+            newButtonTitle = "🤔"
+        }
+        likeButton.likeButton.setTitle(newButtonTitle, for: .normal)
+    }
 }

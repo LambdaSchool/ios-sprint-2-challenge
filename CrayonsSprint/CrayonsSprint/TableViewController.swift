@@ -15,7 +15,8 @@ class TableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("unable to dequeue cell")}
         
         //I need to return the image and name
-      
+        let crayon = crayonDictionary
+        cell.nameLabel.text = CrayonHelper.shared.crayonFor(indexPath: indexPath.row)
         
         
         return cell
