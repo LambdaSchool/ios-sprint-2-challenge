@@ -23,6 +23,14 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated:Bool) {
         super.viewWillAppear(animated)
         
+        guard let topSwatch = TopSwatch else { return }
+        guard let middleSwatch = MiddleSwatch else { return }
+        guard let bottomSwatch = BottomSwatch else { return }
+        
+        topSwatch.backgroundColor = CrayonHelper.shared.crayonColorFor(indexPath: indexPath)
+        middleSwatch.backgroundColor = CrayonHelper.shared.crayonColorFor(indexPath: indexPath)
+        bottomSwatch.backgroundColor = CrayonHelper.shared.crayonColorFor(indexPath: indexPath)
+        
      //review
         // guard let crayon = crayon else { return }
         
