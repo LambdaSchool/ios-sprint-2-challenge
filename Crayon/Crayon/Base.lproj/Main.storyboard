@@ -114,7 +114,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyY-jl-FrH">
                                                         <rect key="frame" x="105" y="2" width="30" height="26"/>
-                                                        <state key="normal" title="B"/>
+                                                        <state key="normal" title="🤔"/>
                                                         <connections>
                                                             <action selector="topBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="bx3-bw-XJY"/>
                                                         </connections>
@@ -164,7 +164,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqY-HP-4Ty">
                                                         <rect key="frame" x="105" y="2" width="30" height="26"/>
-                                                        <state key="normal" title="B"/>
+                                                        <state key="normal" title="🤔"/>
                                                         <connections>
                                                             <action selector="bottomBufferButtonClicked:" destination="eCF-EB-USR" eventType="touchUpInside" id="2k1-P0-E69"/>
                                                         </connections>
@@ -226,7 +226,7 @@
                         <outlet property="crayonNameLabel" destination="Xy9-pE-Sqm" id="JtW-b4-DBF"/>
                         <outlet property="detailView" destination="BRm-rk-spH" id="0MU-ii-cci"/>
                         <outlet property="inlaidView" destination="rWx-YO-s65" id="ASQ-ju-irZ"/>
-                        <outlet property="topBufferButton" destination="hyY-jl-FrH" id="rjo-qU-Jxe"/>
+                        <outlet property="topBufferButton" destination="hyY-jl-FrH" id="hN6-7V-of9"/>
                         <outlet property="topBufferView" destination="95j-Sv-j55" id="pcu-Au-RrA"/>
                     </connections>
                 </viewController>

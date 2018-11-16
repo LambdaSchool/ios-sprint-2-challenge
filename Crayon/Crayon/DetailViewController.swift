@@ -3,6 +3,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    let thinker = "\u{1F914}"
+    let heart = "\u{2764}"
     var crayon: Crayon?
     @IBOutlet weak var crayonImageView: UIImageView!
     @IBOutlet weak var crayonNameLabel: UILabel!
@@ -14,6 +16,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var bottomBufferButton: UIButton!
     @IBOutlet weak var inlaidView: UIView!
     @IBOutlet var detailView: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        reloadInputViews()
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,34 +36,35 @@ class DetailViewController: UIViewController {
         topBufferView.backgroundColor = crayon.color
         bottomBufferView.backgroundColor = crayon.color
         crayonLiteralLabel.text = crayon.color.description
-        bottomBufferButton.titleLabel?.text = "🤔"
-        topBufferButton.titleLabel?.text = "🤔"
         
         if(crayon.isLiked) {
-            bottomBufferButton.titleLabel?.text = "❤️"
-            topBufferButton.titleLabel?.text = "❤️"
+            bottomBufferButton.titleLabel?.text = heart
+            topBufferButton.titleLabel?.text = heart
+        } else {
+        bottomBufferButton.titleLabel?.text = thinker
+        topBufferButton.titleLabel?.text = thinker
         }
+        
+        
         
     }
     @IBAction func topBufferButtonClicked(_ sender: UIButton) {
         toggleLiked()
     }
-    @IBAction func bottomBufferButtonClicked(_ sender: UIButton) {
-        toggleLiked()
-    }
-    
+
     func toggleLiked () {
         
         guard let crayon = crayon else {return}
         if(crayon.isLiked) {
             crayon.isLiked = false
-            bottomBufferButton.titleLabel?.text = "🤔"
-            topBufferButton.titleLabel?.text = "🤔"
+            bottomBufferButton.titleLabel?.text = thinker
+            topBufferButton.titleLabel?.text = thinker
         } else {
             crayon.isLiked = true
-            bottomBufferButton.titleLabel?.text = "❤️"
-            topBufferButton.titleLabel?.text = "❤️"
+            bottomBufferButton.titleLabel?.text = heart
+            topBufferButton.titleLabel?.text = heart
         }
+        viewDidLoad()
     }
     
     
