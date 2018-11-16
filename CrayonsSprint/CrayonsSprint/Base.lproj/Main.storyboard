@@ -26,8 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-9H-Gjl">
-                                            <rect key="frame" x="67.5" y="20.5" width="240" height="159"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-9H-Gjl">
+                                            <rect key="frame" x="67" y="27" width="240" height="149"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5w-AA-Wah">
                                                     <rect key="frame" x="96" y="0.0" width="48" height="24"/>
@@ -36,22 +37,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-Fi-f9x">
-                                                    <rect key="frame" x="0.0" y="29" width="240" height="130"/>
+                                                    <rect key="frame" x="0.0" y="29" width="240" height="120"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="VZC-lb-s97"/>
+                                                        <constraint firstAttribute="height" constant="120" id="G5i-E7-ILg"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Fad-9H-Gjl" firstAttribute="centerX" secondItem="8QH-5d-rY0" secondAttribute="centerX" id="jWQ-Yp-J8r"/>
-                                        <constraint firstItem="Fad-9H-Gjl" firstAttribute="centerY" secondItem="8QH-5d-rY0" secondAttribute="centerY" id="qeU-2A-ZLc"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="crayonView" destination="ggE-Fi-f9x" id="Ghu-DS-EHJ"/>
                                     <outlet property="nameLabel" destination="k5w-AA-Wah" id="eoH-vK-0AW"/>
+                                    <segue destination="iMY-Lp-tha" kind="show" id="HOL-CX-WM2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-14" y="52"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="qz9-Hg-7gP">
             <objects>
-                <viewController id="iMY-Lp-tha" sceneMemberID="viewController">
+                <viewController id="iMY-Lp-tha" customClass="DetailViewController" customModule="CrayonsSprint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aaS-nV-0n5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
