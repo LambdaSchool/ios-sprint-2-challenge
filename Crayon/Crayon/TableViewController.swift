@@ -32,7 +32,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.textAlignment = .center
-        label.backgroundColor = .lightGray
+        label.backgroundColor = .black
+        label.textColor = .white
         label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
         return label
     }
