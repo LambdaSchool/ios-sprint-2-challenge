@@ -17,6 +17,7 @@
 		481D6FF1219F248B00A9A8CF /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481D6FF0219F248B00A9A8CF /* Crayons.xcassets */; };
 		481D6FF3219F253800A9A8CF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FF2219F253800A9A8CF /* TableViewCell.swift */; };
 		48E719CE219F34BF00A26648 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E719CD219F34BF00A26648 /* DetailViewController.swift */; };
+		48E719D0219F3F9900A26648 /* CrayonTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E719CF219F3F9900A26648 /* CrayonTableViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		481D6FF0219F248B00A9A8CF /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
 		481D6FF2219F253800A9A8CF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		48E719CD219F34BF00A26648 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		48E719CF219F3F9900A26648 /* CrayonTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonTableViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				481D6FDA219F21D300A9A8CF /* AppDelegate.swift */,
 				481D6FEE219F225600A9A8CF /* Crayon.swift */,
 				481D6FEC219F222900A9A8CF /* CrayonModel.swift */,
+				48E719CF219F3F9900A26648 /* CrayonTableViewCellDelegate.swift */,
 				481D6FDC219F21D300A9A8CF /* TableViewController.swift */,
 				48E719CD219F34BF00A26648 /* DetailViewController.swift */,
 				481D6FF2219F253800A9A8CF /* TableViewCell.swift */,
@@ -155,6 +158,7 @@
 				481D6FDD219F21D300A9A8CF /* TableViewController.swift in Sources */,
 				481D6FED219F222900A9A8CF /* CrayonModel.swift in Sources */,
 				48E719CE219F34BF00A26648 /* DetailViewController.swift in Sources */,
+				48E719D0219F3F9900A26648 /* CrayonTableViewCellDelegate.swift in Sources */,
 				481D6FDB219F21D300A9A8CF /* AppDelegate.swift in Sources */,
 				481D6FEF219F225600A9A8CF /* Crayon.swift in Sources */,
 			);

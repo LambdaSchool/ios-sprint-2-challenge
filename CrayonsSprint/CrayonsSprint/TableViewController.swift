@@ -2,7 +2,6 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    //let reuseIdentifier = "colorCell"
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return CrayonHelper.shared.sectionCount
@@ -15,8 +14,9 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("unable to dequeue cell")}
         
-        cell.nameLabel.text = CrayonHelper.shared.crayonFor(indexPath: indexPath.row)
-        cell.crayonView.image = CrayonHelper.shared.crayonFor(indexPath: indexPath.row)
+        //I need to return the image and name
+      
+        
         
         return cell
         
@@ -27,8 +27,16 @@ class TableViewController: UITableViewController {
         label.textAlignment = .center
         label.backgroundColor = .black
         label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        return label
     }
     
-    //will need prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        
+        guard let destination = segue.destination as? DetailViewController else {return}
+        
+        //i need to set destination
+       
+    }
 }
 

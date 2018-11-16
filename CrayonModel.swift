@@ -178,4 +178,9 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // I need to retrieve image
+
+    
+    // I need to return the array of images
 }
