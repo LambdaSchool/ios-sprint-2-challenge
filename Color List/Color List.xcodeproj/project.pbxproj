@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2C2245F8219F232E00DB7CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */; };
-		2C2245FA219F232E00DB7CC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2245F9219F232E00DB7CC1 /* ViewController.swift */; };
 		2C2245FD219F232E00DB7CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2245FB219F232E00DB7CC1 /* Main.storyboard */; };
 		2C2245FF219F234E00DB7CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2245FE219F234E00DB7CC1 /* Assets.xcassets */; };
 		2C224602219F234E00DB7CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C224600219F234E00DB7CC1 /* LaunchScreen.storyboard */; };
 		2C22460A219F23B300DB7CC1 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C224609219F23B300DB7CC1 /* CrayonModel.swift */; };
 		2C22460C219F23C400DB7CC1 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22460B219F23C400DB7CC1 /* Crayon.swift */; };
+		2C224610219F2C1A00DB7CC1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22460F219F2C1A00DB7CC1 /* TableViewCell.swift */; };
+		2C224612219F2C3000DB7CC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C224611219F2C3000DB7CC1 /* TableViewController.swift */; };
+		2C224614219F2C6E00DB7CC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C2245F4219F232E00DB7CC1 /* Color List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2245F9219F232E00DB7CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C2245FC219F232E00DB7CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2245FE219F234E00DB7CC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C224601219F234E00DB7CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C224603219F234E00DB7CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C224609219F23B300DB7CC1 /* CrayonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
 		2C22460B219F23C400DB7CC1 /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
+		2C22460F219F2C1A00DB7CC1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2C224611219F2C3000DB7CC1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,15 @@
 		2C2245F6219F232E00DB7CC1 /* Color List */ = {
 			isa = PBXGroup;
 			children = (
+				2C224613219F2C6E00DB7CC1 /* DetailViewController.swift */,
+				2C224611219F2C3000DB7CC1 /* TableViewController.swift */,
 				2C224609219F23B300DB7CC1 /* CrayonModel.swift */,
-				2C22460B219F23C400DB7CC1 /* Crayon.swift */,
-				2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */,
-				2C2245F9219F232E00DB7CC1 /* ViewController.swift */,
 				2C2245FB219F232E00DB7CC1 /* Main.storyboard */,
 				2C2245FE219F234E00DB7CC1 /* Assets.xcassets */,
+				2C22460F219F2C1A00DB7CC1 /* TableViewCell.swift */,
 				2C224600219F234E00DB7CC1 /* LaunchScreen.storyboard */,
+				2C2245F7219F232E00DB7CC1 /* AppDelegate.swift */,
+				2C22460B219F23C400DB7CC1 /* Crayon.swift */,
 				2C224603219F234E00DB7CC1 /* Info.plist */,
 			);
 			path = "Color List";
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2245FA219F232E00DB7CC1 /* ViewController.swift in Sources */,
 				2C22460A219F23B300DB7CC1 /* CrayonModel.swift in Sources */,
+				2C224610219F2C1A00DB7CC1 /* TableViewCell.swift in Sources */,
 				2C2245F8219F232E00DB7CC1 /* AppDelegate.swift in Sources */,
+				2C224614219F2C6E00DB7CC1 /* DetailViewController.swift in Sources */,
+				2C224612219F2C3000DB7CC1 /* TableViewController.swift in Sources */,
 				2C22460C219F23C400DB7CC1 /* Crayon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
