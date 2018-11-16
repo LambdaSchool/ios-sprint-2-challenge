@@ -34,33 +34,20 @@ class DetailViewController: UIViewController {
         crayonColorView.backgroundColor = crayon.color
         topBufferView.backgroundColor = crayon.color
         bottomBufferView.backgroundColor = crayon.color
-        crayonLiteralLabel.text = crayon.color.description
 
     }
     @IBAction func aBufferButtonClicked(_ sender: UIButton) {
         
         guard let crayon = crayon else {return}
-        print(topBufferButton.titleLabel?.text ?? "")
         crayon.isLiked = !crayon.isLiked
-        toggleLiked()
-        print(topBufferButton.titleLabel?.text ?? "")
+        if(crayon.isLiked) {
+            topBufferButton.setTitle(heart, for: .normal)
+            bottomBufferButton.setTitle(heart, for: .normal)
+        } else {
+            topBufferButton.setTitle(thinker, for: .normal)
+            bottomBufferButton.setTitle(thinker, for: .normal)
+        }
+        
     }
 
-    func toggleLiked () {
-        
-        guard let crayon = crayon else {return}
-        if(crayon.isLiked) {
-            print("liked")
-            bottomBufferButton.titleLabel?.text = heart
-            topBufferButton.titleLabel?.text = heart
-            print(topBufferButton.titleLabel?.text ?? "")
-        } else {
-            print("not liked")
-            bottomBufferButton.titleLabel?.text = thinker
-            topBufferButton.titleLabel?.text = thinker
-        }
-        print(topBufferButton.titleLabel?.text ?? "")
-    }
-    
-    
 }
