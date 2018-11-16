@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Crayon Table View Controller-->
         <scene sceneID="cUT-4d-Jfz">
             <objects>
-                <tableViewController id="fs3-OU-lT2" sceneMemberID="viewController">
+                <tableViewController id="fs3-OU-lT2" customClass="CrayonTableViewController" customModule="ios_sprint_2_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DwK-Np-C0H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="FRL-cQ-Typ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="157" id="FRL-cQ-Typ" customClass="CrayonTableViewCell" customModule="ios_sprint_2_challenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FRL-cQ-Typ" id="he6-vB-iQB">
@@ -39,6 +39,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellImage" destination="Gve-YA-fo5" id="PbV-bg-7iR"/>
                                     <segue destination="zzN-68-KPl" kind="show" id="7aZ-3R-CCU"/>
                                 </connections>
                             </tableViewCell>
@@ -57,13 +58,39 @@
         <!--Detail View Controller-->
         <scene sceneID="mLX-Sn-HBL">
             <objects>
-                <viewController title="Detail View Controller" id="zzN-68-KPl" sceneMemberID="viewController">
+                <viewController title="Detail View Controller" id="zzN-68-KPl" customClass="CrayonDetailViewController" customModule="ios_sprint_2_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BEr-sZ-ifW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-qL-M7x">
+                                <rect key="frame" x="90" y="244" width="195" height="243"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62S-mC-Uav">
+                                        <rect key="frame" x="41.5" y="0.0" width="112.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wA0-2J-oaf">
+                                        <rect key="frame" x="0.0" y="130.5" width="195" height="112.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RzV-qL-M7x" firstAttribute="leading" secondItem="67V-CS-2YI" secondAttribute="leading" constant="90" id="JW6-sb-O8a"/>
+                            <constraint firstItem="67V-CS-2YI" firstAttribute="bottom" secondItem="RzV-qL-M7x" secondAttribute="bottom" constant="180" id="jCS-As-cDg"/>
+                            <constraint firstItem="RzV-qL-M7x" firstAttribute="top" secondItem="67V-CS-2YI" secondAttribute="top" constant="180" id="pae-Nd-L2J"/>
+                            <constraint firstItem="67V-CS-2YI" firstAttribute="trailing" secondItem="RzV-qL-M7x" secondAttribute="trailing" constant="90" id="rVu-e4-rEU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="67V-CS-2YI"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="wA0-2J-oaf" id="T2c-gG-7co"/>
+                        <outlet property="label" destination="62S-mC-Uav" id="CPE-RO-Kkn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zb-wS-vt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
