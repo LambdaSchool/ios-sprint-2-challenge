@@ -4,15 +4,26 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var crayon: Crayon?
+    @IBOutlet weak var crayonImageView: UIImageView!
+    @IBOutlet weak var crayonNameLabel: UILabel!
+    @IBOutlet weak var crayonColorView: UIView!
+    @IBOutlet weak var crayonLiteralLabel: UILabel!
+    @IBOutlet weak var topBufferView: UIView!
+    @IBOutlet weak var buttomBufferView: UIView!
+    @IBOutlet var detailView: UIView!
+    @IBOutlet weak var topBufferLabel: UILabel!
+    @IBOutlet weak var bottomBufferLabel: UILabel!
     
-    @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var cohortField: UITextField!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard let person = person else {return}
-        nameField.text = person.name
+        guard let crayon = crayon else {return}
+        
+        detailView.backgroundColor = crayon.color
+        crayonNameLabel.text = crayon.name
+        crayonName
+        
         cohortField.text = person.cohort
         
         

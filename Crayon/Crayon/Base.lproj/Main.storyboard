@@ -202,6 +202,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0PY-wZ-QHl"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomBufferLabel" destination="ds3-Vg-yLz" id="J0N-Dg-5Q1"/>
+                        <outlet property="buttomBufferView" destination="TTr-PG-ep1" id="OJW-Ho-mlh"/>
+                        <outlet property="crayonColorView" destination="YuN-LC-6NM" id="Vsi-9z-BiV"/>
+                        <outlet property="crayonImageView" destination="aMx-dI-fjk" id="X7A-VC-sKL"/>
+                        <outlet property="crayonLiteralLabel" destination="58g-2G-Gd0" id="o6A-yo-nBZ"/>
+                        <outlet property="crayonNameLabel" destination="Xy9-pE-Sqm" id="JtW-b4-DBF"/>
+                        <outlet property="detailView" destination="BRm-rk-spH" id="Xam-v6-qpb"/>
+                        <outlet property="topBufferLabel" destination="yAH-g3-PE8" id="9Z0-ES-woM"/>
+                        <outlet property="topBufferView" destination="95j-Sv-j55" id="pcu-Au-RrA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-jG-C8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
