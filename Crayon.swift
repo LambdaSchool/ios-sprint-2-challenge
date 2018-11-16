@@ -4,7 +4,7 @@ class Crayon {
     let name: String // Crayon name
     let color: UIColor // Crayon color
     let image: UIImage? // Crayon image
-    var isLiked: Bool = false // User likes
+    var isLiked: Bool = true // User likes
     
     init(name: String, color: UIColor, image: UIImage?) {
         (self.name, self.color, self.image) = (name, color, image)

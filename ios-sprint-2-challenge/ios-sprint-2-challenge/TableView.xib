@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="459" id="vxj-wD-FmO">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="459"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxj-wD-FmO" id="8HJ-0y-Kbd">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="458.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="ppe-3N-j6l">
+                        <rect key="frame" x="110" y="111" width="282" height="237"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-Fc-zlC">
+                                <rect key="frame" x="111" y="0.0" width="60" height="38"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-Vg-eAB">
+                                <rect key="frame" x="21" y="69" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anl-Jr-blQ">
+                                <rect key="frame" x="126" y="228" width="30" height="9"/>
+                                <state key="normal" title="Like"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ppe-3N-j6l" firstAttribute="leading" secondItem="8HJ-0y-Kbd" secondAttribute="leadingMargin" constant="90" id="GUg-vq-FEc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ppe-3N-j6l" secondAttribute="bottom" constant="100" id="XKh-hI-miO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ppe-3N-j6l" secondAttribute="trailing" constant="90" id="mke-Qj-juh"/>
+                    <constraint firstItem="ppe-3N-j6l" firstAttribute="top" secondItem="8HJ-0y-Kbd" secondAttribute="topMargin" constant="100" id="udh-dw-aRo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="126.40000000000001" y="156.07196401799101"/>
+        </tableViewCell>
+    </objects>
+</document>
