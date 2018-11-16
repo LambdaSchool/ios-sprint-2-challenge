@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reloadInputViews()
         
     }
     
@@ -39,23 +38,28 @@ class DetailViewController: UIViewController {
 
     }
     @IBAction func aBufferButtonClicked(_ sender: UIButton) {
+        
+        guard let crayon = crayon else {return}
+        print(topBufferButton.titleLabel?.text ?? "")
+        crayon.isLiked = !crayon.isLiked
         toggleLiked()
+        print(topBufferButton.titleLabel?.text ?? "")
     }
 
- 
     func toggleLiked () {
         
         guard let crayon = crayon else {return}
         if(crayon.isLiked) {
-            crayon.isLiked = false
-            bottomBufferButton.titleLabel?.text = thinker
-            topBufferButton.titleLabel?.text = thinker
-        } else {
-            crayon.isLiked = true
+            print("liked")
             bottomBufferButton.titleLabel?.text = heart
             topBufferButton.titleLabel?.text = heart
+            print(topBufferButton.titleLabel?.text ?? "")
+        } else {
+            print("not liked")
+            bottomBufferButton.titleLabel?.text = thinker
+            topBufferButton.titleLabel?.text = thinker
         }
-
+        print(topBufferButton.titleLabel?.text ?? "")
     }
     
     
