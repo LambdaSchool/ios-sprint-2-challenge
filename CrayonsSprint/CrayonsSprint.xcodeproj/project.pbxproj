@@ -15,6 +15,7 @@
 		481D6FED219F222900A9A8CF /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FEC219F222900A9A8CF /* CrayonModel.swift */; };
 		481D6FEF219F225600A9A8CF /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FEE219F225600A9A8CF /* Crayon.swift */; };
 		481D6FF1219F248B00A9A8CF /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481D6FF0219F248B00A9A8CF /* Crayons.xcassets */; };
+		481D6FF3219F253800A9A8CF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D6FF2219F253800A9A8CF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		481D6FEC219F222900A9A8CF /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
 		481D6FEE219F225600A9A8CF /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
 		481D6FF0219F248B00A9A8CF /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
+		481D6FF2219F253800A9A8CF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				481D6FEE219F225600A9A8CF /* Crayon.swift */,
 				481D6FEC219F222900A9A8CF /* CrayonModel.swift */,
 				481D6FDC219F21D300A9A8CF /* TableViewController.swift */,
+				481D6FF2219F253800A9A8CF /* TableViewCell.swift */,
 				481D6FDE219F21D300A9A8CF /* Main.storyboard */,
 				481D6FF0219F248B00A9A8CF /* Crayons.xcassets */,
 				481D6FE1219F21D400A9A8CF /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481D6FF3219F253800A9A8CF /* TableViewCell.swift in Sources */,
 				481D6FDD219F21D300A9A8CF /* TableViewController.swift in Sources */,
 				481D6FED219F222900A9A8CF /* CrayonModel.swift in Sources */,
 				481D6FDB219F21D300A9A8CF /* AppDelegate.swift in Sources */,
