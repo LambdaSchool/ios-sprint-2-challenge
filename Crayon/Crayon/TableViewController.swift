@@ -14,8 +14,12 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else {fatalError("unable to dequeue cell of proper type")}
         
-        cell.nameLabel.text = ColorHelper.shared.colorNameFor(indexPath: indexPath)
-        cell.swatchView.backgroundColor = ColorHelper.shared.colorFor(indexPath: indexPath)
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        
+        cell.nameLabel.text = crayon.name
+        cell.leftViewBuffer.backgroundColor = crayon.color
+        cell.rightViewBuffer.backgroundColor = crayon.color
+        cell.swatchView.image = crayon.image
         
         return cell
     }
@@ -29,12 +33,12 @@ class TableViewController: UITableViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.backgroundColor = .lightGray
-        label.text = ColorHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
         return label
     }
     
     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return ColorHelper.shared.sectionTitles()
+        return CrayonHelper.shared.sectionTitles()
     }
     
 }
