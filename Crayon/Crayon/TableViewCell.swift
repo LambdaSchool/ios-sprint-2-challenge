@@ -2,7 +2,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    static let resuseIdentifier = "cell"
+    static let reuseIdentifier = "cell"
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var leftViewBuffer: UIView!
