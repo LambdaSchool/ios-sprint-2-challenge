@@ -22,5 +22,6 @@ class DetailViewController: UIViewController {
         detailViewColorName.text = crayon.name
         detailViewImage.image = crayon.image
         detailViewColorBox.backgroundColor = crayon.color
+        self.view.backgroundColor = crayon.color
     }
 }

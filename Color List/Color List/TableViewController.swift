@@ -23,14 +23,13 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("Unable to dequeue cell of proper type")}
-        //cell.tableViewCellImage.image = CrayonHelper.shared.image(for: CrayonHelper[indexPath.row])
-        //var name =
+        
+        //Yes I know I'm killing kittens and I shouldn't. I'm Sorry.
         cell.tableViewCellLabel.text = CrayonHelper.shared.colorNameFor(indexPath: indexPath)
         cell.tableViewCellImage.image = UIImage(named: cell.tableViewCellLabel.text!)
+        cell.tableViewBackgroundColor.backgroundColor = UIColor(named: cell.tableViewCellLabel.text!)
         return cell
     }
-    
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
