@@ -20,6 +20,7 @@
 		F8637F83219F299800E25BD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8637F82219F299800E25BD2 /* DetailViewController.swift */; };
 		F8637F85219F2A4B00E25BD2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8637F84219F2A4B00E25BD2 /* TableViewCell.swift */; };
 		F8637F87219F2E0F00E25BD2 /* TableReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8637F86219F2E0F00E25BD2 /* TableReusableHeaderView.swift */; };
+		F8B74B0F219F37E9001E7904 /* The Garbage Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B74B0E219F37E9001E7904 /* The Garbage Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F8637F82219F299800E25BD2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F8637F84219F2A4B00E25BD2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F8637F86219F2E0F00E25BD2 /* TableReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableHeaderView.swift; sourceTree = "<group>"; };
+		F8B74B0E219F37E9001E7904 /* The Garbage Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Garbage Line.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				F8637F6A219F223F00E25BD2 /* Main.storyboard */,
-				F8637F84219F2A4B00E25BD2 /* TableViewCell.swift */,
-				F8637F86219F2E0F00E25BD2 /* TableReusableHeaderView.swift */,
-				F8637F78219F26B700E25BD2 /* TableReusableHeaderView.xib */,
 				F8637F80219F28B100E25BD2 /* TableViewController.swift */,
 				F8637F82219F299800E25BD2 /* DetailViewController.swift */,
 				F8637F7A219F276B00E25BD2 /* Crayon.swift */,
 				F8637F7E219F27B000E25BD2 /* CrayonModel.swift */,
+				F8637F84219F2A4B00E25BD2 /* TableViewCell.swift */,
 				F8637F7C219F277600E25BD2 /* Crayons.xcassets */,
 				F8637F6D219F224000E25BD2 /* Assets.xcassets */,
+				F8B74B0E219F37E9001E7904 /* The Garbage Line.swift */,
+				F8637F86219F2E0F00E25BD2 /* TableReusableHeaderView.swift */,
+				F8637F78219F26B700E25BD2 /* TableReusableHeaderView.xib */,
 				F8637F68219F223F00E25BD2 /* ViewController.swift */,
 				F8637F6F219F224000E25BD2 /* LaunchScreen.storyboard */,
 				F8637F66219F223F00E25BD2 /* AppDelegate.swift */,
@@ -163,6 +166,7 @@
 			files = (
 				F8637F7B219F276B00E25BD2 /* Crayon.swift in Sources */,
 				F8637F7F219F27B000E25BD2 /* CrayonModel.swift in Sources */,
+				F8B74B0F219F37E9001E7904 /* The Garbage Line.swift in Sources */,
 				F8637F69219F223F00E25BD2 /* ViewController.swift in Sources */,
 				F8637F83219F299800E25BD2 /* DetailViewController.swift in Sources */,
 				F8637F81219F28B100E25BD2 /* TableViewController.swift in Sources */,
