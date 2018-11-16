@@ -178,4 +178,21 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // toggle like buttons
+    func buttonPressed(_ sender: UIButton) {
+        
+        if sender.isSelected {
+            sender.setTitle("🧐", for: .normal)
+            
+            sender.isSelected = false
+            
+        } else {
+            sender.setTitle("♥️", for: .selected)
+            sender.isSelected = true
+        }
+    }
+    //persistent likes
+    //static var isLiked: Bool = false
 }
+

@@ -74,13 +74,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-38-MdB">
-                                <rect key="frame" x="8" y="72" width="359" height="0.0"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-38-MdB" userLabel="likeButton">
+                                <rect key="frame" x="8" y="72" width="359" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="🧐"/>
+                                <state key="selected" title="♥️"/>
+                                <state key="highlighted" title="👍"/>
+                                <connections>
+                                    <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="bST-lo-TpG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECn-7w-zka">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECn-7w-zka" userLabel="likeButton">
                                 <rect key="frame" x="8" y="629" width="359" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="🧐"/>
+                                <state key="selected" title="♥️"/>
+                                <connections>
+                                    <action selector="tappedLikeButtons:" destination="HuI-78-sMv" eventType="touchUpInside" id="zrm-ha-Nrw"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-FM-n8d">
                                 <rect key="frame" x="97" y="139" width="181" height="389"/>
@@ -119,7 +130,7 @@
                             <constraint firstItem="ECn-7w-zka" firstAttribute="leading" secondItem="ONK-01-Hho" secondAttribute="leading" constant="8" id="axD-DO-Oex"/>
                             <constraint firstItem="pgU-FM-n8d" firstAttribute="centerX" secondItem="5z5-38-MdB" secondAttribute="centerX" id="eC5-0j-Ghs"/>
                             <constraint firstItem="ONK-01-Hho" firstAttribute="trailing" secondItem="5z5-38-MdB" secondAttribute="trailing" constant="8" id="mA8-Rb-buc"/>
-                            <constraint firstItem="pgU-FM-n8d" firstAttribute="top" secondItem="5z5-38-MdB" secondAttribute="bottom" constant="67" id="uIM-Ue-WRW"/>
+                            <constraint firstItem="pgU-FM-n8d" firstAttribute="top" secondItem="5z5-38-MdB" secondAttribute="bottom" priority="750" constant="96" id="uIM-Ue-WRW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ONK-01-Hho"/>
                     </view>
