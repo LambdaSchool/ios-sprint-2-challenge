@@ -204,7 +204,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomBufferLabel" destination="ds3-Vg-yLz" id="J0N-Dg-5Q1"/>
-                        <outlet property="buttomBufferView" destination="TTr-PG-ep1" id="OJW-Ho-mlh"/>
+                        <outlet property="bottomBufferView" destination="TTr-PG-ep1" id="bhu-qG-weo"/>
                         <outlet property="crayonColorView" destination="YuN-LC-6NM" id="Vsi-9z-BiV"/>
                         <outlet property="crayonImageView" destination="aMx-dI-fjk" id="X7A-VC-sKL"/>
                         <outlet property="crayonLiteralLabel" destination="58g-2G-Gd0" id="o6A-yo-nBZ"/>
