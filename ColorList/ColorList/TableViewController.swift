@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else {fatalError("unable to decue cell")}
         cell.colorLabel.text = CrayonHelper.shared.crayonFor(indexPath: indexPath).name
-        //cell.colorView.image = CrayonHelper.shared.crayonFor(indexPath: indexPath).image
+        cell.colorView.image = CrayonHelper.shared.crayonFor(indexPath: indexPath).image
         
         return cell
     }
@@ -34,6 +34,13 @@ class TableViewController: UITableViewController {
     
     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return CrayonHelper.shared.sectionTitles()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        guard let destination = segue.destination as? DetailViewController else {return}
+        
+        destination.crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
     }
     
 }
