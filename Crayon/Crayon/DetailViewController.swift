@@ -1,5 +1,6 @@
 
 import UIKit
+import Foundation
 
 class DetailViewController: UIViewController {
     
@@ -36,7 +37,15 @@ class DetailViewController: UIViewController {
         crayonColorView.backgroundColor = crayon.color
         topBufferView.backgroundColor = crayon.color
         bottomBufferView.backgroundColor = crayon.color
-        crayonLiteralLabel.text = crayon.color.description
+        
+        crayon.color.getRed(&r, green: &g, blue: &b, alpha: nil)
+        
+        // TODO: catch inappropriate rounding
+        var literalLabelText = "(R: \(String(format: "%.3f", r)), G: \(String(format: "%.3f", g)), B: \(String(format: "%.3f", b)))\n"
+        literalLabelText += "(R: \(String(format: "%.0f", r*255)), G: \(String(format: "%.0f", g*255)), B: \(String(format: "%.0f", b*255)))\n"
+        literalLabelText += "#\(String(Int(r*255), radix: 16))\(String(Int(g*255), radix: 16))\(String(Int(b*255), radix: 16))"
+        
+        crayonLiteralLabel.text = literalLabelText
         
         updateLikeButton()
 
