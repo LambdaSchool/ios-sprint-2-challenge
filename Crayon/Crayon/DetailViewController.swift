@@ -40,6 +40,10 @@ class DetailViewController: UIViewController {
         
         crayon.color.getRed(&r, green: &g, blue: &b, alpha: nil)
         
+        let complementaryColor = crayon.contrastingColor()
+        
+        detailView.backgroundColor = complementaryColor
+        
         // TODO: catch inappropriate rounding
         var literalLabelText = "(R: \(String(format: "%.3f", r)), G: \(String(format: "%.3f", g)), B: \(String(format: "%.3f", b)))\n"
         literalLabelText += "(R: \(String(format: "%.0f", r*255)), G: \(String(format: "%.0f", g*255)), B: \(String(format: "%.0f", b*255)))\n"
