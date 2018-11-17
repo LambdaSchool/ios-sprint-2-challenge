@@ -65,12 +65,12 @@
 				2C9E934021A090FA00780410 /* Main.storyboard */,
 				2C9E934321A090FF00780410 /* Assets.xcassets */,
 				2C9E934521A090FF00780410 /* LaunchScreen.storyboard */,
-				2C9E934E21A091ED00780410 /* Crayon.swift */,
 				2C9E935221A0930300780410 /* DetailViewController.swift */,
 				2C9E935421A0934200780410 /* TableViewCell.swift */,
 				2C9E935621A0936B00780410 /* TableViewController.swift */,
 				2C9E933C21A090FA00780410 /* AppDelegate.swift */,
 				2C9E935021A0927400780410 /* CrayonModel.swift */,
+				2C9E934E21A091ED00780410 /* Crayon.swift */,
 				2C9E934821A090FF00780410 /* Info.plist */,
 			);
 			path = "Color List Version 2";

@@ -10,5 +10,10 @@ import Foundation
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    static let reuseIdentifier = "cell"
+    
+    @IBOutlet weak var tableViewCellLabel: UILabel!
+    @IBOutlet weak var tableViewCellImage: UIImageView!
+    @IBOutlet weak var tableViewCellColor: UIView!
     
 }
