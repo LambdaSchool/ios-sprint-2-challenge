@@ -8,7 +8,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var swatchView: UIImageView!
     @IBOutlet weak var colorView: UIImageView!
     
-    
     @IBAction func tappedLikeButtons(_ sender: UIButton) {
         CrayonHelper.shared.buttonPressed(likeButtons[0])
         CrayonHelper.shared.buttonPressed(likeButtons[1])
