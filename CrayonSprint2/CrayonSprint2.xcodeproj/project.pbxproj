@@ -12,6 +12,8 @@
 		48F72CC821B0472E003C72FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F72CC621B0472E003C72FD /* Main.storyboard */; };
 		48F72CCA21B04730003C72FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F72CC921B04730003C72FD /* Assets.xcassets */; };
 		48F72CCD21B04730003C72FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F72CCB21B04730003C72FD /* LaunchScreen.storyboard */; };
+		48F72CD621B0485B003C72FD /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F72CD421B0485B003C72FD /* Crayon.swift */; };
+		48F72CD721B0485B003C72FD /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F72CD521B0485B003C72FD /* CrayonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		48F72CC921B04730003C72FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F72CCC21B04730003C72FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F72CCE21B04730003C72FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F72CD421B0485B003C72FD /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
+		48F72CD521B0485B003C72FD /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				48F72CC221B0472E003C72FD /* AppDelegate.swift */,
+				48F72CD421B0485B003C72FD /* Crayon.swift */,
+				48F72CD521B0485B003C72FD /* CrayonModel.swift */,
 				48F72CC421B0472E003C72FD /* ViewController.swift */,
 				48F72CC621B0472E003C72FD /* Main.storyboard */,
 				48F72CC921B04730003C72FD /* Assets.xcassets */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F72CD621B0485B003C72FD /* Crayon.swift in Sources */,
+				48F72CD721B0485B003C72FD /* CrayonModel.swift in Sources */,
 				48F72CC521B0472E003C72FD /* ViewController.swift in Sources */,
 				48F72CC321B0472E003C72FD /* AppDelegate.swift in Sources */,
 			);
