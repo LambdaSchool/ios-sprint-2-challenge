@@ -133,27 +133,34 @@
                                                             <constraint firstItem="RaX-1I-fEL" firstAttribute="centerY" secondItem="Vcm-X5-V8y" secondAttribute="centerY" id="tfx-fE-Pb6"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-ki-dU8" userLabel="Crayon Image">
-                                                        <rect key="frame" x="104.5" y="80" width="110" height="110"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="110" id="szZ-5O-p9b"/>
-                                                            <constraint firstAttribute="width" constant="110" id="zud-D8-yb8"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IvW-7r-WXV" userLabel="Crayon Name">
-                                                        <rect key="frame" x="138.5" y="230" width="42" height="97"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-aK-QGF" userLabel="Crayon Swatch">
-                                                        <rect key="frame" x="129.5" y="367" width="60" height="60"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="60" id="AVn-ff-eFY"/>
-                                                            <constraint firstAttribute="width" constant="60" id="f18-hs-C9V"/>
-                                                        </constraints>
-                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2QI-hE-h9O">
+                                                        <rect key="frame" x="104.5" y="80" width="110" height="347"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-ki-dU8" userLabel="Crayon Image">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110" height="151"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="110" id="szZ-5O-p9b"/>
+                                                                    <constraint firstAttribute="width" constant="110" id="zud-D8-yb8"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IvW-7r-WXV" userLabel="Crayon Name">
+                                                                <rect key="frame" x="24.5" y="191" width="61.5" height="33"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-aK-QGF" userLabel="Crayon Swatch">
+                                                                <rect key="frame" x="25" y="264" width="60" height="83"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="AVn-ff-eFY"/>
+                                                                    <constraint firstAttribute="width" constant="60" id="f18-hs-C9V"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="iM4-9H-bKJ"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="ns1-uA-W2m"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-pm-QBL" userLabel="Crayon Colors">
                                                         <rect key="frame" x="138.5" y="447" width="42" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
