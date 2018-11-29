@@ -1,9 +1,10 @@
-//
-//  TableViewCell.swift
-//  CrayonList
-//
-//  Created by Julian A. Fordyce on 11/29/18.
-//  Copyright © 2018 Julian A. Fordyce. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class TableViewCell: UITableViewCell {
+    static let reuseIdentifier = "cell"
+    
+    @IBOutlet var crayonLabel: UILabel!
+    @IBOutlet var crayonView: UIView!
+    @IBOutlet var leftSwatchView: UIView!
+    @IBOutlet var rightSwatchView: UIView!
+}

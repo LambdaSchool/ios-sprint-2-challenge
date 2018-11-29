@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C415EDDC21B0482600028E5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDDB21B0482600028E5E /* AppDelegate.swift */; };
-		C415EDDE21B0482600028E5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDDD21B0482600028E5E /* ViewController.swift */; };
+		C415EDDE21B0482600028E5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDDD21B0482600028E5E /* TableViewController.swift */; };
 		C415EDE121B0482600028E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C415EDDF21B0482600028E5E /* Main.storyboard */; };
 		C415EDE321B0482700028E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C415EDE221B0482700028E5E /* Assets.xcassets */; };
 		C415EDE621B0482700028E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C415EDE421B0482700028E5E /* LaunchScreen.storyboard */; };
+		C415EDEE21B04A4F00028E5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDED21B04A4F00028E5E /* DetailViewController.swift */; };
+		C415EDF021B04A8900028E5E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDEF21B04A8900028E5E /* TableViewCell.swift */; };
+		C415EDF221B0502500028E5E /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDF121B0502500028E5E /* CrayonModel.swift */; };
+		C415EDF421B0503E00028E5E /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415EDF321B0503D00028E5E /* Crayon.swift */; };
+		C415EDF621B0504D00028E5E /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C415EDF521B0504D00028E5E /* Crayons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C415EDD821B0482600028E5E /* CrayonList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrayonList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C415EDDB21B0482600028E5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C415EDDD21B0482600028E5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C415EDDD21B0482600028E5E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C415EDE021B0482600028E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C415EDE221B0482700028E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C415EDE521B0482700028E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C415EDE721B0482700028E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C415EDED21B04A4F00028E5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C415EDEF21B04A8900028E5E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C415EDF121B0502500028E5E /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
+		C415EDF321B0503D00028E5E /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
+		C415EDF521B0504D00028E5E /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +65,15 @@
 			isa = PBXGroup;
 			children = (
 				C415EDDB21B0482600028E5E /* AppDelegate.swift */,
-				C415EDDD21B0482600028E5E /* ViewController.swift */,
+				C415EDED21B04A4F00028E5E /* DetailViewController.swift */,
+				C415EDDD21B0482600028E5E /* TableViewController.swift */,
+				C415EDF321B0503D00028E5E /* Crayon.swift */,
+				C415EDF121B0502500028E5E /* CrayonModel.swift */,
+				C415EDEF21B04A8900028E5E /* TableViewCell.swift */,
 				C415EDDF21B0482600028E5E /* Main.storyboard */,
-				C415EDE221B0482700028E5E /* Assets.xcassets */,
 				C415EDE421B0482700028E5E /* LaunchScreen.storyboard */,
+				C415EDE221B0482700028E5E /* Assets.xcassets */,
+				C415EDF521B0504D00028E5E /* Crayons.xcassets */,
 				C415EDE721B0482700028E5E /* Info.plist */,
 			);
 			path = CrayonList;
@@ -125,6 +140,7 @@
 				C415EDE621B0482700028E5E /* LaunchScreen.storyboard in Resources */,
 				C415EDE321B0482700028E5E /* Assets.xcassets in Resources */,
 				C415EDE121B0482600028E5E /* Main.storyboard in Resources */,
+				C415EDF621B0504D00028E5E /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C415EDDE21B0482600028E5E /* ViewController.swift in Sources */,
+				C415EDF221B0502500028E5E /* CrayonModel.swift in Sources */,
+				C415EDEE21B04A4F00028E5E /* DetailViewController.swift in Sources */,
+				C415EDF021B04A8900028E5E /* TableViewCell.swift in Sources */,
+				C415EDF421B0503E00028E5E /* Crayon.swift in Sources */,
+				C415EDDE21B0482600028E5E /* TableViewController.swift in Sources */,
 				C415EDDC21B0482600028E5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
