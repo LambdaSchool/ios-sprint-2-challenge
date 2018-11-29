@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("Unable to dequeue cell") }
         
-        
+        cell.backgroundColor = CrayonHelper.shared.crayonFor(indexPath: indexPath).color
         cell.label.text = CrayonHelper.shared.crayonFor(indexPath: indexPath).name
         cell.cellImage.image = CrayonHelper.shared.crayonFor(indexPath: indexPath).image
         

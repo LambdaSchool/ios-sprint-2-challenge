@@ -18,9 +18,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var swatchView: UIView!
     
     @IBAction func tapButton1(_ sender: Any) {
+        updateViews()
     }
     
     @IBAction func tapButton2(_ sender: Any) {
+        updateViews()
     }
     
     override func viewDidLoad() {
@@ -40,7 +42,15 @@ class DetailViewController: UIViewController {
         swatchView.backgroundColor = crayon.color
         crayonImage.image = crayon.image
         
+        updateViews()
         
+    }
+    
+    func updateViews() {
+        guard let crayon = crayon else { return }
+        crayon.tappedLikeButton(crayon: crayon)
+        print(crayon.isLiked)
+        print(crayon.likeEmoji)
     }
     
 
