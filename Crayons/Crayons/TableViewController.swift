@@ -18,11 +18,11 @@ class TableViewController: UITableViewController {
     }
     
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        guard let destination = segue.destination as? DetailViewController else {return}
-        
-        destination.crayon = [CrayonHelper.shared.crayonFor(indexPath: indexPath)]
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        guard let destination = segue.destination as? DetailViewController else { return }
+        destination.crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
         
     }
     

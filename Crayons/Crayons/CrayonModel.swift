@@ -143,6 +143,7 @@ class CrayonHelper {
             sectionDictionary[first] = sectionDictionary[first, default: []] + [name]
             let crayon = Crayon(name: name, color: color, image: UIImage(named: name)!)
             crayons[name] = crayon
+            
         }
         sectionKeys = Array(sectionDictionary.keys).sorted()
     }
@@ -179,7 +180,22 @@ class CrayonHelper {
         return crayons[colorName]!
     }
     
-    func isLiked() {
+    var crayonArr: [String] = []
+    
+    func isLiked (colorName: String){
+        crayonArr += [colorName]
+        print(crayonArr)
+        
         
     }
+    
+    func isUnliked (colorName: String) {
+        let index = crayonArr.firstIndex(of: colorName)
+        crayonArr.remove(at: index!)
+        print(crayonArr)
+        
+        
+    }
+    
+    
 }
