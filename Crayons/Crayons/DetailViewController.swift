@@ -34,4 +34,41 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var secondaryView: UIView!
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+        guard let crayon = crayon else { return }
+        
+        super.viewWillAppear(animated)
+        
+        crayonImage.image = crayon.image
+        
+        crayonName.text = crayon.name
+        
+        
+        swatchView.backgroundColor = crayon.color
+        
+        topLikeView.backgroundColor = crayon.color
+        
+        bottomLikeView.backgroundColor = crayon.color
+        
+        secondaryView.backgroundColor = crayon.color
+        
+        mainStackView.backgroundColor = .white
+        
+        mainView.backgroundColor = crayon.contrastingColor()
+        
+        topLikeButton.setTitle(CrayonHelper.shared.buttonDidUpdate(), for: .normal)
+        bottomLikeButton.setTitle(CrayonHelper.shared.buttonDidUpdate(), for: .normal)
+        
+    }
+    
+    @IBAction func likeButton(_ sender: Any){
+        let string = topLikeButton.currentTitle
+        topLikeButton.setTitle(CrayonHelper.shared.userLikes(string: string ?? "Hello"), for: .normal)
+        bottomLikeButton.setTitle(CrayonHelper.shared.userLikes(string: string ?? "Hello"), for: .normal)
+        
+        CrayonHelper.shared.buttonUpdate = topLikeButton.currentTitle
+        
+    }
+    
 }

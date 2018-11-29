@@ -19,48 +19,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="185" id="z9X-bV-2TP" customClass="TableViewCell" customModule="Crayons" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="185"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="254" id="Upn-Ys-HP2" customClass="TableViewCell" customModule="Crayons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="254"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9X-bV-2TP" id="EMm-Gb-y1m">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Upn-Ys-HP2" id="6Aj-so-NmL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="253.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qbl-s4-W7c">
-                                            <rect key="frame" x="107" y="40" width="162" height="116"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i28-VR-udC" userLabel="LSwatch View">
-                                            <rect key="frame" x="0.0" y="0.0" width="55" height="185"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzc-BR-Up6">
+                                            <rect key="frame" x="70" y="11" width="235" height="231.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIl-zG-qPS">
+                                                    <rect key="frame" x="57" y="72" width="135" height="141.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKk-ss-uF0">
+                                                    <rect key="frame" x="75" y="8" width="85" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="1BA-Le-hAF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="gIl-zG-qPS" firstAttribute="top" secondItem="rzc-BR-Up6" secondAttribute="top" constant="72" id="JJm-jJ-7VQ"/>
+                                                <constraint firstItem="gIl-zG-qPS" firstAttribute="leading" secondItem="rzc-BR-Up6" secondAttribute="leading" constant="57" id="LO3-0X-J5R"/>
+                                                <constraint firstItem="gIl-zG-qPS" firstAttribute="top" secondItem="cKk-ss-uF0" secondAttribute="bottom" constant="22" id="P3n-9V-WB9"/>
+                                                <constraint firstItem="cKk-ss-uF0" firstAttribute="top" secondItem="rzc-BR-Up6" secondAttribute="topMargin" id="ijI-xB-RYe"/>
+                                                <constraint firstAttribute="bottom" secondItem="gIl-zG-qPS" secondAttribute="bottom" constant="18" id="szj-8b-kOC"/>
+                                                <constraint firstAttribute="trailing" secondItem="gIl-zG-qPS" secondAttribute="trailing" constant="43" id="vfe-V1-6Eh"/>
+                                                <constraint firstItem="cKk-ss-uF0" firstAttribute="centerX" secondItem="rzc-BR-Up6" secondAttribute="centerX" id="wXa-aH-S1U"/>
+                                            </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAZ-ZE-YcQ" userLabel="RSwatch View">
-                                            <rect key="frame" x="320" y="0.0" width="55" height="185"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEZ-6z-hTz" userLabel="Crayon Name Label">
-                                            <rect key="frame" x="167" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Qbl-s4-W7c" firstAttribute="top" secondItem="MEZ-6z-hTz" secondAttribute="bottom" constant="8" id="4IZ-AD-CRC"/>
-                                        <constraint firstItem="pAZ-ZE-YcQ" firstAttribute="leading" secondItem="MEZ-6z-hTz" secondAttribute="trailing" constant="111" id="ONY-Zm-OHv"/>
-                                        <constraint firstItem="MEZ-6z-hTz" firstAttribute="leading" secondItem="i28-VR-udC" secondAttribute="trailing" constant="112" id="Oge-K7-Y89"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Qbl-s4-W7c" secondAttribute="bottom" constant="18" id="SCa-NA-JRM"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Qbl-s4-W7c" secondAttribute="trailing" constant="90" id="iOf-s3-IlQ"/>
-                                        <constraint firstItem="MEZ-6z-hTz" firstAttribute="top" secondItem="EMm-Gb-y1m" secondAttribute="topMargin" id="j11-WZ-L4b"/>
-                                        <constraint firstItem="Qbl-s4-W7c" firstAttribute="top" secondItem="MEZ-6z-hTz" secondAttribute="bottom" constant="8" id="laS-90-uns"/>
-                                        <constraint firstItem="Qbl-s4-W7c" firstAttribute="leading" secondItem="EMm-Gb-y1m" secondAttribute="leadingMargin" constant="91" id="wOD-gX-i9v"/>
+                                        <constraint firstItem="rzc-BR-Up6" firstAttribute="centerX" secondItem="6Aj-so-NmL" secondAttribute="centerX" id="ES5-LH-Mn1"/>
+                                        <constraint firstItem="rzc-BR-Up6" firstAttribute="leading" secondItem="6Aj-so-NmL" secondAttribute="leadingMargin" constant="54" id="Xze-cJ-9um"/>
+                                        <constraint firstItem="rzc-BR-Up6" firstAttribute="centerY" secondItem="6Aj-so-NmL" secondAttribute="centerY" id="fXc-qI-zL5"/>
+                                        <constraint firstItem="rzc-BR-Up6" firstAttribute="top" secondItem="6Aj-so-NmL" secondAttribute="topMargin" id="tSS-ve-B5Z"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="crayonImageView" destination="Qbl-s4-W7c" id="OBA-AQ-HDy"/>
-                                    <outlet property="crayonNameLabel" destination="MEZ-6z-hTz" id="YuO-le-RTZ"/>
-                                    <outlet property="lSwatchView" destination="i28-VR-udC" id="tP5-Pn-0Zm"/>
-                                    <outlet property="rSwatchView" destination="pAZ-ZE-YcQ" id="Zj9-xk-xF1"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2VO-vy-lrq"/>
+                                    <outlet property="crayonImageView" destination="gIl-zG-qPS" id="EMn-rS-QZV"/>
+                                    <outlet property="crayonNameLabel" destination="cKk-ss-uF0" id="zgO-wK-HDM"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="xhr-1e-t9x"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
