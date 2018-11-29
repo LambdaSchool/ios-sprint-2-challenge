@@ -14,6 +14,9 @@
 		F832BF5921B051C500BC9CD2 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5621B051C400BC9CD2 /* Crayon.swift */; };
 		F832BF5A21B051C500BC9CD2 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5721B051C400BC9CD2 /* CrayonModel.swift */; };
 		F832BF5B21B051C500BC9CD2 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F832BF5821B051C400BC9CD2 /* Crayons.xcassets */; };
+		F832BF5D21B055FC00BC9CD2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */; };
+		F832BF5F21B0561000BC9CD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */; };
+		F832BF6121B0571A00BC9CD2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F832BF5621B051C400BC9CD2 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
 		F832BF5721B051C400BC9CD2 /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
 		F832BF5821B051C400BC9CD2 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Crayons.xcassets; sourceTree = "<group>"; };
+		F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				F832BF5721B051C400BC9CD2 /* CrayonModel.swift */,
 				F832BF5821B051C400BC9CD2 /* Crayons.xcassets */,
 				F832BF4221AFAB8100BC9CD2 /* Main.storyboard */,
+				F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */,
+				F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */,
+				F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */,
 				F832BF4721AFAB8100BC9CD2 /* LaunchScreen.storyboard */,
 				F832BF4A21AFAB8100BC9CD2 /* Info.plist */,
 				F832BF4521AFAB8100BC9CD2 /* Assets.xcassets */,
@@ -144,7 +153,10 @@
 			files = (
 				F832BF3F21AFAB8100BC9CD2 /* AppDelegate.swift in Sources */,
 				F832BF5A21B051C500BC9CD2 /* CrayonModel.swift in Sources */,
+				F832BF5F21B0561000BC9CD2 /* DetailViewController.swift in Sources */,
+				F832BF6121B0571A00BC9CD2 /* TableViewCell.swift in Sources */,
 				F832BF5921B051C500BC9CD2 /* Crayon.swift in Sources */,
+				F832BF5D21B055FC00BC9CD2 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
