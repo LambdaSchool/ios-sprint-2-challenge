@@ -1,6 +1,6 @@
 import UIKit
 
-class ColorListViewController: UITableViewController {
+class ColorDetailViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

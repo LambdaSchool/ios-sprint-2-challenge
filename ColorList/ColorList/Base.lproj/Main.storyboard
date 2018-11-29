@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T5b-Hd-PKS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,22 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Crayons-->
         <scene sceneID="pSK-Dy-D50">
             <objects>
-                <tableViewController id="Si5-RO-LLa" sceneMemberID="viewController">
+                <tableViewController id="Si5-RO-LLa" customClass="ColorListViewController" customModule="ColorList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H47-pN-4yx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ddv-43-teb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="198" id="Ddv-43-teb" customClass="ColorSwatchCell" customModule="ColorList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="198"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ddv-43-teb" id="TXv-VP-Ab8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="197.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Bh-5u-u1z">
+                                            <rect key="frame" x="21" y="11" width="307" height="176"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yc-wY-Ufs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="26.5"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lox-eD-hAJ" userLabel="swatchView">
+                                                    <rect key="frame" x="0.0" y="56.5" width="307" height="119.5"/>
+                                                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6Bh-5u-u1z" firstAttribute="bottom" secondItem="TXv-VP-Ab8" secondAttribute="bottomMargin" id="0o2-ZS-QXi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="6Bh-5u-u1z" secondAttribute="trailing" constant="5" id="QL1-d1-O7G"/>
+                                        <constraint firstItem="6Bh-5u-u1z" firstAttribute="leading" secondItem="TXv-VP-Ab8" secondAttribute="leadingMargin" constant="5" id="VOU-F5-TK2"/>
+                                        <constraint firstItem="6Bh-5u-u1z" firstAttribute="top" secondItem="TXv-VP-Ab8" secondAttribute="topMargin" id="nx9-mT-izu"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="colorName" destination="3Yc-wY-Ufs" id="3dP-OF-e68"/>
+                                    <outlet property="swatchView" destination="lox-eD-hAJ" id="rpi-ja-Zmd"/>
+                                    <segue destination="n5U-qI-cAI" kind="push" identifier="" id="vMA-Bf-jLe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,11 +60,11 @@
                             <outlet property="delegate" destination="Si5-RO-LLa" id="ZIW-qU-EZ1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tmS-Xt-atU"/>
+                    <navigationItem key="navigationItem" title="Crayons" id="tmS-Xt-atU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfK-79-r3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="503" y="168"/>
+            <point key="canvasLocation" x="501.60000000000002" y="167.76611694152925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z2A-db-gBr">
@@ -48,6 +76,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fie-bN-05r"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iNd-qx-HOb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ0-bg-CmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
