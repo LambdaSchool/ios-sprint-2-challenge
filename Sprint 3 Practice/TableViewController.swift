@@ -29,4 +29,16 @@ class TableViewController: UITableViewController {
     }
     
     
+    // MVP - Each cell leads to a crayon detail view.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { fatalError("Could not originate from source.") }
+        guard let destination = segue.destination as? DetailViewController else { fatalError("Could not reach destination.")}
+        
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        
+        destination.crayon = crayon
+        
+    }
+    
 }

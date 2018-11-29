@@ -22,4 +22,12 @@ class DetailViewController: UIViewController {
     
     @IBAction func likeButtonBottom(_ sender: Any) {
     }
+    
+    var crayon: Crayon?
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let crayon = crayon else { fatalError("No crayon found.")}
+    }
 }
