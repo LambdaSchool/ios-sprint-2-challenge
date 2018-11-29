@@ -9,7 +9,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var crayonView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var swatchView: UIView!
-    @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var likeButton1: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
