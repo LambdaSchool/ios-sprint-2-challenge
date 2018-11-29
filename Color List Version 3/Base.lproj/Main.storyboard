@@ -37,13 +37,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crayon Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="156" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-yP-R7W">
-                                                            <rect key="frame" x="98" y="0.0" width="104" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="85" y="0.0" width="130" height="39.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Almond" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-SA-1Wv">
-                                                            <rect key="frame" x="100" y="40" width="100" height="160"/>
+                                                            <rect key="frame" x="100" y="47.5" width="100" height="152.5"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>

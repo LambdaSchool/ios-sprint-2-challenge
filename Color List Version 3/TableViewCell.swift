@@ -14,7 +14,6 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var tableViewCellView: UIView!
     @IBOutlet weak var tableViewCellLabel: UILabel!
     @IBOutlet weak var tableViewCellImage: UIImageView!
-    
     @IBOutlet weak var tableVieCellBackgroundColor: UIView!
     
 }

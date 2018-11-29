@@ -28,7 +28,8 @@ class Crayon {
     func contrastingColor() -> UIColor {
         var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
         color.getRed(&r, green: &g, blue: &b, alpha: nil)
-        let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
-        return luminance > 0.5 ? .black : .white
+        return UIColor(displayP3Red: 1.0 - r, green: 1.0 - g, blue: 1.0 - b, alpha: 1.0)
+        //let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
+        //return luminance > 0.5 ? .black : .white
     }
 }

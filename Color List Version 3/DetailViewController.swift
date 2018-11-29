@@ -26,8 +26,8 @@ class DetailViewController: UIViewController {
         detailViewImage.image = crayon.image
         detailViewSwatch.backgroundColor = crayon.color
         self.view.backgroundColor = crayon.color
-        detailViewBottomButton.backgroundColor = crayon.color
-        detailViewTopButton.backgroundColor = crayon.color
+        detailViewBottomButton.backgroundColor = crayon.contrastingColor()
+        detailViewTopButton.backgroundColor = crayon.contrastingColor()
         
         if crayon.isLiked == false {
             self.detailViewTopButton.setTitle("🤔", for: .normal)
