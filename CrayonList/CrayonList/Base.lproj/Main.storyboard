@@ -223,7 +223,7 @@
                         <outlet property="bottomSwatchView" destination="sBj-hY-rsC" id="jfn-GY-Yuc"/>
                         <outlet property="detailLabel" destination="aqj-1u-bhY" id="1fk-JM-8MJ"/>
                         <outlet property="detailSwatch" destination="5GL-DR-jTS" id="D8F-ZD-3rG"/>
-                        <outlet property="detailView" destination="CLn-9d-gBS" id="fcF-Fb-TxK"/>
+                        <outlet property="detailView" destination="CLn-9d-gBS" id="VNR-xQ-HAQ"/>
                         <outlet property="topButton" destination="VHc-Sv-Yub" id="55f-8c-zPN"/>
                         <outlet property="topSwatchView" destination="tTy-ly-8bU" id="49J-l1-U8j"/>
                     </connections>
