@@ -10,8 +10,6 @@ class Crayon {
         (self.name, self.color, self.image) = (name, color, image)
     }
 
-    // Return a contrasting color that can be
-    // seen against the color
     func contrastingColor() -> UIColor {
         var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
         color.getRed(&r, green: &g, blue: &b, alpha: nil)
