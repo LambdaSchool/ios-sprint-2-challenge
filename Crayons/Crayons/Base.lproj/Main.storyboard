@@ -13,33 +13,31 @@
         <!--Table View Controller-->
         <scene sceneID="w0m-HJ-k3E">
             <objects>
-                <tableViewController id="nob-HL-MD5" sceneMemberID="viewController">
+                <tableViewController id="nob-HL-MD5" customClass="TableViewController" customModule="Crayons" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="urp-EQ-bp8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="185" id="z9X-bV-2TP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="185" id="z9X-bV-2TP" customClass="TableViewCell" customModule="Crayons" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="185"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9X-bV-2TP" id="EMm-Gb-y1m">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qbl-s4-W7c">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qbl-s4-W7c">
                                             <rect key="frame" x="107" y="40" width="162" height="116"/>
                                         </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i28-VR-udC" userLabel="Left View">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i28-VR-udC" userLabel="LSwatch View">
                                             <rect key="frame" x="0.0" y="0.0" width="55" height="185"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAZ-ZE-YcQ">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAZ-ZE-YcQ" userLabel="RSwatch View">
                                             <rect key="frame" x="320" y="0.0" width="55" height="185"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEZ-6z-hTz">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEZ-6z-hTz" userLabel="Crayon Name Label">
                                             <rect key="frame" x="167" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -48,8 +46,12 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Qbl-s4-W7c" firstAttribute="top" secondItem="MEZ-6z-hTz" secondAttribute="bottom" constant="8" id="4IZ-AD-CRC"/>
+                                        <constraint firstItem="pAZ-ZE-YcQ" firstAttribute="leading" secondItem="MEZ-6z-hTz" secondAttribute="trailing" constant="111" id="ONY-Zm-OHv"/>
+                                        <constraint firstItem="MEZ-6z-hTz" firstAttribute="leading" secondItem="i28-VR-udC" secondAttribute="trailing" constant="112" id="Oge-K7-Y89"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Qbl-s4-W7c" secondAttribute="bottom" constant="18" id="SCa-NA-JRM"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Qbl-s4-W7c" secondAttribute="trailing" constant="90" id="iOf-s3-IlQ"/>
+                                        <constraint firstItem="MEZ-6z-hTz" firstAttribute="top" secondItem="EMm-Gb-y1m" secondAttribute="topMargin" id="j11-WZ-L4b"/>
+                                        <constraint firstItem="Qbl-s4-W7c" firstAttribute="top" secondItem="MEZ-6z-hTz" secondAttribute="bottom" constant="8" id="laS-90-uns"/>
                                         <constraint firstItem="Qbl-s4-W7c" firstAttribute="leading" secondItem="EMm-Gb-y1m" secondAttribute="leadingMargin" constant="91" id="wOD-gX-i9v"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -69,20 +71,87 @@
             </objects>
             <point key="canvasLocation" x="332" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crayons" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="Crayons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-EF-hmo">
+                                <rect key="frame" x="16" y="85" width="343" height="560"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-If-5E9" userLabel="Top Like View">
+                                        <rect key="frame" x="54" y="27" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axa-d7-XY6">
+                                                <rect key="frame" x="105" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Like"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1d-1S-DFI" userLabel="Crayon Name">
+                                        <rect key="frame" x="150" y="163" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POV-iN-ESC" userLabel="Crayon Image">
+                                        <rect key="frame" x="64" y="192" width="220" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdk-qV-LI8" userLabel="Bottom Like View">
+                                        <rect key="frame" x="54" y="424" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-mo-Gac">
+                                                <rect key="frame" x="105" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Like"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-Vc-dBO" userLabel="Swatch View">
+                                        <rect key="frame" x="139" y="375" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t3b-EF-hmo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EY1-x1-2SC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t3b-EF-hmo" secondAttribute="trailing" constant="16" id="crY-YJ-ORw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t3b-EF-hmo" secondAttribute="bottom" constant="22" id="eq3-GZ-SmI"/>
+                            <constraint firstItem="t3b-EF-hmo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="vV7-tZ-0Rl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="CrayonDetailName" destination="F1d-1S-DFI" id="gUZ-7X-iZb"/>
+                        <outlet property="bottomLikeButton" destination="IbJ-mo-Gac" id="eh3-3H-oLE"/>
+                        <outlet property="bottomLikeView" destination="Kdk-qV-LI8" id="2jo-gD-sZq"/>
+                        <outlet property="crayonDetailName" destination="F1d-1S-DFI" id="fyW-Ve-QnD"/>
+                        <outlet property="crayonImage" destination="POV-iN-ESC" id="h6v-G8-lTW"/>
+                        <outlet property="crayonName" destination="F1d-1S-DFI" id="F9T-pn-VZ7"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="VVt-D6-n5b"/>
+                        <outlet property="secondaryView" destination="t3b-EF-hmo" id="FAN-l1-G2z"/>
+                        <outlet property="swatchView" destination="6Bt-Vc-dBO" id="UAN-aG-GQi"/>
+                        <outlet property="topLikeButton" destination="Axa-d7-XY6" id="7XA-u7-4FW"/>
+                        <outlet property="topLikeView" destination="Kdk-qV-LI8" id="3ew-ST-DN0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="134"/>
+            <point key="canvasLocation" x="1168.8" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eZs-sb-9WG">
