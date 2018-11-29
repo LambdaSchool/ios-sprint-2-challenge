@@ -177,6 +177,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ee-TN-N2f"/>
                     </view>
+                    <connections>
+                        <outlet property="colorSwatch" destination="qZm-XN-isM" id="zha-LP-cYG"/>
+                        <outlet property="crayonImage" destination="6DL-pO-4Pe" id="QP8-ay-ixm"/>
+                        <outlet property="nameLabel" destination="HSh-fA-LE1" id="RHk-fq-k2n"/>
+                        <outlet property="outerView" destination="iP5-5x-hAx" id="vNt-2o-jwP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dt5-jM-kDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
