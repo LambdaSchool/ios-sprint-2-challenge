@@ -32,4 +32,24 @@ class Crayon {
         //let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
         //return luminance > 0.5 ? .black : .white
     }
+    
+    func fourDigits (_ number: NSNumber) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.usesSignificantDigits = true
+        numberFormatter.minimumSignificantDigits = 3
+        numberFormatter.maximumSignificantDigits = 3
+        print(numberFormatter.string(from: number))
+        guard let formattedNum = numberFormatter.string(from: number) else { return "Nope. Didn't Work"}
+        return formattedNum
+    }
+    
+    func information() ->  String {
+        var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
+        color.getRed(&r, green: &g, blue: &b, alpha: nil)
+        let rDouble: Double = Double(r)
+        let gDouble: Double = Double(g)
+        let bDouble: Double = Double(b)
+        
+        return String(format: "(R:\(fourDigits(NSNumber(value: rDouble))) G:\(fourDigits(NSNumber(value: gDouble))) B:\(fourDigits(NSNumber(value: bDouble)))")
+    }
 }

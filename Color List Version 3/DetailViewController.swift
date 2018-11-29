@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailViewSwatch: UIView!
     @IBOutlet weak var detailViewBottomButton: UIButton!
     
+    @IBOutlet weak var detailViewInformation: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,6 +29,7 @@ class DetailViewController: UIViewController {
         self.view.backgroundColor = crayon.color
         detailViewBottomButton.backgroundColor = crayon.contrastingColor()
         detailViewTopButton.backgroundColor = crayon.contrastingColor()
+        detailViewInformation.text = crayon.information()
         
         if crayon.isLiked == false {
             self.detailViewTopButton.setTitle("🤔", for: .normal)
