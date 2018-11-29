@@ -134,6 +134,7 @@
                                         <rect key="frame" x="8" y="462" width="334" height="30"/>
                                         <color key="backgroundColor" red="0.1355539177" green="1" blue="0.092983124309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="🤔"/>
+                                        <state key="selected" title="♥️"/>
                                         <connections>
                                             <action selector="tappedLikeButton:" destination="WgF-bA-4Lc" eventType="touchUpInside" id="q5A-BK-KvF"/>
                                         </connections>
@@ -142,6 +143,7 @@
                                         <rect key="frame" x="8" y="8" width="334" height="30"/>
                                         <color key="backgroundColor" red="0.1355539177" green="1" blue="0.092983124309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="🤔"/>
+                                        <state key="selected" title="♥️"/>
                                         <connections>
                                             <action selector="tappedLikeButton:" destination="WgF-bA-4Lc" eventType="touchUpInside" id="myd-oa-V8I"/>
                                         </connections>
@@ -173,7 +175,7 @@
                     </view>
                     <connections>
                         <outlet property="colorLabelFloat" destination="IRh-7G-OOm" id="RGr-t9-xNP"/>
-                        <outlet property="colorLabelHex" destination="Eop-I7-3b5" id="2Zd-IQ-9a7"/>
+                        <outlet property="colorLabelHex" destination="ia9-Xz-jmC" id="AvU-kR-pVZ"/>
                         <outlet property="colorLabelInt" destination="Eop-I7-3b5" id="BDS-H5-eMJ"/>
                         <outlet property="colorNameLabel" destination="RM9-Gm-KZx" id="cQn-TY-hA1"/>
                         <outlet property="crayonColorImageView" destination="evB-Mc-ryU" id="DWE-rY-JRr"/>

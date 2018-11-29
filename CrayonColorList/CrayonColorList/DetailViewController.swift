@@ -56,7 +56,8 @@ class DetailViewController: UIViewController {
         colorLabelInt.text = "(\(rFormattedInt)\(gFormattedInt)\(bFormattedInt))"
         
         // Hex
-        
+        let hexColor = String(format: "%02lX%02lX%02lX", lroundf(Float(r * 255)), lroundf(Float(g * 255)), lroundf(Float(b * 255)))
+        colorLabelHex.text = "Hex: \(hexColor)"
         
     
         
