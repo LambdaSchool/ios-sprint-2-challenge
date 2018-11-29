@@ -17,6 +17,17 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .lightGray
+        label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        return label
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return CrayonHelper.shared.sectionCount
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
