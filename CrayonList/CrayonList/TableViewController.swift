@@ -26,7 +26,28 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.backgroundColor = .black
+        label.textAlignment = .center
+        label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        return label
+    }
     
-
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return CrayonHelper.shared.sectionTitles()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        guard let destination = segue.destination as? DetailViewController else { return }
+        
+        destination.crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        destination.crayon?.isLiked = CrayonHelper.shared.crayonFor(indexPath: indexPath).isLiked
+    }
+    
+    
 }
+
+
 
