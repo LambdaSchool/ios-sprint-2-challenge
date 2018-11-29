@@ -132,6 +132,7 @@
                     </view>
                     <connections>
                         <outlet property="crayonImage" destination="emq-QF-vyq" id="vVF-Cg-UMv"/>
+                        <outlet property="detailView" destination="TmL-7u-KeN" id="0UL-S9-l1z"/>
                         <outlet property="label" destination="OUo-Ul-8QV" id="K67-WC-VlA"/>
                         <outlet property="likeButton1" destination="KBd-bc-IkS" id="Mxn-SI-5mZ"/>
                         <outlet property="likeButton2" destination="xrl-B1-jrq" id="qQO-ae-LoC"/>

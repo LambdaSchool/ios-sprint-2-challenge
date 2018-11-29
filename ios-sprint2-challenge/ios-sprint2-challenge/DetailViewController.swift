@@ -11,6 +11,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet var detailView: UIView!
+    
     @IBOutlet weak var crayonImage: UIImageView!
     
     @IBOutlet weak var swatchView: UIView!
@@ -29,6 +31,16 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         
         guard let crayon = crayon else { return }
+        
+        
+        detailView?.backgroundColor = .white
+        likeButton1?.backgroundColor = crayon.color
+        likeButton2?.backgroundColor = crayon.color
+        label?.text = crayon.name
+        swatchView.backgroundColor = crayon.color
+        crayonImage.image = crayon.image
+        
+        
     }
     
 
