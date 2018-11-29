@@ -13,7 +13,20 @@ class TableViewController: UITableViewController {
         return label
     }
     
+    // MVP - Cells display color names and crayon images. Each cell is bordered with supporting color swatchs on its edges.
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reusableIdentifier, for: indexPath) as? TableViewCell else { fatalError("Unable to dequeue proper cell")}
+        
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        
+        cell.crayonNameMain.text = crayon.name
+        cell.crayonImageMain.image = crayon.image
+        cell.leadingSwatch.backgroundColor = crayon.color
+        cell.trailingSwatch.backgroundColor = crayon.color
+        
+        return cell
+    }
     
     
 }
