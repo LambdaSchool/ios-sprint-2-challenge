@@ -133,7 +133,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyZ-R9-IrM">
                                         <rect key="frame" x="8" y="462" width="334" height="30"/>
                                         <color key="backgroundColor" red="0.1355539177" green="1" blue="0.092983124309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="🤔"/>
                                         <connections>
                                             <action selector="tappedLikeButton:" destination="WgF-bA-4Lc" eventType="touchUpInside" id="q5A-BK-KvF"/>
                                         </connections>
@@ -141,7 +141,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX0-56-DUS">
                                         <rect key="frame" x="8" y="8" width="334" height="30"/>
                                         <color key="backgroundColor" red="0.1355539177" green="1" blue="0.092983124309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="🤔"/>
                                         <connections>
                                             <action selector="tappedLikeButton:" destination="WgF-bA-4Lc" eventType="touchUpInside" id="myd-oa-V8I"/>
                                         </connections>
