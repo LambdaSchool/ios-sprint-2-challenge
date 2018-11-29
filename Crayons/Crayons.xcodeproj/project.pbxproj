@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A20DD37121B052320032F63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD37021B052320032F63F /* ViewController.swift */; };
-		A20DD37621B052330032F63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20DD37521B052330032F63F /* Assets.xcassets */; };
 		A20DD37921B052330032F63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20DD37721B052330032F63F /* LaunchScreen.storyboard */; };
 		A20DD38621B0528F0032F63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD38021B0528E0032F63F /* AppDelegate.swift */; };
 		A20DD38721B0528F0032F63F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD38121B0528E0032F63F /* DetailViewController.swift */; };
@@ -17,12 +15,12 @@
 		A20DD38A21B0528F0032F63F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD38421B0528F0032F63F /* TableViewController.swift */; };
 		A20DD38B21B0528F0032F63F /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DD38521B0528F0032F63F /* CrayonModel.swift */; };
 		A20DD38D21B052A40032F63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20DD38C21B052A40032F63F /* Main.storyboard */; };
+		A20DD38F21B053430032F63F /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20DD38E21B053430032F63F /* Crayons.xcassets */; };
+		A20DD39121B0540A0032F63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20DD39021B0540A0032F63F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A20DD36B21B052320032F63F /* Crayons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crayons.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20DD37021B052320032F63F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A20DD37521B052330032F63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20DD37821B052330032F63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20DD37A21B052330032F63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20DD38021B0528E0032F63F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../SprintChallenge2/SprintChallenge2/AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +30,8 @@
 		A20DD38421B0528F0032F63F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A20DD38521B0528F0032F63F /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
 		A20DD38C21B052A40032F63F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A20DD38E21B053430032F63F /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
+		A20DD39021B0540A0032F63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +70,9 @@
 				A20DD38121B0528E0032F63F /* DetailViewController.swift */,
 				A20DD38321B0528E0032F63F /* TableViewCell.swift */,
 				A20DD38421B0528F0032F63F /* TableViewController.swift */,
-				A20DD37021B052320032F63F /* ViewController.swift */,
 				A20DD38C21B052A40032F63F /* Main.storyboard */,
-				A20DD37521B052330032F63F /* Assets.xcassets */,
+				A20DD39021B0540A0032F63F /* Assets.xcassets */,
+				A20DD38E21B053430032F63F /* Crayons.xcassets */,
 				A20DD37721B052330032F63F /* LaunchScreen.storyboard */,
 				A20DD37A21B052330032F63F /* Info.plist */,
 			);
@@ -138,8 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20DD37921B052330032F63F /* LaunchScreen.storyboard in Resources */,
-				A20DD37621B052330032F63F /* Assets.xcassets in Resources */,
 				A20DD38D21B052A40032F63F /* Main.storyboard in Resources */,
+				A20DD39121B0540A0032F63F /* Assets.xcassets in Resources */,
+				A20DD38F21B053430032F63F /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +155,6 @@
 				A20DD38B21B0528F0032F63F /* CrayonModel.swift in Sources */,
 				A20DD38A21B0528F0032F63F /* TableViewController.swift in Sources */,
 				A20DD38821B0528F0032F63F /* Crayon.swift in Sources */,
-				A20DD37121B052320032F63F /* ViewController.swift in Sources */,
 				A20DD38921B0528F0032F63F /* TableViewCell.swift in Sources */,
 				A20DD38721B0528F0032F63F /* DetailViewController.swift in Sources */,
 			);

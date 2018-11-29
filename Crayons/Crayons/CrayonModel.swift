@@ -178,4 +178,8 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    func isLiked() {
+        
+    }
 }

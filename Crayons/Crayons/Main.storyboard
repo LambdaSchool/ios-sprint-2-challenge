@@ -12,55 +12,54 @@
         <!--Root View Controller-->
         <scene sceneID="Hbt-T8-x4w">
             <objects>
-                <tableViewController id="QQf-Rf-X0A" customClass="TableViewController" customModule="SprintChallenge2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cCp-wP-iAd">
+                <tableViewController id="QQf-Rf-X0A" customClass="TableViewController" customModule="Crayons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="248" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cCp-wP-iAd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="qey-BP-Dwo" customClass="TableViewCell" customModule="SprintChallenge2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="248" id="qey-BP-Dwo" customClass="TableViewCell" customModule="Crayons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="248"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qey-BP-Dwo" id="N7C-eh-1f8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qey-BP-Dwo" id="N7C-eh-1f8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="247.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5M-nc-LLv">
-                                            <rect key="frame" x="0.0" y="0.0" width="28" height="180"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5M-nc-LLv">
+                                            <rect key="frame" x="0.0" y="0.0" width="28" height="248"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dt0-x9-Fww">
-                                            <rect key="frame" x="347" y="0.0" width="28" height="180"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dt0-x9-Fww">
+                                            <rect key="frame" x="347" y="0.0" width="28" height="248"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ars-Qv-GRO">
-                                            <rect key="frame" x="166.5" y="0.0" width="42" height="21"/>
+                                            <rect key="frame" x="166" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-gw-IIe">
-                                            <rect key="frame" x="108" y="21" width="159" height="186"/>
+                                            <rect key="frame" x="108" y="40" width="159" height="197"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="186" id="IA4-6D-Wyw"/>
-                                                <constraint firstAttribute="width" constant="159" id="osi-pz-ahb"/>
+                                                <constraint firstAttribute="width" constant="159" id="nzz-wa-kBF"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="top" secondItem="X5M-nc-LLv" secondAttribute="top" id="BcN-DU-HjY"/>
-                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="top" secondItem="N7C-eh-1f8" secondAttribute="top" id="JAY-f6-cNM"/>
-                                        <constraint firstItem="XoP-gw-IIe" firstAttribute="top" secondItem="ars-Qv-GRO" secondAttribute="bottom" id="LXa-8e-CO2"/>
-                                        <constraint firstItem="dt0-x9-Fww" firstAttribute="top" secondItem="N7C-eh-1f8" secondAttribute="top" id="QEb-8c-bLb"/>
-                                        <constraint firstAttribute="trailing" secondItem="dt0-x9-Fww" secondAttribute="trailing" id="Ua2-0G-pNf"/>
-                                        <constraint firstAttribute="bottom" secondItem="X5M-nc-LLv" secondAttribute="bottom" id="VAu-kz-UFr"/>
-                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="centerX" secondItem="XoP-gw-IIe" secondAttribute="centerX" id="Wju-Tu-dP6"/>
-                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="leading" secondItem="N7C-eh-1f8" secondAttribute="leading" id="a1F-zM-vux"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="XoP-gw-IIe" secondAttribute="bottom" id="hAc-lr-ZuP"/>
-                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="centerX" secondItem="N7C-eh-1f8" secondAttribute="centerX" id="kCk-El-kxa"/>
-                                        <constraint firstAttribute="bottom" secondItem="dt0-x9-Fww" secondAttribute="bottom" id="klj-jJ-Ild"/>
-                                        <constraint firstItem="dt0-x9-Fww" firstAttribute="leading" secondItem="XoP-gw-IIe" secondAttribute="trailing" constant="80" id="q3q-JK-x4u"/>
-                                        <constraint firstItem="XoP-gw-IIe" firstAttribute="leading" secondItem="X5M-nc-LLv" secondAttribute="trailing" constant="80" id="rxi-N1-idf"/>
+                                        <constraint firstItem="XoP-gw-IIe" firstAttribute="bottom" secondItem="N7C-eh-1f8" secondAttribute="bottomMargin" id="4Gl-h0-8LF"/>
+                                        <constraint firstItem="dt0-x9-Fww" firstAttribute="leading" secondItem="XoP-gw-IIe" secondAttribute="trailing" constant="80" id="C6C-wd-9yU"/>
+                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="centerX" secondItem="N7C-eh-1f8" secondAttribute="centerX" id="Eha-qh-FPz"/>
+                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="leading" secondItem="N7C-eh-1f8" secondAttribute="leading" id="LLg-2r-BfX"/>
+                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="bottom" secondItem="dt0-x9-Fww" secondAttribute="bottom" id="Ufr-0t-8Lh"/>
+                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="top" secondItem="N7C-eh-1f8" secondAttribute="top" id="ZDU-mc-MLm"/>
+                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="top" secondItem="dt0-x9-Fww" secondAttribute="top" id="cyw-Sj-9lx"/>
+                                        <constraint firstAttribute="trailing" secondItem="dt0-x9-Fww" secondAttribute="trailing" id="hzF-3G-2Ul"/>
+                                        <constraint firstItem="XoP-gw-IIe" firstAttribute="top" secondItem="ars-Qv-GRO" secondAttribute="bottom" constant="8" symbolic="YES" id="m9L-0C-iP1"/>
+                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="top" secondItem="N7C-eh-1f8" secondAttribute="topMargin" id="nV8-55-f9I"/>
+                                        <constraint firstItem="ars-Qv-GRO" firstAttribute="centerX" secondItem="XoP-gw-IIe" secondAttribute="centerX" id="nwy-9t-Kvl"/>
+                                        <constraint firstItem="X5M-nc-LLv" firstAttribute="centerY" secondItem="N7C-eh-1f8" secondAttribute="centerY" id="tmV-CM-PHJ"/>
+                                        <constraint firstItem="XoP-gw-IIe" firstAttribute="leading" secondItem="X5M-nc-LLv" secondAttribute="trailing" constant="80" id="uJ3-i9-ihU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -86,7 +85,7 @@
         <!--Detail View Controller-->
         <scene sceneID="CX6-ZI-nMW">
             <objects>
-                <viewController id="nDK-cT-zIO" customClass="DetailViewController" customModule="SprintChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nDK-cT-zIO" customClass="DetailViewController" customModule="Crayons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FhL-rx-DgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +151,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Ih-FN-CNK"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomSwatchView" destination="psk-oX-z1z" id="h6Z-iQ-9La"/>
+                        <outlet property="crayonImageView" destination="8q8-Gw-YEL" id="46r-Ev-37k"/>
+                        <outlet property="crayonName" destination="G2d-wl-Bbm" id="NJT-bA-3hD"/>
+                        <outlet property="squareSwatchView" destination="OVG-CU-meh" id="f3z-fh-1kW"/>
+                        <outlet property="topSwatchView" destination="QzN-3v-57o" id="iLR-Kf-LVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv7-eC-NuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
