@@ -110,6 +110,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYo-UP-TYG">
                                                         <rect key="frame" x="20" y="0.0" width="295" height="74"/>
                                                         <state key="normal" title="😷"/>
+                                                        <connections>
+                                                            <action selector="tapButton1:" destination="cQY-me-Xze" eventType="touchUpInside" id="ngh-GR-all"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Uv-Uy-EKe">
                                                         <rect key="frame" x="47.5" y="122" width="240" height="74.5"/>
@@ -127,6 +130,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stQ-nr-KNn">
                                                         <rect key="frame" x="20" y="489" width="295" height="74"/>
                                                         <state key="normal" title="😷"/>
+                                                        <connections>
+                                                            <action selector="tapButton2:" destination="cQY-me-Xze" eventType="touchUpInside" id="ObM-wj-t6S"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -168,7 +174,7 @@
                     </view>
                     <connections>
                         <outlet property="button1" destination="zYo-UP-TYG" id="feq-l8-RHw"/>
-                        <outlet property="button2" destination="stQ-nr-KNn" id="Yxj-gQ-0q6"/>
+                        <outlet property="button2" destination="stQ-nr-KNn" id="v9r-IL-Tci"/>
                         <outlet property="crayonImage" destination="5Uv-Uy-EKe" id="tNz-ab-hxv"/>
                         <outlet property="detailView" destination="Gvr-Ps-OAK" id="Zgt-JP-oAY"/>
                         <outlet property="label" destination="j5h-DW-jUa" id="d3b-sg-dIq"/>

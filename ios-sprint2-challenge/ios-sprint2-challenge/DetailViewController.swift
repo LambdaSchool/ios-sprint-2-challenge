@@ -6,7 +6,7 @@ class DetailViewController: UIViewController {
     var crayon: Crayon?
     
     @IBOutlet weak var button1: UIButton!
-    
+
     @IBOutlet weak var button2: UIButton!
     
     @IBOutlet weak var label: UILabel!
@@ -16,7 +16,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var crayonImage: UIImageView!
     
     @IBOutlet weak var swatchView: UIView!
-    
     
     
     @IBAction func tapButton1(_ sender: Any) {
@@ -29,17 +28,21 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         guard let crayon = crayon else { return }
-        
-        
+    
         detailView?.backgroundColor = crayon.color
         button1?.backgroundColor = crayon.color
+        button1?.setTitle(crayon.likeEmoji, for: .normal)
         button2?.backgroundColor = crayon.color
+        button2?.setTitle(crayon.likeEmoji, for: .normal)
         label?.text = crayon.name
         swatchView.backgroundColor = crayon.color
         crayonImage.image = crayon.image
@@ -54,6 +57,8 @@ class DetailViewController: UIViewController {
         print(crayon.isLiked)
         print(crayon.likeEmoji)
     }
+    
+    
     
 
     
