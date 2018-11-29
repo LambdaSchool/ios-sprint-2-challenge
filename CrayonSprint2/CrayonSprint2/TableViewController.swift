@@ -2,6 +2,11 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
 //tableview functions
     override func numberOfSections(in tableView: UITableView) -> Int {
         return CrayonHelper.shared.sectionCount
