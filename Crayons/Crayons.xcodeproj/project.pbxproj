@@ -17,6 +17,7 @@
 		17D8FDD121B051450065E6D5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FDD021B051440065E6D5 /* TableViewController.swift */; };
 		17D8FDD321B051AC0065E6D5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FDD221B051AC0065E6D5 /* DetailViewController.swift */; };
 		17D8FDD521B051DB0065E6D5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FDD421B051DB0065E6D5 /* TableViewCell.swift */; };
+		17D8FDD721B065160065E6D5 /* CrayonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D8FDD621B065160065E6D5 /* CrayonCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17D8FDD021B051440065E6D5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		17D8FDD221B051AC0065E6D5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		17D8FDD421B051DB0065E6D5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		17D8FDD621B065160065E6D5 /* CrayonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrayonCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				17D8FDD021B051440065E6D5 /* TableViewController.swift */,
 				17D8FDD221B051AC0065E6D5 /* DetailViewController.swift */,
 				17D8FDBC21B049290065E6D5 /* Main.storyboard */,
+				17D8FDD621B065160065E6D5 /* CrayonCell.xib */,
 				17D8FDBF21B0492B0065E6D5 /* Assets.xcassets */,
 				17D8FDC121B0492B0065E6D5 /* LaunchScreen.storyboard */,
 				17D8FDC421B0492B0065E6D5 /* Info.plist */,
@@ -140,6 +143,7 @@
 				17D8FDC321B0492B0065E6D5 /* LaunchScreen.storyboard in Resources */,
 				17D8FDC021B0492B0065E6D5 /* Assets.xcassets in Resources */,
 				17D8FDBE21B049290065E6D5 /* Main.storyboard in Resources */,
+				17D8FDD721B065160065E6D5 /* CrayonCell.xib in Resources */,
 				17D8FDCD21B04A2F0065E6D5 /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

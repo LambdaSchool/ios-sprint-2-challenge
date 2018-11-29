@@ -10,6 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    static let shared = DetailViewController()
+    
+    var crayon: Crayon?
     
     @IBOutlet weak var crayonName: UILabel!
     
@@ -27,8 +30,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var mainView: UIView!
     
+    @IBOutlet weak var mainStackView: UIStackView!
+    
     @IBOutlet weak var secondaryView: UIView!
-    
-    
-    
+
 }

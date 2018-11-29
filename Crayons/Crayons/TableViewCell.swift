@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    static let shared = DetailViewController()
+    static let shared = TableViewCell()
     
     let cellReuseIdentifier = "cell"
     
@@ -21,5 +21,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var lSwatchView: UIView!
     
     @IBOutlet var rSwatchView: UIView!
+    
+    
     
 }

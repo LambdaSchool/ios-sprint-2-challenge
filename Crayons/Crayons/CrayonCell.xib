@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EIZ-rV-BrS">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="254" translatesAutoresizingMaskIntoConstraints="NO" id="On8-sr-u23" customClass="TableViewCell" customModule="Crayons" customModuleProvider="target">
+                    <rect key="frame" x="-81" y="266" width="472" height="254"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="On8-sr-u23" id="vM8-yE-caG">
+                        <rect key="frame" x="0.0" y="0.0" width="472" height="253.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-K9-VhZ">
+                                <rect key="frame" x="70" y="31" width="332" height="191.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T3p-Go-OJZ">
+                                        <rect key="frame" x="57" y="72" width="232" height="101.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJm-Sa-E6i">
+                                        <rect key="frame" x="123.5" y="8" width="85" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="0DS-DC-eJQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="T3p-Go-OJZ" firstAttribute="top" secondItem="UJm-Sa-E6i" secondAttribute="bottom" constant="22" id="7AE-DZ-BXk"/>
+                                    <constraint firstAttribute="bottom" secondItem="T3p-Go-OJZ" secondAttribute="bottom" constant="18" id="JCG-E2-nRK"/>
+                                    <constraint firstItem="T3p-Go-OJZ" firstAttribute="leading" secondItem="M9M-K9-VhZ" secondAttribute="leading" constant="57" id="L8A-Xr-Mni"/>
+                                    <constraint firstItem="T3p-Go-OJZ" firstAttribute="top" secondItem="M9M-K9-VhZ" secondAttribute="top" constant="72" id="MEx-7d-2aQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3p-Go-OJZ" secondAttribute="trailing" constant="43" id="XwN-5Q-cfo"/>
+                                    <constraint firstItem="UJm-Sa-E6i" firstAttribute="centerX" secondItem="M9M-K9-VhZ" secondAttribute="centerX" id="vk5-8i-j0B"/>
+                                    <constraint firstItem="UJm-Sa-E6i" firstAttribute="top" secondItem="M9M-K9-VhZ" secondAttribute="topMargin" id="wYK-ic-bga"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="M9M-K9-VhZ" firstAttribute="leading" secondItem="vM8-yE-caG" secondAttribute="leadingMargin" constant="54" id="L10-CM-83k"/>
+                            <constraint firstItem="M9M-K9-VhZ" firstAttribute="centerX" secondItem="vM8-yE-caG" secondAttribute="centerX" id="ZNw-7b-FrD"/>
+                            <constraint firstItem="M9M-K9-VhZ" firstAttribute="centerY" secondItem="vM8-yE-caG" secondAttribute="centerY" id="iRV-29-BXJ"/>
+                            <constraint firstItem="M9M-K9-VhZ" firstAttribute="top" secondItem="vM8-yE-caG" secondAttribute="topMargin" id="wYq-OV-phQ"/>
+                        </constraints>
+                    </tableViewCellContentView>
+                    <connections>
+                        <outlet property="crayonImageView" destination="T3p-Go-OJZ" id="BhM-Sl-iG9"/>
+                        <outlet property="crayonNameLabel" destination="UJm-Sa-E6i" id="pLk-t5-BoU"/>
+                    </connections>
+                </tableViewCell>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="coq-ix-BNe"/>
+            <point key="canvasLocation" x="281" y="349"/>
+        </view>
+        <viewController id="nWz-nt-SEB" customClass="DetailViewController" customModule="Crayons" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="Nas-Hw-Qve">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xo7-TR-hfo">
+                        <rect key="frame" x="67" y="269" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kjk-Zk-Hsx">
+                                <rect key="frame" x="-52" y="-216" width="343" height="560"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-MT-5ZF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="560"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-EY-KaA" userLabel="Top Like View">
+                                                <rect key="frame" x="54" y="27" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KF-zx-Jwa">
+                                                        <rect key="frame" x="105" y="49" width="30" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Like"/>
+                                                        <connections>
+                                                            <action selector="likeButton:" destination="nWz-nt-SEB" eventType="touchUpInside" id="ozN-h5-Kfd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1A-JQ-eAG" userLabel="Crayon Name">
+                                                <rect key="frame" x="150" y="163" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcQ-KU-0CK" userLabel="Crayon Image">
+                                                <rect key="frame" x="64" y="192" width="220" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwY-gB-4Td" userLabel="Bottom Like View">
+                                                <rect key="frame" x="54" y="424" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgk-9U-3rP">
+                                                        <rect key="frame" x="105" y="49" width="30" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Like"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-hk-JE1" userLabel="Swatch View">
+                                                <rect key="frame" x="139" y="375" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <viewLayoutGuide key="safeArea" id="2OA-T1-54P"/>
+            </view>
+            <connections>
+                <outlet property="CrayonDetailName" destination="h1A-JQ-eAG" id="gQd-us-oWE"/>
+                <outlet property="bottomLikeButton" destination="rgk-9U-3rP" id="tIz-TU-Iik"/>
+                <outlet property="bottomLikeView" destination="nwY-gB-4Td" id="fLK-r3-vgT"/>
+                <outlet property="crayonDetailName" destination="h1A-JQ-eAG" id="Jfp-k1-Jii"/>
+                <outlet property="crayonImage" destination="tcQ-KU-0CK" id="xD5-Pe-ohD"/>
+                <outlet property="crayonName" destination="h1A-JQ-eAG" id="uF9-lA-oOr"/>
+                <outlet property="mainStackView" destination="Kjk-Zk-Hsx" id="8AT-x2-CcT"/>
+                <outlet property="mainView" destination="Nas-Hw-Qve" id="GfL-aX-SDP"/>
+                <outlet property="secondaryView" destination="xo7-TR-hfo" id="2cj-9n-X0m"/>
+                <outlet property="swatchView" destination="Lld-hk-JE1" id="AFJ-8c-PNn"/>
+                <outlet property="topLikeButton" destination="1KF-zx-Jwa" id="yKr-KW-S8y"/>
+                <outlet property="topLikeView" destination="nwY-gB-4Td" id="wbK-oQ-uTU"/>
+            </connections>
+            <point key="canvasLocation" x="1079" y="349"/>
+        </viewController>
+    </objects>
+</document>
