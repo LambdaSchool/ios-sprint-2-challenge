@@ -22,10 +22,20 @@ class DetailViewController: UIViewController {
         detailView.image = crayon.image
         detailLabel.text = crayon.name
         
-    
-
-
+        updateView()
     }
-
+    @IBAction func pressLikeButton(_ sender: Any) {
+        guard let crayon = crayon else { return }
+        crayon.isLiked = !crayon.isLiked
+        updateView()
+    }
+    
+    func updateView() {
+        guard let crayon = crayon else { return }
+        let likeButtonTitle = crayon.isLiked ? "🤔" : "❤️"
+        print(likeButtonTitle)
+        topButton.setTitle(likeButtonTitle, for: .normal)
+        bottomButton.setTitle(likeButtonTitle, for: .normal)
+    }
 
 }

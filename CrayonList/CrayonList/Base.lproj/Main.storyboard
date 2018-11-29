@@ -79,7 +79,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="crayonLabel" destination="N3X-mf-n7i" id="di6-KP-2Iq"/>
-                                    <outlet property="crayonView" destination="W0j-sm-f91" id="GyI-Ef-3zG"/>
+                                    <outlet property="crayonView" destination="W0j-sm-f91" id="DFn-Lr-Rbb"/>
                                     <outlet property="leftSwatchView" destination="MZD-MM-afi" id="HcT-WF-CYy"/>
                                     <outlet property="rightSwatchView" destination="vzz-SY-lSh" id="FO4-LC-bnj"/>
                                     <segue destination="Waf-re-nkf" kind="show" id="ZQA-mR-jYp"/>
@@ -133,6 +133,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Sv-Yub">
                                                         <rect key="frame" x="134" y="8" width="46" height="30"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="pressLikeButton:" destination="Waf-re-nkf" eventType="touchUpInside" id="bK6-kh-pfp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,7 +143,7 @@
                                                     <constraint firstItem="VHc-Sv-Yub" firstAttribute="leading" secondItem="tTy-ly-8bU" secondAttribute="leading" constant="134" id="4rt-VS-NvY"/>
                                                     <constraint firstAttribute="bottom" secondItem="VHc-Sv-Yub" secondAttribute="bottom" constant="7" id="kWh-eh-pVp"/>
                                                     <constraint firstItem="VHc-Sv-Yub" firstAttribute="top" secondItem="tTy-ly-8bU" secondAttribute="top" constant="8" id="m9h-YQ-EZq"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VHc-Sv-Yub" secondAttribute="trailing" symbolic="YES" id="t0I-7E-A0d"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VHc-Sv-Yub" secondAttribute="trailing" constant="20" symbolic="YES" id="t0I-7E-A0d"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBj-hY-rsC">
@@ -149,6 +152,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqO-lv-Inr">
                                                         <rect key="frame" x="134" y="8" width="46" height="30"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="pressLikeButton:" destination="Waf-re-nkf" eventType="touchUpInside" id="2zn-KM-xkZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
