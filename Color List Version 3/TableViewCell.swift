@@ -11,11 +11,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     static let reuseIdentifer = "cell"
-    
-    
     @IBOutlet weak var tableViewCellView: UIView!
-    
-    @IBOutlet weak var tableViewCellLabel: UIStackView!
-    
+    @IBOutlet weak var tableViewCellLabel: UILabel!
     @IBOutlet weak var tableViewCellImage: UIImageView!
+    
+    @IBOutlet weak var tableVieCellBackgroundColor: UIView!
+    
 }

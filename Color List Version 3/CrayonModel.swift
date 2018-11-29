@@ -187,4 +187,16 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // Retrieve crayon name
+    func colorNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = sectionDictionary[key] ?? []
+        return values[indexPath.row]
+    }
+    
+    // Section name lookup
+    func sectionNameFor(_ number: Int ) -> String {
+        return sectionKeys[number]
+    }
 }
