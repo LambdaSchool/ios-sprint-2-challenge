@@ -136,9 +136,9 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2d-wl-Bbm">
-                                        <rect key="frame" x="146.5" y="271" width="42" height="12"/>
+                                        <rect key="frame" x="147" y="271" width="42" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="12" id="gL9-v5-1Qu"/>
+                                            <constraint firstAttribute="height" constant="24" id="gL9-v5-1Qu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -168,7 +168,7 @@
                                     <constraint firstItem="psk-oX-z1z" firstAttribute="top" secondItem="OVG-CU-meh" secondAttribute="bottom" constant="33" id="WGJ-YT-ry9"/>
                                     <constraint firstItem="psk-oX-z1z" firstAttribute="width" secondItem="QzN-3v-57o" secondAttribute="width" id="ZnI-J8-heU"/>
                                     <constraint firstItem="G2d-wl-Bbm" firstAttribute="top" secondItem="8q8-Gw-YEL" secondAttribute="bottom" constant="20" id="Zyu-Jo-Bnh"/>
-                                    <constraint firstItem="OVG-CU-meh" firstAttribute="top" secondItem="G2d-wl-Bbm" secondAttribute="bottom" constant="40" id="aM0-ea-y1j"/>
+                                    <constraint firstItem="OVG-CU-meh" firstAttribute="top" secondItem="G2d-wl-Bbm" secondAttribute="bottom" constant="28" id="aM0-ea-y1j"/>
                                     <constraint firstAttribute="bottom" secondItem="psk-oX-z1z" secondAttribute="bottom" constant="20" id="bPU-7x-Cdd"/>
                                     <constraint firstItem="8pt-62-AIl" firstAttribute="top" secondItem="OVG-CU-meh" secondAttribute="bottom" constant="8" symbolic="YES" id="cjY-jc-fVq"/>
                                     <constraint firstItem="8q8-Gw-YEL" firstAttribute="top" secondItem="qVi-Dt-V6q" secondAttribute="top" constant="65" id="hes-TK-xal"/>
