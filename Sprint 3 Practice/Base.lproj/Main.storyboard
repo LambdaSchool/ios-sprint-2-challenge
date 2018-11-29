@@ -109,12 +109,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-Ls-KOX">
                                                 <rect key="frame" x="8" y="8" width="319" height="507"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-X5-V8y">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-X5-V8y" userLabel="Top Swatch">
                                                         <rect key="frame" x="0.0" y="0.0" width="319" height="40"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaX-1I-fEL" userLabel="Like Button Top">
                                                                 <rect key="frame" x="144.5" y="5" width="30" height="30"/>
                                                                 <state key="normal" title="🤔"/>
+                                                                <connections>
+                                                                    <action selector="likeButtonTop:" destination="ZLL-qf-SqK" eventType="touchUpInside" id="0YX-RV-b1l"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,20 +127,20 @@
                                                             <constraint firstItem="RaX-1I-fEL" firstAttribute="centerY" secondItem="Vcm-X5-V8y" secondAttribute="centerY" id="tfx-fE-Pb6"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-ki-dU8">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-ki-dU8" userLabel="Crayon Image">
                                                         <rect key="frame" x="104.5" y="80" width="110" height="110"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="szZ-5O-p9b"/>
                                                             <constraint firstAttribute="width" constant="110" id="zud-D8-yb8"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IvW-7r-WXV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IvW-7r-WXV" userLabel="Crayon Name">
                                                         <rect key="frame" x="138.5" y="230" width="42" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-aK-QGF">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-aK-QGF" userLabel="Crayon Swatch">
                                                         <rect key="frame" x="129.5" y="290.5" width="60" height="60"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -145,18 +148,21 @@
                                                             <constraint firstAttribute="width" constant="60" id="f18-hs-C9V"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-pm-QBL">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-pm-QBL" userLabel="Crayon Colors">
                                                         <rect key="frame" x="138.5" y="390.5" width="42" height="36.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-mr-AD6">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-mr-AD6" userLabel="Bottom Swatch">
                                                         <rect key="frame" x="0.0" y="467" width="319" height="40"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfP-nm-5fv" userLabel="Like Button Bottom">
                                                                 <rect key="frame" x="144.5" y="5" width="30" height="30"/>
                                                                 <state key="normal" title="🤔"/>
+                                                                <connections>
+                                                                    <action selector="likeButtonBottom:" destination="ZLL-qf-SqK" eventType="touchUpInside" id="vQh-pA-o6A"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -196,6 +202,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DT9-eH-Qeh"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomSwatch" destination="CAq-mr-AD6" id="8Wa-g7-NOd"/>
+                        <outlet property="crayonColors" destination="ha0-pm-QBL" id="XNF-5f-lj7"/>
+                        <outlet property="crayonDetailImageView" destination="SQn-ki-dU8" id="Eg8-e7-K8G"/>
+                        <outlet property="crayonNameDetail" destination="IvW-7r-WXV" id="PbJ-bU-Ppm"/>
+                        <outlet property="crayonSwatch" destination="Upy-aK-QGF" id="9Mq-NY-Cvq"/>
+                        <outlet property="largestBackground" destination="agJ-3z-ofP" id="Us6-5l-nJj"/>
+                        <outlet property="secondLargestView" destination="HP5-4C-aqt" id="eE5-sJ-hgP"/>
+                        <outlet property="topSwatch" destination="Vcm-X5-V8y" id="imT-B3-8s7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JpH-3m-SEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
