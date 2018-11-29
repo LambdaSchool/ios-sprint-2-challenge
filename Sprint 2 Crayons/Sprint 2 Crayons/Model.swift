@@ -171,11 +171,28 @@ class CrayonHelper {
         return sectionDictionary[key]?.count ?? 0
     }
     
-    // Retrieve a crayon record
-    func crayonFor(indexPath: IndexPath) -> Crayon {
+    func crayonNameFor(indexPath: IndexPath) -> String {
         let key = sectionNameFor(indexPath: indexPath)
         let values = sectionDictionary[key] ?? []
-        let colorName = values[indexPath.row]
-        return crayons[colorName]!
+        return values[indexPath.row]
+    }
+
+
+
+
+    func crayonFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
     }
 }
+
+    // Retrieve a crayon record
+//    func crayonFor(indexPath: IndexPath) -> UIColor {
+//        let key = sectionNameFor(indexPath: indexPath)
+//        let values = sectionDictionary[key] ?? []
+//        let colorName = values[indexPath.row]
+//        return crayonDictionary[colorName, default: .clear]
+//    }
+//}

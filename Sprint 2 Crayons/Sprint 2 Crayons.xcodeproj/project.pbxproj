@@ -13,9 +13,9 @@
 		F35DFC2D21B0451B005A8838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35DFC2B21B0451B005A8838 /* LaunchScreen.storyboard */; };
 		F35DFC3521B04548005A8838 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3421B04548005A8838 /* TableViewController.swift */; };
 		F35DFC3721B04555005A8838 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3621B04555005A8838 /* TableViewCell.swift */; };
-		F35DFC3921B04574005A8838 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3821B04574005A8838 /* DetailViewController.swift */; };
 		F35DFC3B21B04581005A8838 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3A21B04581005A8838 /* Model.swift */; };
-		F35DFC3D21B04656005A8838 /* Crayons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3C21B04656005A8838 /* Crayons.swift */; };
+		F35DFC3F21B050ED005A8838 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3E21B050ED005A8838 /* DetailViewController.swift */; };
+		F35DFC4121B056DB005A8838 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC4021B056DB005A8838 /* Crayon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		F35DFC2E21B0451B005A8838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F35DFC3421B04548005A8838 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F35DFC3621B04555005A8838 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		F35DFC3821B04574005A8838 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F35DFC3A21B04581005A8838 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		F35DFC3C21B04656005A8838 /* Crayons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayons.swift; sourceTree = "<group>"; };
+		F35DFC3E21B050ED005A8838 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		F35DFC4021B056DB005A8838 /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 			children = (
 				F35DFC2221B0451A005A8838 /* AppDelegate.swift */,
 				F35DFC3421B04548005A8838 /* TableViewController.swift */,
+				F35DFC3E21B050ED005A8838 /* DetailViewController.swift */,
 				F35DFC3621B04555005A8838 /* TableViewCell.swift */,
-				F35DFC3821B04574005A8838 /* DetailViewController.swift */,
 				F35DFC3A21B04581005A8838 /* Model.swift */,
-				F35DFC3C21B04656005A8838 /* Crayons.swift */,
+				F35DFC4021B056DB005A8838 /* Crayon.swift */,
 				F35DFC2621B0451A005A8838 /* Main.storyboard */,
 				F35DFC2921B0451B005A8838 /* Assets.xcassets */,
 				F35DFC2B21B0451B005A8838 /* LaunchScreen.storyboard */,
@@ -149,10 +149,10 @@
 			files = (
 				F35DFC3B21B04581005A8838 /* Model.swift in Sources */,
 				F35DFC3721B04555005A8838 /* TableViewCell.swift in Sources */,
+				F35DFC3F21B050ED005A8838 /* DetailViewController.swift in Sources */,
+				F35DFC4121B056DB005A8838 /* Crayon.swift in Sources */,
 				F35DFC2321B0451A005A8838 /* AppDelegate.swift in Sources */,
 				F35DFC3521B04548005A8838 /* TableViewController.swift in Sources */,
-				F35DFC3921B04574005A8838 /* DetailViewController.swift in Sources */,
-				F35DFC3D21B04656005A8838 /* Crayons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
