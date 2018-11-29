@@ -16,6 +16,7 @@
 		2796CFD521B0494F00C6EE3D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796CFD421B0494F00C6EE3D /* DetailViewController.swift */; };
 		2796CFE321B04BCD00C6EE3D /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796CFE221B04BCD00C6EE3D /* Crayon.swift */; };
 		2796CFE521B04BFB00C6EE3D /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796CFE421B04BFB00C6EE3D /* CrayonModel.swift */; };
+		2796CFE721B052F300C6EE3D /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2796CFE621B052F200C6EE3D /* Crayons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2796CFD421B0494F00C6EE3D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2796CFE221B04BCD00C6EE3D /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
 		2796CFE421B04BFB00C6EE3D /* CrayonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
+		2796CFE621B052F200C6EE3D /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				2796CFCA21B045AA00C6EE3D /* Info.plist */,
 				2796CFBE21B045A900C6EE3D /* AppDelegate.swift */,
 				2796CFC521B045AA00C6EE3D /* Assets.xcassets */,
+				2796CFE621B052F200C6EE3D /* Crayons.xcassets */,
 				2796CFC221B045A900C6EE3D /* Main.storyboard */,
 				2796CFD021B046DD00C6EE3D /* TableViewCell.swift */,
 				2796CFD221B047FC00C6EE3D /* TableViewController.swift */,
@@ -137,6 +140,7 @@
 				2796CFC921B045AA00C6EE3D /* LaunchScreen.storyboard in Resources */,
 				2796CFC621B045AA00C6EE3D /* Assets.xcassets in Resources */,
 				2796CFC421B045A900C6EE3D /* Main.storyboard in Resources */,
+				2796CFE721B052F300C6EE3D /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
