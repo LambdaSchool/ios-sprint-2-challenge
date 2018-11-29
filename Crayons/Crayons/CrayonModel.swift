@@ -184,7 +184,6 @@ class CrayonHelper {
     
     func isLiked (colorName: String){
         crayonArr += [colorName]
-        print(crayonArr)
         
         
     }
@@ -192,7 +191,6 @@ class CrayonHelper {
     func isUnliked (colorName: String) {
         let index = crayonArr.firstIndex(of: colorName)
         crayonArr.remove(at: index!)
-        print(crayonArr)
         
         
     }

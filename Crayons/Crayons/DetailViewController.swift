@@ -1,4 +1,5 @@
 import UIKit
+import SpriteKit
 
 class DetailViewController: UIViewController {
     
@@ -20,6 +21,14 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var topLikeButton: UIButton!
     
+    @IBOutlet weak var rgbLabel: UILabel!
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -31,12 +40,13 @@ class DetailViewController: UIViewController {
         } else {
             topLikeButton.setTitle("Liked", for: .normal)
             botLikeButton.setTitle("Liked", for: .normal)
-            CrayonHelper.shared.isLiked(colorName: crayon?.name ?? "")
+           CrayonHelper.shared.isLiked(colorName: crayon?.name ?? "")
         }
     }
     
-    
-    
+    func newSmokeEmitter() -> SKEmitterNode? {
+        return SKEmitterNode(fileNamed: "smoke.sks")
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +65,9 @@ class DetailViewController: UIViewController {
         bottomSwatchView.backgroundColor = crayon?.color
         squareSwatchView.backgroundColor = crayon?.color
         crayonName.text = crayon?.name
+        //view.backgroundColor = crayon?.contrastingColor()
         view.backgroundColor = crayon?.color
+        
     }
     
 }

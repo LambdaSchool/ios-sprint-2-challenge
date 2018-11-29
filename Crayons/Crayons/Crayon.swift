@@ -17,5 +17,7 @@ class Crayon {
         color.getRed(&r, green: &g, blue: &b, alpha: nil)
         let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
         return luminance > 0.5 ? .black : .white
+        
+        
     }
 }
