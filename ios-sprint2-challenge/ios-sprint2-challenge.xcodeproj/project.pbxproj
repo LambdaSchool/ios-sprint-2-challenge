@@ -17,6 +17,7 @@
 		87A9432321B0462F00AE54D2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9432221B0462F00AE54D2 /* TableViewCell.swift */; };
 		87A9432521B0463800AE54D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9432421B0463800AE54D2 /* DetailViewController.swift */; };
 		87A9432721B0469100AE54D2 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A9432621B0469100AE54D2 /* TableViewCell.xib */; };
+		87A9432921B0513C00AE54D2 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9432821B0513C00AE54D2 /* Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		87A9432221B0462F00AE54D2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		87A9432421B0463800AE54D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		87A9432621B0469100AE54D2 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		87A9432821B0513C00AE54D2 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				87A9432221B0462F00AE54D2 /* TableViewCell.swift */,
 				87A9432421B0463800AE54D2 /* DetailViewController.swift */,
 				87A9431E21B045E600AE54D2 /* Crayon.swift */,
+				87A9432821B0513C00AE54D2 /* Delegate.swift */,
 				87A9431C21B045DF00AE54D2 /* CrayonModel.swift */,
 				87A9431121B045A600AE54D2 /* Assets.xcassets */,
 				87A9431321B045A600AE54D2 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				87A9432321B0462F00AE54D2 /* TableViewCell.swift in Sources */,
 				87A9431D21B045DF00AE54D2 /* CrayonModel.swift in Sources */,
 				87A9430B21B045A600AE54D2 /* AppDelegate.swift in Sources */,
+				87A9432921B0513C00AE54D2 /* Delegate.swift in Sources */,
 				87A9432521B0463800AE54D2 /* DetailViewController.swift in Sources */,
 				87A9431F21B045E600AE54D2 /* Crayon.swift in Sources */,
 				87A9432121B0462900AE54D2 /* TableViewController.swift in Sources */,
