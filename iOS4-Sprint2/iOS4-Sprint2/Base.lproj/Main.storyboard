@@ -94,15 +94,21 @@
                                                         <rect key="frame" x="59" y="57" width="240" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oup-R5-7Hj" userLabel="likeTop">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oup-R5-7Hj" userLabel="likeTopButton">
                                                         <rect key="frame" x="156" y="8" width="46" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="likeTopButton:" destination="56w-De-qHJ" eventType="touchUpInside" id="muW-cW-7dg"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbz-hU-lZ9" userLabel="likeBottom">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbz-hU-lZ9" userLabel="likeBottomButton">
                                                         <rect key="frame" x="156" y="393" width="46" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="likeBottomButton:" destination="56w-De-qHJ" eventType="touchUpInside" id="ofT-PU-aSB"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vE-Ej-6mt" userLabel="colorName">
                                                         <rect key="frame" x="158" y="193" width="42" height="21"/>
@@ -111,7 +117,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-Q6-o6H">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-Q6-o6H" userLabel="swatchView">
                                                         <rect key="frame" x="59" y="222" width="240" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,6 +154,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n4B-z1-idX"/>
                     </view>
+                    <connections>
+                        <outlet property="colorName" destination="0vE-Ej-6mt" id="mUe-Qv-K1R"/>
+                        <outlet property="colorSpecs" destination="NNv-NQ-67v" id="aNn-fl-WXy"/>
+                        <outlet property="colorView" destination="X9j-yE-Wpx" id="s57-3X-Ejc"/>
+                        <outlet property="crayonImage" destination="CxF-2u-dOy" id="Qbq-mv-DvY"/>
+                        <outlet property="detailBorder" destination="FgC-Vq-iyG" id="aAM-Yd-6zl"/>
+                        <outlet property="likeBottomButton" destination="vbz-hU-lZ9" id="ZYN-3Z-i8S"/>
+                        <outlet property="likeTopButton" destination="oup-R5-7Hj" id="YPP-yG-6Lc"/>
+                        <outlet property="swatchView" destination="QsM-Q6-o6H" id="wnG-B9-ox0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRj-Ap-6Ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
