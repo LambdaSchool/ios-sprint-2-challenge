@@ -11,20 +11,21 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return CrayonHelper.shared.sectionCount
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return crayons.count
+        return CrayonHelper.shared.rowCountFor(section: section)
     }
 
     let reuseIdentifier = "cell"
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-
-        cell.crayonView.image = crayons[indexPath.row].image
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? TableViewCell
+            else { fatalError("U killed puppies") }
+        
+        cell.nameLabel.text = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        cell.swatchView.backgroundColor = CrayonHelper.shared.crayonFor(indexPath: indexPath)
         return cell
     }
     
