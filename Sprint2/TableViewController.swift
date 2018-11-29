@@ -2,11 +2,13 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    @IBOutlet weak var crayonView: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    @IBOutlet weak var crayonView: UIImageView!
 
     var crayons: [Crayon] = []
-    
 
     // MARK: - Table view data source
 
