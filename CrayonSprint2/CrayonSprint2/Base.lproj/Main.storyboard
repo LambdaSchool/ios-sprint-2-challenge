@@ -166,6 +166,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didPressLike:" destination="khg-6Z-I3w" eventType="touchUpInside" id="DMt-oR-80g"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.70942418770000004" blue="0.87676055730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

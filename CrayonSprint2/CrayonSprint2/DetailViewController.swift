@@ -28,5 +28,10 @@ class DetailViewController: UIViewController {
         
     }
 
+    @IBAction func didPressLike(_ sender: Any) {
+        guard let crayon = crayon else {return}
+        CrayonHelper.shared.tappedLikeButton(for: crayon)
     }
+    
+    
 }
