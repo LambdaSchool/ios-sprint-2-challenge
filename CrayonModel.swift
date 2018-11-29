@@ -124,58 +124,66 @@ let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875
                         "Eggplant": #colorLiteral(red: 0.37890625, green: 0.25, blue: 0.31640625, alpha: 1.0),
 ]
 
-class CrayonHelper {
-    static let shared = CrayonHelper()
+class ColorHelper {
+    static let shared = ColorHelper()
     
     // Group color names by letter
-    private var sectionDictionary: [String: [String]] = [:]
+    private var model: [String: [String]] = [:]
+    
+    // "A": ["Apple Red", "Augmented Pink", "Autumn Brown", ...]
     
     // Sorted collection of color letter indices
-    private var sectionKeys: [String] = []
+    private var modelKeys: [String] = []
     
-    // Stored crayons
-    private var crayons: [String: Crayon] = [:]
-    
-    // Model setup
     private init() {
-        for (name, color) in crayonDictionary {
+        for (name, _) in crayonDictionary {
             let first = String(name.uppercased()[name.startIndex])
-            sectionDictionary[first] = sectionDictionary[first, default: []] + [name]
-            let crayon = Crayon(name: name, color: color, image: UIImage(named: name)!)
-            crayons[name] = crayon
+            model[first] = model[first, default: []] + [name]
         }
-        sectionKeys = Array(sectionDictionary.keys).sorted()
+        modelKeys = Array(model.keys).sorted()
     }
     
-    // Number of sections
     var sectionCount: Int {
-        return sectionDictionary.keys.count
+        return model.keys.count
     }
     
-    // Section name lookup
     func sectionNameFor(indexPath: IndexPath) -> String {
-        return sectionKeys[indexPath.section]
+        return modelKeys[indexPath.section]
     }
     
-    // Section title
     func sectionTitles() -> [String] {
-        return sectionKeys
+        return modelKeys
     }
     
-    // Section row count
     func rowCountFor(section: Int) -> Int {
-        guard section >= 0, section < sectionDictionary.keys.count else {
+        guard section >= 0, section < model.keys.count else {
             fatalError("Invalid section number")
         }
-        let key = sectionKeys[section]
-        return sectionDictionary[key]?.count ?? 0
+        let key = modelKeys[section]
+        return model[key]?.count ?? 0
     }
     
-    // Retrieve a crayon record
-    func crayonFor(indexPath: IndexPath) -> Crayon {
+    func colorNameFor(indexPath: IndexPath) -> String {
         let key = sectionNameFor(indexPath: indexPath)
-        let values = sectionDictionary[key] ?? []
-        let colorName = values[indexPath.row]
-        return crayons[colorName]!
+        let values = model[key] ?? []
+        return values[indexPath.row]
     }
+    
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = model[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
+    }
+    
+//    func crayonFor(indexPath: IndexPath) -> Crayon {
+//        let key = sectionNameFor(indexPath: indexPath)
+//        let values = crayonDictionary[key] ?? []
+//        let colorName = values[indexPath.row]
+//        return crayonFor[colorName]!
+//    }
+    
+
+
+    
 }
