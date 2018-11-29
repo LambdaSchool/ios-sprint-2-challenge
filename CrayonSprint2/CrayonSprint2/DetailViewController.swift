@@ -14,8 +14,19 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var topBarView: UIView!
     @IBOutlet weak var likeButton1: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let crayon = crayon else {return}
+        backgroundView.backgroundColor = crayon.color
+        whiteView.backgroundColor = .white
+        bottomBarView.backgroundColor = crayon.color
+        topBarView.backgroundColor = crayon.color
+        crayonView.image = crayon.image
+        nameLabel.text = crayon.name
+        swatchView.backgroundColor = crayon.color
+        
+    }
 
     }
 }
