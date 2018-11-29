@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heg-D0-p1E">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -80,6 +80,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-bc-IkS">
                                         <rect key="frame" x="20" y="0.0" width="295" height="54"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tapButton1:" destination="xdc-OQ-QRE" eventType="touchUpInside" id="vP8-t3-CPU"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUo-Ul-8QV">
                                         <rect key="frame" x="146.5" y="102" width="42" height="53.5"/>
@@ -103,6 +106,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrl-B1-jrq">
                                         <rect key="frame" x="20" y="509" width="295" height="54"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tapButton2:" destination="xdc-OQ-QRE" eventType="touchUpInside" id="pxj-eg-3dX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -124,6 +130,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2RT-bx-aRj"/>
                     </view>
+                    <connections>
+                        <outlet property="crayonImage" destination="emq-QF-vyq" id="vVF-Cg-UMv"/>
+                        <outlet property="label" destination="OUo-Ul-8QV" id="K67-WC-VlA"/>
+                        <outlet property="likeButton1" destination="KBd-bc-IkS" id="Mxn-SI-5mZ"/>
+                        <outlet property="likeButton2" destination="xrl-B1-jrq" id="qQO-ae-LoC"/>
+                        <outlet property="swatchView" destination="FnF-p2-UAb" id="BXa-Qh-v0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBg-XJ-aoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
