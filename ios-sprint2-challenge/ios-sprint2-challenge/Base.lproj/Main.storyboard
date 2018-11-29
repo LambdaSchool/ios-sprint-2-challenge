@@ -48,6 +48,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellImage" destination="1W8-tM-WJv" id="Lk5-yU-2lO"/>
+                                    <outlet property="colorBackground" destination="hel-fq-6x7" id="MKd-2c-hnh"/>
+                                    <outlet property="label" destination="haF-JA-Wnk" id="qSg-4h-ORp"/>
                                     <segue destination="xdc-OQ-QRE" kind="show" id="UqR-ya-QCf"/>
                                 </connections>
                             </tableViewCell>

@@ -14,7 +14,21 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("Unable to dequeue cell") }
         
-        //Need to come back as soon as I connect my outlets
+        
+        cell.label.text = CrayonHelper.shared.crayonFor(indexPath: indexPath).name
+        cell.cellImage.image = CrayonHelper.shared.crayonFor(indexPath: indexPath).image
+        
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .lightGray
+        label.textColor = .black
+        label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        return label
+    }
+    
+    
 }
