@@ -43,8 +43,8 @@ class TableViewController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow
             else { return }
         
-        let color = CrayonHelper.shared.crayonColorFor(indexPath: indexPathh)
-        destination.color = color
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        destination.crayon = crayon
         
         
     }
