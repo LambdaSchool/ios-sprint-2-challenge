@@ -51,9 +51,6 @@
                             <outlet property="delegate" destination="PmM-ZQ-nnV" id="rdP-TU-QPQ"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="crayonView" destination="Obh-f3-I73" id="bFk-rp-v21"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm2-rg-Ia5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
