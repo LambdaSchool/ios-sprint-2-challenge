@@ -14,6 +14,8 @@
 		2C40F07921B04C2D004EE3EB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40F07821B04C2D004EE3EB /* DetailViewController.swift */; };
 		2C40F07B21B04C3C004EE3EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40F07A21B04C3C004EE3EB /* TableViewCell.swift */; };
 		2C40F07D21B04C7F004EE3EB /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40F07C21B04C7F004EE3EB /* Crayon.swift */; };
+		2C40F07F21B050EB004EE3EB /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40F07E21B050EB004EE3EB /* CrayonModel.swift */; };
+		2C40F08121B050FD004EE3EB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40F08021B050FD004EE3EB /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2C40F07821B04C2D004EE3EB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2C40F07A21B04C3C004EE3EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2C40F07C21B04C7F004EE3EB /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
+		2C40F07E21B050EB004EE3EB /* CrayonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
+		2C40F08021B050FD004EE3EB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2C40F07821B04C2D004EE3EB /* DetailViewController.swift */,
 				2C40F07A21B04C3C004EE3EB /* TableViewCell.swift */,
 				2C40F07C21B04C7F004EE3EB /* Crayon.swift */,
+				2C40F07E21B050EB004EE3EB /* CrayonModel.swift */,
+				2C40F08021B050FD004EE3EB /* TableViewController.swift */,
 				2C3FAB3521B049D4004A08EE /* Assets.xcassets */,
 				2C3FAB3721B049D4004A08EE /* LaunchScreen.storyboard */,
 				2C3FAB3A21B049D4004A08EE /* Info.plist */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C40F07F21B050EB004EE3EB /* CrayonModel.swift in Sources */,
+				2C40F08121B050FD004EE3EB /* TableViewController.swift in Sources */,
 				2C40F07B21B04C3C004EE3EB /* TableViewCell.swift in Sources */,
 				2C3FAB2F21B049D3004A08EE /* AppDelegate.swift in Sources */,
 				2C40F07921B04C2D004EE3EB /* DetailViewController.swift in Sources */,

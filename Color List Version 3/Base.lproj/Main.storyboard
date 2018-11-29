@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TR7-Pj-2nB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="4dd-fe-Mdi">
+            <objects>
+                <tableViewController id="KD5-yE-tEY" customClass="TableViewController" customModule="Color_List_Version_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gJn-Rh-I8N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="GZn-8l-Xr3" customClass="TableViewCell" customModule="Color_List_Version_3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZn-8l-Xr3" id="O9h-hs-W3h">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y80-u8-Wji">
+                                            <rect key="frame" x="37.5" y="0.0" width="300" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jXt-dO-0DB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crayon Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="156" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-yP-R7W">
+                                                            <rect key="frame" x="98" y="0.0" width="104" height="32"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Almond" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-SA-1Wv">
+                                                            <rect key="frame" x="100" y="40" width="100" height="160"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="jXt-dO-0DB" firstAttribute="width" secondItem="Y80-u8-Wji" secondAttribute="width" id="2PN-fG-s3L"/>
+                                                <constraint firstItem="jXt-dO-0DB" firstAttribute="centerY" secondItem="Y80-u8-Wji" secondAttribute="centerY" id="BP5-mO-VwT"/>
+                                                <constraint firstItem="jXt-dO-0DB" firstAttribute="height" secondItem="Y80-u8-Wji" secondAttribute="height" id="cEd-hc-cPv"/>
+                                                <constraint firstItem="jXt-dO-0DB" firstAttribute="centerX" secondItem="Y80-u8-Wji" secondAttribute="centerX" id="zD6-eL-6OI"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.03624573524" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="Y80-u8-Wji" firstAttribute="centerX" secondItem="GZn-8l-Xr3" secondAttribute="centerX" id="0dm-et-EeE"/>
+                                    <constraint firstItem="Y80-u8-Wji" firstAttribute="width" secondItem="GZn-8l-Xr3" secondAttribute="width" multiplier="8:10" id="DQH-VK-ASi"/>
+                                    <constraint firstItem="Y80-u8-Wji" firstAttribute="centerY" secondItem="GZn-8l-Xr3" secondAttribute="centerY" id="dvR-QD-tOk"/>
+                                    <constraint firstItem="Y80-u8-Wji" firstAttribute="height" secondItem="GZn-8l-Xr3" secondAttribute="height" id="l7e-3M-Wzi"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="y22-zR-G3O" kind="show" id="BNX-Ve-ypb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KD5-yE-tEY" id="MzW-F0-uCA"/>
+                            <outlet property="delegate" destination="KD5-yE-tEY" id="J75-XJ-nek"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="caS-Hh-bx2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C0-Ms-wZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384.80000000000001" y="109.29535232383809"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="IPk-Lf-0SG">
+            <objects>
+                <viewController id="y22-zR-G3O" customClass="DetailViewController" customModule="Color_List_Version_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qH4-Ua-yaI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8b4-RU-YSf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWp-m9-OJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6fs-UX-sBA">
+            <objects>
+                <navigationController id="TR7-Pj-2nB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bs-Ic-Aqe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KD5-yE-tEY" kind="relationship" relationship="rootViewController" id="Edq-F4-Vpt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYK-Uz-JAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Almond" width="100" height="100"/>
+    </resources>
+</document>
