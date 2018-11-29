@@ -178,4 +178,23 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    
+    func userLikes (string: String) -> String {
+        var newString = "Like"
+        if newString == string {
+            newString = "Unlike"
+            return newString
+        } else {
+            return(newString)
+        }
+    }
+    
+    var buttonUpdate = DetailViewController.shared.topLikeButton?.currentTitle
+    
+    func buttonDidUpdate () -> String {
+        
+        return buttonUpdate ?? "Like"
+    }
+    
 }
