@@ -62,6 +62,9 @@
                                     <constraint firstItem="Y80-u8-Wji" firstAttribute="height" secondItem="GZn-8l-Xr3" secondAttribute="height" id="l7e-3M-Wzi"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="tableViewCellImage" destination="Azp-SA-1Wv" id="pdx-uV-GqY"/>
+                                    <outlet property="tableViewCellLabel" destination="jXt-dO-0DB" id="fJS-E4-CZg"/>
+                                    <outlet property="tableViewCellView" destination="Y80-u8-Wji" id="kbP-RX-xwf"/>
                                     <segue destination="y22-zR-G3O" kind="show" id="BNX-Ve-ypb"/>
                                 </connections>
                             </tableViewCell>
@@ -84,13 +87,77 @@
                     <view key="view" contentMode="scaleToFill" id="qH4-Ua-yaI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xm-NA-9Vz">
+                                <rect key="frame" x="37.5" y="132" width="300" height="467"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdy-BN-Bwp">
+                                        <rect key="frame" x="127" y="429" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlz-5Z-CBG">
+                                        <rect key="frame" x="127" y="8" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-9g-dZY">
+                                        <rect key="frame" x="129" y="247" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vdy-BN-Bwp" firstAttribute="centerX" secondItem="7xm-NA-9Vz" secondAttribute="centerX" id="9HR-le-FQl"/>
+                                    <constraint firstItem="vlz-5Z-CBG" firstAttribute="centerX" secondItem="7xm-NA-9Vz" secondAttribute="centerX" id="ARJ-jp-2nS"/>
+                                    <constraint firstItem="vlz-5Z-CBG" firstAttribute="top" secondItem="7xm-NA-9Vz" secondAttribute="top" constant="8" id="Jtu-xx-Gk8"/>
+                                    <constraint firstItem="Vdy-BN-Bwp" firstAttribute="centerX" secondItem="7xm-NA-9Vz" secondAttribute="centerX" id="XVI-0b-hYI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vdy-BN-Bwp" secondAttribute="bottom" constant="8" id="YX6-aI-CnP"/>
+                                    <constraint firstAttribute="bottom" secondItem="wk4-9g-dZY" secondAttribute="bottom" constant="199" id="bSM-uT-mX3"/>
+                                    <constraint firstItem="vlz-5Z-CBG" firstAttribute="centerX" secondItem="7xm-NA-9Vz" secondAttribute="centerX" id="iYh-pt-oIb"/>
+                                    <constraint firstItem="wk4-9g-dZY" firstAttribute="centerX" secondItem="7xm-NA-9Vz" secondAttribute="centerX" id="xYM-yD-srG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sli-8u-7F9">
+                                <rect key="frame" x="157.5" y="459" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2JB-Vb-mDO"/>
+                                    <constraint firstAttribute="height" constant="60" id="k27-hT-hOH"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Aquamarine" translatesAutoresizingMaskIntoConstraints="NO" id="4Nk-ce-fJb">
+                                <rect key="frame" x="67" y="217" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PHH-2U-HOK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7xm-NA-9Vz" firstAttribute="centerY" secondItem="8b4-RU-YSf" secondAttribute="centerY" id="7zn-cQ-qHf"/>
+                            <constraint firstItem="7xm-NA-9Vz" firstAttribute="height" secondItem="qH4-Ua-yaI" secondAttribute="height" multiplier="7:10" id="E3Z-Fe-5hF"/>
+                            <constraint firstItem="7xm-NA-9Vz" firstAttribute="width" secondItem="qH4-Ua-yaI" secondAttribute="width" multiplier="8:10" id="Gxg-ve-yu9"/>
+                            <constraint firstItem="4Nk-ce-fJb" firstAttribute="leading" secondItem="8b4-RU-YSf" secondAttribute="leading" constant="67" id="HNN-aS-ZCq"/>
+                            <constraint firstItem="8b4-RU-YSf" firstAttribute="bottom" secondItem="sli-8u-7F9" secondAttribute="bottom" constant="148" id="Hhx-xx-MAh"/>
+                            <constraint firstItem="4Nk-ce-fJb" firstAttribute="centerX" secondItem="sli-8u-7F9" secondAttribute="centerX" id="ahP-0O-tFi"/>
+                            <constraint firstItem="4Nk-ce-fJb" firstAttribute="top" secondItem="8b4-RU-YSf" secondAttribute="top" constant="153" id="fgi-Zk-b42"/>
+                            <constraint firstItem="7xm-NA-9Vz" firstAttribute="centerX" secondItem="8b4-RU-YSf" secondAttribute="centerX" id="r58-Yk-ESa"/>
+                            <constraint firstItem="4Nk-ce-fJb" firstAttribute="centerX" secondItem="qH4-Ua-yaI" secondAttribute="centerX" id="whg-hA-sFN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8b4-RU-YSf"/>
                     </view>
+                    <connections>
+                        <outlet property="detailViewBottomButton" destination="Vdy-BN-Bwp" id="e5d-yD-Ltd"/>
+                        <outlet property="detailViewImage" destination="4Nk-ce-fJb" id="EVu-Hr-Vjl"/>
+                        <outlet property="detailViewLabel" destination="wk4-9g-dZY" id="3Wn-Zw-IAL"/>
+                        <outlet property="detailViewSwatch" destination="sli-8u-7F9" id="bbY-8E-yF8"/>
+                        <outlet property="detailViewTopButton" destination="vlz-5Z-CBG" id="r9T-kt-1UJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWp-m9-OJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1175" y="109"/>
+            <point key="canvasLocation" x="1345" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6fs-UX-sBA">
@@ -111,5 +178,6 @@
     </scenes>
     <resources>
         <image name="Almond" width="100" height="100"/>
+        <image name="Aquamarine" width="100" height="100"/>
     </resources>
 </document>

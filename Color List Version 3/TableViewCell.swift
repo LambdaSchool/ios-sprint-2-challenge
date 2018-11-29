@@ -13,5 +13,9 @@ class TableViewCell: UITableViewCell {
     static let reuseIdentifer = "cell"
     
     
+    @IBOutlet weak var tableViewCellView: UIView!
     
+    @IBOutlet weak var tableViewCellLabel: UIStackView!
+    
+    @IBOutlet weak var tableViewCellImage: UIImageView!
 }
