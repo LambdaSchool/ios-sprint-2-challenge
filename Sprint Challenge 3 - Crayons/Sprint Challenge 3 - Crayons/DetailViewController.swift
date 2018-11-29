@@ -1,6 +1,6 @@
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController { // add SwitchControlDelegate
     
     var crayon: Crayon?
     
@@ -24,6 +24,14 @@ class DetailViewController: UIViewController {
         crayonImage.image = crayon.image
         outerView.backgroundColor = crayon.color
     }
+    
+    @IBOutlet weak var buttonForDelegation: UIButton!
+    
+    // FIXME: Attempt at adding delegate
+    /* func switchControl(_ switchControl: DelegatingSwitchControl, didChangeStateTo state: Bool) {
+        buttonForDelegation.titleLabel = sender.isOn ? ":thinking_face:" : ":heart:"
+    } */
+    
     
     
 }
