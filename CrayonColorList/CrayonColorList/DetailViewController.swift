@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
         crayon?.isLiked = likeColorButtons[0].isSelected
     }
     
-    // TODO: stretch goals
+    
     
     @IBOutlet weak var colorLabelFloat: UILabel!
     @IBOutlet weak var colorLabelHex: UILabel!
@@ -32,12 +32,14 @@ class DetailViewController: UIViewController {
         colorNameLabel.text = crayon.name
         crayonColorImageView.image = crayon.image
         swatchColorImageView.backgroundColor = crayon.color
-        likeColorButtons[0].backgroundColor = crayon.color
-        likeColorButtons[1].backgroundColor = crayon.color
+//        likeColorButtons[0].backgroundColor = crayon.color
+//        likeColorButtons[1].backgroundColor = crayon.color
         likeColorButtons[0].isSelected = crayon.isLiked
         likeColorButtons[1].isSelected = crayon.isLiked
 
         view.backgroundColor = crayon.color
+        
+        // MARK: - Stretch Goals
         
         //get RGB values of color
         var (r, g, b): (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
@@ -59,7 +61,9 @@ class DetailViewController: UIViewController {
         let hexColor = String(format: "%02lX%02lX%02lX", lroundf(Float(r * 255)), lroundf(Float(g * 255)), lroundf(Float(b * 255)))
         colorLabelHex.text = "Hex: \(hexColor)"
         
-    
+        // Complementary colors on buttons
+        likeColorButtons[0].backgroundColor = crayon.getComplementaryForColor(color: crayon.color)
+        likeColorButtons[1].backgroundColor = crayon.getComplementaryForColor(color: crayon.color)
         
         
     }
