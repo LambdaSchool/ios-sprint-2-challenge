@@ -8,7 +8,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
     
     
- //   guard let showView = Cra
+    //  guard let showView.image = CrayonModel.shared
     }
 }
 

@@ -16,5 +16,23 @@ class Crayon {
         let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
         return luminance > 0.5 ? .black : .white
     }
+    
+    var randomCrayon = crayonDictionary()
+    var likeButton2 = UIButton()
+    
+    // viewwillapear
+    
+    func didPressLikeButton(_ sender: UIButton) {
+        randomCrayon.isLiked = !randomCrayon.isLiked
+        updateViews()
+    }
+    
+    func updateViews() {
+        let likeButtonTitle = randomCrayon.isLiked ? "👎" : "👍 "
+        likeButton.setTitle(likeButtonTitle, for: .normal)
+        likeButton2.setTitle(likeButtonTitle, for: .normal)
+    }
+    
+    
 }
 
