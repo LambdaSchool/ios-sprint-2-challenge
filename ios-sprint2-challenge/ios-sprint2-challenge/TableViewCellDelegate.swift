@@ -1,6 +1,6 @@
 import UIKit
 import Foundation
 
-protocol Delegate: class {
+protocol TableViewCellDelegate: class {
     func tappedLikeButton(on cell: TableViewCell)
 }
