@@ -178,4 +178,9 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    //added func to allow my buttons to change when tapped
+    func tappedLikeButton(for crayon: Crayon) {
+        crayon.isLiked = !crayon.isLiked
+    }
 }
