@@ -184,4 +184,20 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // Just experimenting
+    // color name for each index path
+    func colorNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = sectionDictionary[key] ?? []
+        return values[indexPath.row]
+    }
+    
+    // actual color for each index path
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
+    }
 }
