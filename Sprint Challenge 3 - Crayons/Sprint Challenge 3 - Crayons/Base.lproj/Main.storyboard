@@ -30,15 +30,16 @@
                                             <rect key="frame" x="24" y="11" width="327" height="234"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHD-xF-viK">
-                                                    <rect key="frame" x="128" y="0.0" width="71" height="76"/>
+                                                    <rect key="frame" x="128" y="0.0" width="71" height="126"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ZR-fq-qn6">
-                                                    <rect key="frame" x="88.5" y="84" width="150" height="150"/>
+                                                    <rect key="frame" x="113.5" y="134" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="gBV-4B-oru"/>
+                                                        <constraint firstAttribute="height" constant="100" id="9gp-nA-6DN"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Q9o-DH-Ka4"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>

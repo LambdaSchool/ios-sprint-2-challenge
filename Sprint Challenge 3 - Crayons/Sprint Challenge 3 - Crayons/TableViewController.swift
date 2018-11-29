@@ -2,6 +2,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    var crayon: Crayon?
+    
     // Number of Sections, Number of Rows, Cell for Row
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -25,9 +27,7 @@ class TableViewController: UITableViewController {
         cell.nameLabel.text = CrayonHelper.shared.colorNameFor(indexPath: indexPath) // sectionNameFor(indexPath: indexPath)
         cell.colorPanelLeading.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
         cell.colorPanelTrailing.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
-        
-        // FIXME: UIImage needs to be added
-        //cell.crayonImage.image =
+        cell.crayonImage.image = CrayonHelper.shared.crayonFor(indexPath: indexPath).image
         
         return cell
     }
