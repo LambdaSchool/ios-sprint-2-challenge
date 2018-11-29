@@ -39,5 +39,14 @@ class TableViewController: UITableViewController {
         
         return label
     }
+    
+    //create the segue between tableview and detailview
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        guard let destination = segue.destination as? DetailViewController else {return}
+        
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        destination.crayon = crayon
+    }
 }
 
