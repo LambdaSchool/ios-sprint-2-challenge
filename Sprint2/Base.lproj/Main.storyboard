@@ -26,19 +26,28 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-zY-1bx">
-                                            <rect key="frame" x="166" y="29" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-xw-rrn">
-                                            <rect key="frame" x="73" y="78" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="kgM-wo-K8z">
+                                            <rect key="frame" x="16" y="11" width="343" height="263"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-zY-1bx">
+                                                    <rect key="frame" x="150.5" y="0.0" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-xw-rrn">
+                                                    <rect key="frame" x="51.5" y="48.5" width="240" height="214.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kgM-wo-K8z" secondAttribute="trailing" id="7iB-in-nFR"/>
+                                        <constraint firstItem="kgM-wo-K8z" firstAttribute="top" secondItem="Kpj-so-Yh5" secondAttribute="topMargin" id="Mk0-ZG-8rR"/>
+                                        <constraint firstItem="kgM-wo-K8z" firstAttribute="leading" secondItem="Kpj-so-Yh5" secondAttribute="leadingMargin" id="bJg-fc-GpN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kgM-wo-K8z" secondAttribute="bottom" id="n4O-RR-1QA"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Uyp-zY-1bx" id="Rur-ly-qXE"/>

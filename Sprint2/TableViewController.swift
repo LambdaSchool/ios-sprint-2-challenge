@@ -23,6 +23,7 @@ class TableViewController: UITableViewController {
         cell.nameLabel.text = ColorHelper.shared.colorNameFor(indexPath: indexPath)
         cell.swatchView.backgroundColor = ColorHelper.shared.colorFor(indexPath: indexPath)
         
+        
         return cell
     }
     
