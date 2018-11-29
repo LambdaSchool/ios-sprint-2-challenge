@@ -33,16 +33,17 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Obh-f3-I73">
-                                            <rect key="frame" x="67" y="94" width="240" height="128"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-xw-rrn">
+                                            <rect key="frame" x="73" y="78" width="240" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Uyp-zY-1bx" id="Rur-ly-qXE"/>
-                                    <outlet property="swatchView" destination="Obh-f3-I73" id="baz-Gp-Okj"/>
-                                    <segue destination="nUm-fg-h7B" kind="show" id="0h2-DA-6WV"/>
+                                    <outlet property="swatchView" destination="2Fs-xw-rrn" id="rN1-6d-cu1"/>
+                                    <segue destination="JiK-9C-y3G" kind="show" id="0h2-DA-6WV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,16 +65,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuQ-FA-iaW">
-                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W51-p1-lkd">
+                                <rect key="frame" x="48" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Au-bN-V6h"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PpE-3l-X1o">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="lYl-ut-9fm">
+                            <connections>
+                                <segue destination="PmM-ZQ-nnV" kind="show" id="tml-sw-PFU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="showView" destination="W51-p1-lkd" id="rw2-nU-iMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqC-JS-Hnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="108.39580209895054"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="La3-3V-T4e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JiK-9C-y3G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YoP-4W-0No">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nUm-fg-h7B" kind="relationship" relationship="rootViewController" id="r58-jj-sH2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5O-kd-TVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1144.8" y="108.39580209895054"/>
         </scene>
