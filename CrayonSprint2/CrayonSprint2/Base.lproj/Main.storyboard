@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Crayons-->
         <scene sceneID="M9e-Rt-GJY">
             <objects>
                 <tableViewController id="uC6-4E-AkX" customClass="TableViewController" customModule="CrayonSprint2" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,13 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JLY-80-jCD" customClass="TableViewCell" customModule="CrayonSprint2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="crayonCell" rowHeight="200" id="JLY-80-jCD" customClass="TableViewCell" customModule="CrayonSprint2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JLY-80-jCD" id="Yl8-9m-V3n">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="khg-6Z-I3w" kind="show" id="1gr-Ls-ERG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,7 +36,7 @@
                             <outlet property="delegate" destination="uC6-4E-AkX" id="vBk-l1-Mhr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="EOh-M7-kDW"/>
+                    <navigationItem key="navigationItem" title="Crayons" id="EOh-M7-kDW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6v-Bu-h16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
