@@ -2,6 +2,18 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    // Basic table functionality
+    
+    // Section count
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return CrayonHelper.shared.sectionCount
+    }
+    
+    // Row count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return CrayonHelper.shared.rowCountFor(section: section)
+    }
+    
     // MVP - You will include section headers grouped by the first letter of each crayon.
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
