@@ -21,6 +21,16 @@ class DetailViewController: UIViewController {
     @IBAction func tapButton2(_ sender: Any) {
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let crayon = crayon else { return }
+    }
+    
 
     
     
