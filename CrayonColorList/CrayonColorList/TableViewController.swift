@@ -26,6 +26,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         self.tableView.backgroundColor = .black
+        tableView.tintColor = .black
     }
     
     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
@@ -36,6 +37,7 @@ class TableViewController: UITableViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.backgroundColor = .black
+        label.textColor = .white
         label.text = CrayonHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
         return label
     }

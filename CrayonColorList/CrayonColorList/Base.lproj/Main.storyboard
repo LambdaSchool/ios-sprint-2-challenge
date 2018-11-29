@@ -93,6 +93,8 @@
                                                 <rect key="frame" x="105" y="179" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="ACW-pb-gdk"/>
+                                                    <constraint firstAttribute="width" constant="100" id="FnP-h1-aTF"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="c39-te-5Hx"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB Float" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRh-7G-OOm">
@@ -175,7 +177,7 @@
                         <outlet property="colorLabelInt" destination="Eop-I7-3b5" id="BDS-H5-eMJ"/>
                         <outlet property="colorNameLabel" destination="RM9-Gm-KZx" id="cQn-TY-hA1"/>
                         <outlet property="crayonColorImageView" destination="evB-Mc-ryU" id="DWE-rY-JRr"/>
-                        <outlet property="swatchColorImageView" destination="RM9-Gm-KZx" id="h7Y-Qf-NwF"/>
+                        <outlet property="swatchColorImageView" destination="3Y9-W3-jE3" id="Wck-g4-Kxh"/>
                         <outletCollection property="likeColorButtons" destination="TyZ-R9-IrM" collectionClass="NSMutableArray" id="GYI-lK-thM"/>
                         <outletCollection property="likeColorButtons" destination="mX0-56-DUS" collectionClass="NSMutableArray" id="Lzi-j3-9Bq"/>
                     </connections>

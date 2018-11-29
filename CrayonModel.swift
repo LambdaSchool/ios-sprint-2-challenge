@@ -186,6 +186,7 @@ class CrayonHelper {
             sender.isSelected = false
         } else {
             sender.setTitle("♥️", for: .selected)
+            sender.isSelected = true
         }
     }
 }
