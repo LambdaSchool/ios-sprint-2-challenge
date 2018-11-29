@@ -223,6 +223,8 @@
                         <outlet property="crayonNameDetail" destination="IvW-7r-WXV" id="PbJ-bU-Ppm"/>
                         <outlet property="crayonSwatch" destination="Upy-aK-QGF" id="9Mq-NY-Cvq"/>
                         <outlet property="largestBackground" destination="agJ-3z-ofP" id="Us6-5l-nJj"/>
+                        <outlet property="likeButtonBottom" destination="SfP-nm-5fv" id="qyD-Qa-aWH"/>
+                        <outlet property="likeButtonTop" destination="RaX-1I-fEL" id="azJ-7y-MRY"/>
                         <outlet property="secondLargestView" destination="HP5-4C-aqt" id="eE5-sJ-hgP"/>
                         <outlet property="topSwatch" destination="Vcm-X5-V8y" id="imT-B3-8s7"/>
                     </connections>

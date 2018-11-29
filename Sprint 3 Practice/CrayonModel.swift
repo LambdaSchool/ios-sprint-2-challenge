@@ -178,4 +178,11 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    // Store like state for respective crayon
+    func favoriteCrayons(for crayon: Crayon) {
+        // From Crayon.swift
+        crayon.isLiked = !crayon.isLiked
+    }
+    
 }
