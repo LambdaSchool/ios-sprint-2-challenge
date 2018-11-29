@@ -13,13 +13,13 @@
         <!--Table View Controller-->
         <scene sceneID="BKX-sn-PAN">
             <objects>
-                <tableViewController id="Jnw-QC-u1l" sceneMemberID="viewController">
+                <tableViewController id="Jnw-QC-u1l" customClass="TableViewController" customModule="Sprint_3_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wXw-BK-fJD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="333" id="PY6-cd-RfJ" userLabel="TableView Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="333" id="PY6-cd-RfJ" userLabel="TableView Cell" customClass="TableViewCell" customModule="Sprint_3_Practice" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="333"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PY6-cd-RfJ" id="weH-ZX-w0z">
@@ -73,6 +73,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="crayonImageMain" destination="4aM-iD-pzh" id="RyO-HS-Oot"/>
+                                    <outlet property="crayonNameMain" destination="8w5-fy-53c" id="bev-Sp-wnG"/>
+                                    <outlet property="leadingSwatch" destination="5ms-4f-Mfz" id="ItA-GX-8Bd"/>
+                                    <outlet property="trailingSwatch" destination="fLx-Cy-RBe" id="7MF-VX-qPw"/>
                                     <segue destination="ZLL-qf-SqK" kind="show" id="u6l-vW-36u"/>
                                 </connections>
                             </tableViewCell>
@@ -88,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="422" y="150"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="U5Q-cy-7lD">
             <objects>
-                <viewController id="ZLL-qf-SqK" sceneMemberID="viewController">
+                <viewController id="ZLL-qf-SqK" customClass="DetailViewController" customModule="Sprint_3_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OI5-j9-NVG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,9 +111,17 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-X5-V8y">
                                                         <rect key="frame" x="0.0" y="0.0" width="319" height="40"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaX-1I-fEL" userLabel="Like Button Top">
+                                                                <rect key="frame" x="144.5" y="5" width="30" height="30"/>
+                                                                <state key="normal" title="🤔"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="782-zT-gni"/>
+                                                            <constraint firstItem="RaX-1I-fEL" firstAttribute="centerX" secondItem="Vcm-X5-V8y" secondAttribute="centerX" id="i4b-NF-Ose"/>
+                                                            <constraint firstItem="RaX-1I-fEL" firstAttribute="centerY" secondItem="Vcm-X5-V8y" secondAttribute="centerY" id="tfx-fE-Pb6"/>
                                                         </constraints>
                                                     </view>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-ki-dU8">
@@ -127,7 +139,7 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-aK-QGF">
                                                         <rect key="frame" x="129.5" y="290.5" width="60" height="60"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="AVn-ff-eFY"/>
                                                             <constraint firstAttribute="width" constant="60" id="f18-hs-C9V"/>
@@ -141,8 +153,16 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-mr-AD6">
                                                         <rect key="frame" x="0.0" y="467" width="319" height="40"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfP-nm-5fv" userLabel="Like Button Bottom">
+                                                                <rect key="frame" x="144.5" y="5" width="30" height="30"/>
+                                                                <state key="normal" title="🤔"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="SfP-nm-5fv" firstAttribute="centerY" secondItem="CAq-mr-AD6" secondAttribute="centerY" id="MLE-Uw-PdG"/>
+                                                            <constraint firstItem="SfP-nm-5fv" firstAttribute="centerX" secondItem="CAq-mr-AD6" secondAttribute="centerX" id="eJx-RU-0y5"/>
                                                             <constraint firstAttribute="height" constant="40" id="rGC-Qa-nDI"/>
                                                         </constraints>
                                                     </view>
