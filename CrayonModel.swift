@@ -127,6 +127,8 @@ let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875
 class CrayonHelper {
     static let shared = CrayonHelper()
     
+    private var model: [String: [String]] = [:]
+    
     // Group color names by letter
     private var sectionDictionary: [String: [String]] = [:]
     
@@ -178,4 +180,19 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    func colorNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = model[key] ?? []
+        return values[indexPath.row]
+    }
+    
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = model[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
+    }
 }
+
+    
+

@@ -24,8 +24,8 @@ class TableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? TableViewCell
             else { fatalError("U killed puppies") }
         
-            cell.nameLabel.text = Crayon.init(name: <#T##String#>, color: <#T##UIColor#>, image: <#T##UIImage?#>)
-            cell.swatchView.image = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        cell.nameLabel.text = CrayonHelper.shared.colorNameFor(indexPath: indexPath)
+        cell.swatchView.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
         return cell
     }
     
