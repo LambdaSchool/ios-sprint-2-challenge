@@ -2,6 +2,7 @@
 import UIKit
 
 class ColorListViewController: UITableViewController {
+
     
     // number of sections, number of rows, and cell for row
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -16,26 +17,23 @@ class ColorListViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ColorSwatchCell.reuseIdentifier, for: indexPath) as? ColorSwatchCell
             else { fatalError("Unable to dequeue proper cell") }
         
-        // Customize the cell
-//        cell.colorName.text = CrayonHelper.shared.crayonFor(indexPath: indexPath)
-//        cell.swatchView.backgroundColor = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        
+        // Populate the cell
+        let thisCrayon: Crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        cell.colorName.text = thisCrayon.name
+        cell.swatchView.backgroundColor = 
         
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
-            let destination = segue.destination as? DetailViewController,
+            let destination = segue.destination as? ColorDetailViewController,
             let indexPath = tableView.indexPathForSelectedRow
             else { return }
         
-        let person = Model.shared.person(at: indexPath.row)
-        destination.person = person
-        
-        // Hopefully this will crash: DO NOT DO THIS!
-        // destination.nameField.text = person.name
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        destination.crayon = crayon
     }
-    
-    
     
 }

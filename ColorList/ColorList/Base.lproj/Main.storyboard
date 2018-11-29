@@ -34,9 +34,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lox-eD-hAJ" userLabel="swatchView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERf-Ni-2Yg" userLabel="swatchView">
                                                     <rect key="frame" x="0.0" y="56.5" width="307" height="119.5"/>
-                                                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                             </subviews>
                                         </stackView>
@@ -50,7 +50,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="colorName" destination="3Yc-wY-Ufs" id="3dP-OF-e68"/>
-                                    <outlet property="swatchView" destination="lox-eD-hAJ" id="rpi-ja-Zmd"/>
+                                    <outlet property="swatchView" destination="ERf-Ni-2Yg" id="hAy-of-VGG"/>
                                     <segue destination="n5U-qI-cAI" kind="push" identifier="" id="vMA-Bf-jLe"/>
                                 </connections>
                             </tableViewCell>
