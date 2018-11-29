@@ -13,13 +13,13 @@
         <!--Root View Controller-->
         <scene sceneID="M9e-Rt-GJY">
             <objects>
-                <tableViewController id="uC6-4E-AkX" sceneMemberID="viewController">
+                <tableViewController id="uC6-4E-AkX" customClass="TableViewController" customModule="CrayonSprint2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="l83-Uw-XpB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JLY-80-jCD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JLY-80-jCD" customClass="TableViewCell" customModule="CrayonSprint2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JLY-80-jCD" id="Yl8-9m-V3n">
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="50" y="-166"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="KaV-uj-FLd">
             <objects>
-                <viewController id="khg-6Z-I3w" sceneMemberID="viewController">
+                <viewController id="khg-6Z-I3w" customClass="DetailViewController" customModule="CrayonSprint2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFB-Ej-KjU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
