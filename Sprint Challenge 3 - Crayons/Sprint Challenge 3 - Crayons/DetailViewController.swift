@@ -12,7 +12,9 @@ class DetailViewController: UIViewController { // add SwitchControlDelegate
     
     @IBOutlet weak var outerView: UIView!
     
+    @IBOutlet weak var topButton: UIButton!
     
+    @IBOutlet weak var bottomButton: UIButton!
     
     // Show views
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +28,9 @@ class DetailViewController: UIViewController { // add SwitchControlDelegate
         colorSwatch.backgroundColor = crayon.color
         crayonImage.image = crayon.image
         outerView.backgroundColor = crayon.color
+        topButton.backgroundColor = crayon.color
+        bottomButton.backgroundColor = crayon.color
+        
     }
 
     @IBOutlet var likeButtons: [UIButton]!
