@@ -168,6 +168,7 @@ class CrayonHelper {
             fatalError("Invalid section number")
         }
         let key = sectionKeys[section]
+        print(key)
         return sectionDictionary[key]?.count ?? 0
     }
     
@@ -177,5 +178,20 @@ class CrayonHelper {
         let values = sectionDictionary[key] ?? []
         let colorName = values[indexPath.row]
         return crayons[colorName]!
+    }
+    
+    //Get the name of the crayon
+    func crayonNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = sectionDictionary[key] ?? []
+        return values[indexPath.row]
+    }
+    
+    //Get a crayon color
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
     }
 }
