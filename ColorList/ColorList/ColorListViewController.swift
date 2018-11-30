@@ -3,37 +3,23 @@ import UIKit
 
 class ColorListViewController: UITableViewController {
 
+    //MARK: - section and row count and connect cell to viewController
+    //Tell self the structure of the CrayonModel data. What?
+    //section count, number count, and a connection to the cells
     
-    // number of sections, number of rows, and cell for row
+    //Get the section count
     override func numberOfSections(in tableView: UITableView) -> Int {
         return CrayonHelper.shared.sectionCount
     }
     
+    //Get the row count
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CrayonHelper.shared.rowCountFor(section: section)
     }
     
+    //Connect the tableViewCell to this viewController
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ColorSwatchCell.reuseIdentifier, for: indexPath) as? ColorSwatchCell
-            else { fatalError("Unable to dequeue proper cell") }
-        
-        
-        // Populate the cell
-        let thisCrayon: Crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
-        cell.colorName.text = thisCrayon.name
-        cell.swatchView.backgroundColor = 
-        
-        return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard
-            let destination = segue.destination as? ColorDetailViewController,
-            let indexPath = tableView.indexPathForSelectedRow
-            else { return }
-        
-        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
-        destination.crayon = crayon
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Color, for: <#T##IndexPath#>)
     }
     
 }
