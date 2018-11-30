@@ -1,5 +1,7 @@
 import UIKit
 
+// Model
+
 class Crayon {
     let name: String // Crayon name
     let color: UIColor // Crayon color

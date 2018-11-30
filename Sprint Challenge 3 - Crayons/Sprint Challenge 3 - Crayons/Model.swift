@@ -1,6 +1,6 @@
 import UIKit
 
-// Model powers the table view
+// Model Controller powers the table view
 
 // Dictionary of crayon names and colors
 let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875, blue: 0.25, alpha: 1.0),
@@ -126,7 +126,7 @@ let crayonDictionary = ["Sepia": #colorLiteral(red: 0.6171875, green: 0.35546875
                         "Eggplant": #colorLiteral(red: 0.37890625, green: 0.25, blue: 0.31640625, alpha: 1.0),
 ]
 
-// Model
+
 class CrayonHelper {
     static let shared = CrayonHelper()
     
@@ -151,6 +151,18 @@ class CrayonHelper {
         }
         // Put the sorted keys of the dictionary into the sectionDictionary array
         sectionKeys = Array(sectionDictionary.keys).sorted()
+    }
+    
+    // Button was pressed
+    func buttonTapped(_ sender: UIButton) {
+        
+        if sender.isSelected {
+            sender.setTitle("🤔", for: .normal)
+            sender.isSelected = false
+        } else {
+            sender.setTitle("❤️", for: .normal)
+            sender.isSelected = true
+        }
     }
     
     // Number of sections

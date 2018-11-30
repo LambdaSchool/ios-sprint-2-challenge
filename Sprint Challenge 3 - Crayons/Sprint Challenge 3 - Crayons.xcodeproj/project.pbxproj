@@ -17,8 +17,6 @@
 		84119C7021B0497B006D2605 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119C6F21B0497B006D2605 /* TableViewController.swift */; };
 		84119C7221B049AE006D2605 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119C7121B049AE006D2605 /* DetailViewController.swift */; };
 		84119C7421B04A4E006D2605 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84119C7321B04A4E006D2605 /* Crayons.xcassets */; };
-		84119C7621B06C53006D2605 /* SwitchControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119C7521B06C53006D2605 /* SwitchControlDelegate.swift */; };
-		84119C7821B06C62006D2605 /* DelegatingSwitchControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119C7721B06C62006D2605 /* DelegatingSwitchControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +32,6 @@
 		84119C6F21B0497B006D2605 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		84119C7121B049AE006D2605 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84119C7321B04A4E006D2605 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
-		84119C7521B06C53006D2605 /* SwitchControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchControlDelegate.swift; sourceTree = "<group>"; };
-		84119C7721B06C62006D2605 /* DelegatingSwitchControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatingSwitchControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +70,6 @@
 				84119C6D21B0494E006D2605 /* TableViewCell.swift */,
 				84119C6F21B0497B006D2605 /* TableViewController.swift */,
 				84119C7121B049AE006D2605 /* DetailViewController.swift */,
-				84119C7521B06C53006D2605 /* SwitchControlDelegate.swift */,
-				84119C7721B06C62006D2605 /* DelegatingSwitchControl.swift */,
 				84119C5721B04590006D2605 /* AppDelegate.swift */,
 				84119C7321B04A4E006D2605 /* Crayons.xcassets */,
 				84119C5E21B04592006D2605 /* Assets.xcassets */,
@@ -161,10 +155,8 @@
 				84119C7021B0497B006D2605 /* TableViewController.swift in Sources */,
 				84119C6A21B045DB006D2605 /* Crayon.swift in Sources */,
 				84119C5821B04590006D2605 /* AppDelegate.swift in Sources */,
-				84119C7621B06C53006D2605 /* SwitchControlDelegate.swift in Sources */,
 				84119C6C21B045FD006D2605 /* Model.swift in Sources */,
 				84119C7221B049AE006D2605 /* DetailViewController.swift in Sources */,
-				84119C7821B06C62006D2605 /* DelegatingSwitchControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

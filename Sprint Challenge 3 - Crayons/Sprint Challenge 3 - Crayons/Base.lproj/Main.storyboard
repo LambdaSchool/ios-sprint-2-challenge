@@ -108,7 +108,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvz-Ns-9AG">
                                                         <rect key="frame" x="0.0" y="0.0" width="327" height="40"/>
-                                                        <state key="normal" title="Like?"/>
+                                                        <state key="normal" title="🤔"/>
+                                                        <connections>
+                                                            <action selector="tappedLikeButton:" destination="NGI-0M-Eag" eventType="touchUpInside" id="bUc-KW-6td"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6DL-pO-4Pe">
                                                         <rect key="frame" x="113.5" y="83" width="100" height="100"/>
@@ -136,7 +139,10 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="l4e-np-6i8"/>
                                                         </constraints>
-                                                        <state key="normal" title="Like?"/>
+                                                        <state key="normal" title="🤔"/>
+                                                        <connections>
+                                                            <action selector="tappedLikeButton:" destination="NGI-0M-Eag" eventType="touchUpInside" id="ofX-BT-SPd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -179,11 +185,12 @@
                         <viewLayoutGuide key="safeArea" id="8ee-TN-N2f"/>
                     </view>
                     <connections>
-                        <outlet property="buttonForDelegation" destination="Uvz-Ns-9AG" id="kmu-uz-siS"/>
                         <outlet property="colorSwatch" destination="qZm-XN-isM" id="zha-LP-cYG"/>
                         <outlet property="crayonImage" destination="6DL-pO-4Pe" id="QP8-ay-ixm"/>
                         <outlet property="nameLabel" destination="HSh-fA-LE1" id="RHk-fq-k2n"/>
                         <outlet property="outerView" destination="iP5-5x-hAx" id="vNt-2o-jwP"/>
+                        <outletCollection property="likeButtons" destination="Uvz-Ns-9AG" collectionClass="NSMutableArray" id="6xD-Bj-pVW"/>
+                        <outletCollection property="likeButtons" destination="jqR-bl-ckE" collectionClass="NSMutableArray" id="kkL-Ll-Hx6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dt5-jM-kDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
