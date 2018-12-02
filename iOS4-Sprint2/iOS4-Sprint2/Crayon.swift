@@ -18,5 +18,20 @@ class Crayon {
         let luminance = r * 0.2989 + g * 0.5870 + b * 0.1140
         return luminance > 0.5 ? .black : .white
     }
+    
+    // need a function and string for the thinking/like string to be shown in the top and bottom like button text methods
+    // and initialize it to false as in the isLiked property declaration ... which means "thinking emoji"
+    var likeButtonEmoji = "🤔"
+    func isLikedToggled(crayon: Crayon) {
+
+        switch crayon.isLiked {
+        case true:
+            likeButtonEmoji = "🤔"
+        case false:
+            likeButtonEmoji = "❤️"
+        }
+    
+    }
+    
 }
 

@@ -35,10 +35,10 @@ class TableViewController: UITableViewController {
         
         let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
         
-        cell.cellBorder.backgroundColor = crayon.color
+        cell.backgroundColor = crayon.color
         cell.nameLabel.text = crayon.name
         cell.crayonView.image = crayon.image
-        
+//        cell.cellBorder.backgroundColor = .white
         
         
  return cell
