@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateViews()
         
         guard let crayon = crayon else {return}
         backgroundView.backgroundColor = crayon.color
