@@ -19,4 +19,15 @@ class Crayon {
         return luminance > 0.5 ? .black : .white
     }
 }
-
+//
+//func buttonPress
+//
+//if sender.isSelected{
+//    sender.setTitle("Emojiquestions", for: .normal )
+//}
+//
+//
+//likebutton.isSelected=crayon.isLiked
+//
+//
+//in action, run the function, Crayon?isliked = likebutton.isSelected

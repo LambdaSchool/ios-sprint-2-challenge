@@ -16,6 +16,7 @@
 		F35DFC3B21B04581005A8838 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3A21B04581005A8838 /* Model.swift */; };
 		F35DFC3F21B050ED005A8838 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC3E21B050ED005A8838 /* DetailViewController.swift */; };
 		F35DFC4121B056DB005A8838 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFC4021B056DB005A8838 /* Crayon.swift */; };
+		F3F2446C21B1F239000E4E82 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F2446B21B1F239000E4E82 /* DetailViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F35DFC3A21B04581005A8838 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F35DFC3E21B050ED005A8838 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		F35DFC4021B056DB005A8838 /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
+		F3F2446B21B1F239000E4E82 /* DetailViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F35DFC2221B0451A005A8838 /* AppDelegate.swift */,
 				F35DFC3421B04548005A8838 /* TableViewController.swift */,
 				F35DFC3E21B050ED005A8838 /* DetailViewController.swift */,
+				F3F2446B21B1F239000E4E82 /* DetailViewController2.swift */,
 				F35DFC3621B04555005A8838 /* TableViewCell.swift */,
 				F35DFC3A21B04581005A8838 /* Model.swift */,
 				F35DFC4021B056DB005A8838 /* Crayon.swift */,
@@ -151,6 +154,7 @@
 				F35DFC3721B04555005A8838 /* TableViewCell.swift in Sources */,
 				F35DFC3F21B050ED005A8838 /* DetailViewController.swift in Sources */,
 				F35DFC4121B056DB005A8838 /* Crayon.swift in Sources */,
+				F3F2446C21B1F239000E4E82 /* DetailViewController2.swift in Sources */,
 				F35DFC2321B0451A005A8838 /* AppDelegate.swift in Sources */,
 				F35DFC3521B04548005A8838 /* TableViewController.swift in Sources */,
 			);

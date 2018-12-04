@@ -178,8 +178,6 @@ class CrayonHelper {
     }
 
 
-
-
     func crayonColorFor(indexPath: IndexPath) -> UIColor {
         let key = sectionNameFor(indexPath: indexPath)
         let items = sectionDictionary[key] ?? []
@@ -196,6 +194,17 @@ class CrayonHelper {
         return crayons[colorName]!
     
 }
+    
+    func buttonWasPressed(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.setTitle("🤔", for: .normal)
+            sender.isSelected = false
+        } else {
+            sender.setTitle("👌", for: .normal)
+            sender.isSelected = true
+            
+        }
+    }
 }
 
 // Retrieve a crayon record
@@ -206,3 +215,4 @@ class CrayonHelper {
 //    return crayons[colorName]!
 //}
 //}
+

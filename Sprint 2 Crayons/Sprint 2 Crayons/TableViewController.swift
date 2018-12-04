@@ -2,9 +2,6 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    
-    
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return CrayonHelper.shared.sectionCount
     }
@@ -22,9 +19,7 @@ class TableViewController: UITableViewController {
         cell.swatchView1.backgroundColor = CrayonHelper.shared.crayonColorFor(indexPath: indexPath)
         cell.swatchView2.backgroundColor = CrayonHelper.shared.crayonColorFor(indexPath: indexPath)
         cell.crayonImage.image = crayon.image
-        
-    
-        
+
         return cell
     }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -39,16 +34,12 @@ class TableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
-            let destination = segue.destination as? DetailViewController,
+            let destination = segue.destination as? DetailViewController2,
             let indexPath = tableView.indexPathForSelectedRow
             else { return }
         
         let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
         destination.crayon = crayon
-        
-        
     }
-
-  
 }
 
