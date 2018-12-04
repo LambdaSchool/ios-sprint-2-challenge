@@ -12,7 +12,6 @@
 		F3B5913521B3614300CE94B0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5913421B3614300CE94B0 /* TableViewCell.swift */; };
 		F3B5913721B3615700CE94B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5913621B3615700CE94B0 /* Model.swift */; };
 		F3B5913921B3615E00CE94B0 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5913821B3615E00CE94B0 /* Crayon.swift */; };
-		F3B5913B21B39A9900CE94B0 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5913A21B39A9900CE94B0 /* LikeButton.swift */; };
 		F3F2445A21B1F004000E4E82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F2445921B1F004000E4E82 /* AppDelegate.swift */; };
 		F3F2445F21B1F004000E4E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F2445D21B1F004000E4E82 /* Main.storyboard */; };
 		F3F2446121B1F005000E4E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F2446021B1F005000E4E82 /* Assets.xcassets */; };
@@ -25,7 +24,6 @@
 		F3B5913421B3614300CE94B0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F3B5913621B3615700CE94B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F3B5913821B3615E00CE94B0 /* Crayon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
-		F3B5913A21B39A9900CE94B0 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		F3F2445621B1F004000E4E82 /* SPRINT 2 Take 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPRINT 2 Take 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F2445921B1F004000E4E82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F2445E21B1F004000E4E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				F3B5913221B3611D00CE94B0 /* DetailViewController.swift */,
 				F3B5913621B3615700CE94B0 /* Model.swift */,
 				F3B5913821B3615E00CE94B0 /* Crayon.swift */,
-				F3B5913A21B39A9900CE94B0 /* LikeButton.swift */,
 				F3F2445D21B1F004000E4E82 /* Main.storyboard */,
 				F3F2446021B1F005000E4E82 /* Assets.xcassets */,
 				F3F2446221B1F005000E4E82 /* LaunchScreen.storyboard */,
@@ -156,7 +153,6 @@
 				F3B5913921B3615E00CE94B0 /* Crayon.swift in Sources */,
 				F3F2445A21B1F004000E4E82 /* AppDelegate.swift in Sources */,
 				F3B5912F21B360F800CE94B0 /* TableViewController.swift in Sources */,
-				F3B5913B21B39A9900CE94B0 /* LikeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
