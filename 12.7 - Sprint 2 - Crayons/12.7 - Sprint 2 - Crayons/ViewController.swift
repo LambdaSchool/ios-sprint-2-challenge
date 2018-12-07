@@ -4,9 +4,9 @@ class ViewController: UIViewController {
     
     var crayon: Crayon?
     
-    var heartEmoji: String = "❤️"
-    var thinkEmoji: String = "🤔"
-    var thinkOrHeart: String = ""
+     var heartEmoji: String = "❤️"
+     var thinkEmoji: String = "🤔"
+     var thinkOrHeart: String = ""
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,9 +33,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func likeAction01(_ sender: Any) {
+        crayon?.isLiked.toggle()
+        thinkOrHeart.self = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
+        likeButton01.setTitle(heartEmoji, for: .normal)
+        likeButton02.setTitle(thinkOrHeart, for: .normal)
     }
     
     @IBAction func likeAction02(_ sender: Any) {
+        crayon?.isLiked.toggle()
+        thinkOrHeart.self = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
+        likeButton01.setTitle(heartEmoji, for: .normal)
+        likeButton02.setTitle(thinkOrHeart, for: .normal)
     }
     
 
@@ -52,11 +60,7 @@ class ViewController: UIViewController {
 
 
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
+   
 
 }
 

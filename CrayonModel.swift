@@ -192,14 +192,17 @@ class CrayonHelper {
         return crayonDictionary[name, default: .clear]
     }
     
-//    func likeButton() {
-//        crayon?.isLiked.toggle()
-//        likeOrNot = (crayon?.isLiked)! ? liked : notLiked
-//        likeButtonOutlet.setTitle(likeOrNot, for: .normal)
+    var crayon: Crayon?
+    // maybe from vc
+    
+    func likeButton() {
+        crayon?.isLiked.toggle()
+    //    ViewController.thinkOrHeart = (crayon?.isLiked)! ? ViewController.heartEmoji : ViewController.thinkEmoji
+   //     ViewController.likeAction01.setTitle(ViewController.thinkOrHeart, for: .normal)
 //        likeButton2Outlet.setTitle(likeOrNot, for: .normal)
 //
 //
-//    }
+    }
     
     
     
