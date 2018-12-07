@@ -29,8 +29,17 @@ class DetailViewController: UIViewController {
  
     
     @IBAction func topButtonPressed(_ sender: Any) {
+        crayon?.isLiked.toggle()
+        updateViews()
     }
+    
     @IBAction func bottonButtonPressed(_ sender: Any) {
+        crayon?.isLiked.toggle()
+        updateViews()
+    }
+    
+    override func viewDidLoad() {
+        updateViews()
     }
     
     
@@ -47,7 +56,43 @@ class DetailViewController: UIViewController {
         colorName?.text = crayon.name
         crayonImage?.image = crayon.image
         swatchView?.backgroundColor = crayon.color
+        likeTopButton.setTitle.("\(buttonEmoji)")
+        
+        updateViews()
         
     }
+    
+    var like: String = "❤️"
+    var thinking: String = "🤔"
+    var buttonEmoji: String = ""
+    
+    
+    // Like button
+    
+    // need a function that can be called in actions for both buttons and in view did load
+    // that reflects state of like/not liked ... and updates the state of that crayon
+    // isLiked variable
+    
+    func updateViews() {
+        guard let crayon = crayon else { return }
+        
+ 
+
+      
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
