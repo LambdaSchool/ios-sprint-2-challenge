@@ -12,6 +12,11 @@
 		845AEFDF21BAD1A000944CA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845AEFDD21BAD1A000944CA7 /* Main.storyboard */; };
 		845AEFE121BAD1A100944CA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845AEFE021BAD1A100944CA7 /* Assets.xcassets */; };
 		845AEFE421BAD1A100944CA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845AEFE221BAD1A100944CA7 /* LaunchScreen.storyboard */; };
+		845AEFEC21BAD65E00944CA7 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AEFEB21BAD65E00944CA7 /* CrayonModel.swift */; };
+		845AEFEE21BAD66B00944CA7 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AEFED21BAD66B00944CA7 /* Crayon.swift */; };
+		845AEFF021BAD68100944CA7 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845AEFEF21BAD68100944CA7 /* Crayons.xcassets */; };
+		845AEFF221BAD72800944CA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AEFF121BAD72800944CA7 /* TableViewController.swift */; };
+		845AEFF421BAD73500944CA7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AEFF321BAD73500944CA7 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		845AEFE021BAD1A100944CA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845AEFE321BAD1A100944CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845AEFE521BAD1A100944CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845AEFEB21BAD65E00944CA7 /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
+		845AEFED21BAD66B00944CA7 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
+		845AEFEF21BAD68100944CA7 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
+		845AEFF121BAD72800944CA7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		845AEFF321BAD73500944CA7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,13 @@
 			children = (
 				845AEFD921BAD1A000944CA7 /* AppDelegate.swift */,
 				845AEFDB21BAD1A000944CA7 /* ViewController.swift */,
+				845AEFED21BAD66B00944CA7 /* Crayon.swift */,
+				845AEFF121BAD72800944CA7 /* TableViewController.swift */,
+				845AEFF321BAD73500944CA7 /* TableViewCell.swift */,
 				845AEFDD21BAD1A000944CA7 /* Main.storyboard */,
 				845AEFE021BAD1A100944CA7 /* Assets.xcassets */,
+				845AEFEF21BAD68100944CA7 /* Crayons.xcassets */,
+				845AEFEB21BAD65E00944CA7 /* CrayonModel.swift */,
 				845AEFE221BAD1A100944CA7 /* LaunchScreen.storyboard */,
 				845AEFE521BAD1A100944CA7 /* Info.plist */,
 			);
@@ -125,6 +140,7 @@
 				845AEFE421BAD1A100944CA7 /* LaunchScreen.storyboard in Resources */,
 				845AEFE121BAD1A100944CA7 /* Assets.xcassets in Resources */,
 				845AEFDF21BAD1A000944CA7 /* Main.storyboard in Resources */,
+				845AEFF021BAD68100944CA7 /* Crayons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				845AEFDC21BAD1A000944CA7 /* ViewController.swift in Sources */,
+				845AEFEC21BAD65E00944CA7 /* CrayonModel.swift in Sources */,
 				845AEFDA21BAD1A000944CA7 /* AppDelegate.swift in Sources */,
+				845AEFF421BAD73500944CA7 /* TableViewCell.swift in Sources */,
+				845AEFF221BAD72800944CA7 /* TableViewController.swift in Sources */,
+				845AEFEE21BAD66B00944CA7 /* Crayon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
