@@ -22,7 +22,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="305" id="oh6-p1-bSW" customClass="TableViewCell" customModule="ColorList_Challenge_2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="305"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oh6-p1-bSW" id="USb-hl-THr">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oh6-p1-bSW" id="USb-hl-THr" userLabel="tableCellBorder">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="304.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -55,6 +55,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="cellBorder" destination="USb-hl-THr" id="KNv-y4-SCz"/>
+                                    <outlet property="crayonView" destination="Kpl-jL-x6q" id="426-rZ-14T"/>
+                                    <outlet property="nameLabel" destination="TQa-m9-SAu" id="47J-ZU-SRz"/>
                                     <segue destination="fea-Zf-OBP" kind="show" id="6If-TP-DGI"/>
                                 </connections>
                             </tableViewCell>
@@ -91,6 +94,9 @@
                                                     <constraint firstAttribute="width" constant="340" id="Pui-0t-YJH"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="topButtonPressed:" destination="fea-Zf-OBP" eventType="touchUpInside" id="WRT-iw-MvM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brg-8Y-rKO" userLabel="Detail Bottom Button">
                                                 <rect key="frame" x="10" y="292" width="340" height="30"/>
@@ -99,6 +105,9 @@
                                                     <constraint firstAttribute="width" constant="340" id="Nai-tj-Ruj"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="bottonButtonPressed:" destination="fea-Zf-OBP" eventType="touchUpInside" id="Prj-9h-9R5"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-b9-dzg" userLabel="Detail Crayon">
                                                 <rect key="frame" x="135" y="58" width="90" height="90"/>
@@ -113,6 +122,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jz-gS-ui1" userLabel="Detail Swatch">
+                                                <rect key="frame" x="73" y="183" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -147,6 +160,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kBP-Sc-jdQ"/>
                     </view>
+                    <connections>
+                        <outlet property="colorName" destination="ER4-m0-HR9" id="cmr-EH-wxN"/>
+                        <outlet property="colorView" destination="Q4b-Gf-bs6" id="sox-fV-OPt"/>
+                        <outlet property="crayonImage" destination="gUH-b9-dzg" id="CeQ-w1-B0G"/>
+                        <outlet property="detailBorder" destination="aMr-yM-rkv" id="aP4-dF-F3C"/>
+                        <outlet property="likeBottonButton" destination="Brg-8Y-rKO" id="VSq-vb-FAE"/>
+                        <outlet property="likeTopButton" destination="bXs-sc-2Vo" id="32k-Rn-fXx"/>
+                        <outlet property="swatchView" destination="2Jz-gS-ui1" id="Khc-pK-JDv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4c-JY-3ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
