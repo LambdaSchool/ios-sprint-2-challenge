@@ -11,17 +11,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         thinkOrHeart = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
         likeButton01.setTitle(thinkOrHeart, for: .normal)
         likeButton02.setTitle(thinkOrHeart, for: .normal)
     }
-    
-    
-    
-    
-    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,14 +26,8 @@ class ViewController: UIViewController {
         swatchView04.backgroundColor = crayon.color
         swatchView05.backgroundColor = crayon.color
         colorLabel.text = crayon.name
-        
-        
-        
-        
-        
     }
  
-    
     @IBOutlet weak var swatchVIew01: UIView!
     @IBOutlet weak var swatchView02: UIView!
     @IBOutlet weak var swatchView03: UIView!
