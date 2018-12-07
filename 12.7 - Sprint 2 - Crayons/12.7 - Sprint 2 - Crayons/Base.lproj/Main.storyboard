@@ -70,6 +70,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="crayonLabel" destination="c1a-HR-ypI" id="RhO-ZW-sDV"/>
+                                    <outlet property="crayonView" destination="tS9-cR-1tc" id="Q7p-lI-0OL"/>
+                                    <outlet property="swatchView01" destination="bE0-LZ-yZI" id="kir-9x-poZ"/>
+                                    <outlet property="swatchView02" destination="8wu-Qg-ytk" id="PTN-eP-NRc"/>
                                     <segue destination="6RR-jU-RYD" kind="show" id="d0u-Xj-3lq"/>
                                 </connections>
                             </tableViewCell>
@@ -165,6 +169,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tYq-lC-RTN"/>
                     </view>
+                    <connections>
+                        <outlet property="swatchVIew01" destination="Uci-XP-W5W" id="wwr-86-2NT"/>
+                        <outlet property="swatchView02" destination="r5H-eJ-dPA" id="ae9-jh-EZN"/>
+                        <outlet property="swatchView03" destination="Fu7-f8-JvV" id="sny-82-j7f"/>
+                        <outlet property="swatchView04" destination="ahW-1u-ISm" id="PcP-MO-87q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idd-GJ-DVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

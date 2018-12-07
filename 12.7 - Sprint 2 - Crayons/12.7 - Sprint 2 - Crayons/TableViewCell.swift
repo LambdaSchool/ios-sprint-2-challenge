@@ -2,6 +2,27 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var swatchView01: UIView!
+    @IBOutlet weak var swatchView02: UIView!
+    @IBOutlet weak var crayonView: UIImageView!
+    @IBOutlet weak var crayonLabel: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
