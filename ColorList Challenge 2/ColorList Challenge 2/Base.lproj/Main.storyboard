@@ -26,12 +26,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="304.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-CU-lrk">
+                                            <rect key="frame" x="36" y="11" width="303" height="283"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="8t8-Ag-3He">
                                             <rect key="frame" x="36" y="31" width="303" height="243"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-m9-SAu" userLabel="table crayon name">
-                                                    <rect key="frame" x="130.5" y="0.0" width="42" height="147"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="127" y="0.0" width="49" height="147"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -48,16 +52,20 @@
                                     <constraints>
                                         <constraint firstItem="8t8-Ag-3He" firstAttribute="top" secondItem="USb-hl-THr" secondAttribute="topMargin" constant="20" id="78X-c2-9ds"/>
                                         <constraint firstItem="8t8-Ag-3He" firstAttribute="centerX" secondItem="USb-hl-THr" secondAttribute="centerX" id="KOl-KL-IqZ"/>
+                                        <constraint firstItem="zmt-CU-lrk" firstAttribute="top" secondItem="USb-hl-THr" secondAttribute="topMargin" id="Pzp-qg-KF3"/>
                                         <constraint firstItem="8t8-Ag-3He" firstAttribute="leading" secondItem="USb-hl-THr" secondAttribute="leadingMargin" constant="20" id="SoV-zX-tTi"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="8t8-Ag-3He" secondAttribute="bottom" constant="20" id="jIJ-5g-ezk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zmt-CU-lrk" secondAttribute="bottom" id="eIn-aV-5kF"/>
+                                        <constraint firstItem="zmt-CU-lrk" firstAttribute="bottomMargin" secondItem="8t8-Ag-3He" secondAttribute="bottom" constant="12" id="jIJ-5g-ezk"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="8t8-Ag-3He" secondAttribute="trailing" constant="20" id="mu2-xZ-e98"/>
+                                        <constraint firstItem="zmt-CU-lrk" firstAttribute="leading" secondItem="USb-hl-THr" secondAttribute="leadingMargin" constant="20" id="sNH-UV-fwm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zmt-CU-lrk" secondAttribute="trailing" constant="20" id="uz4-ca-oNH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="cellBorder" destination="USb-hl-THr" id="KNv-y4-SCz"/>
-                                    <outlet property="crayonView" destination="Kpl-jL-x6q" id="426-rZ-14T"/>
-                                    <outlet property="nameLabel" destination="TQa-m9-SAu" id="47J-ZU-SRz"/>
+                                    <outlet property="cellBorder" destination="zmt-CU-lrk" id="bBl-JM-BbX"/>
+                                    <outlet property="crayonView" destination="Kpl-jL-x6q" id="AJx-nP-JKG"/>
+                                    <outlet property="nameLabel" destination="TQa-m9-SAu" id="ghb-NH-oFW"/>
                                     <segue destination="fea-Zf-OBP" kind="show" id="6If-TP-DGI"/>
                                 </connections>
                             </tableViewCell>
@@ -82,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMr-yM-rkv" userLabel="Detail Outside View">
-                                <rect key="frame" x="0.0" y="64" width="376" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-Gf-bs6" userLabel="Detail Inside View">
                                         <rect key="frame" x="8" y="30" width="360" height="450"/>

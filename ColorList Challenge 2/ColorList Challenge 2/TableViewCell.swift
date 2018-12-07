@@ -19,5 +19,4 @@ class TableViewCell: UITableViewCell {
    
     @IBOutlet weak var cellBorder: UIView!
     
-    
 }
