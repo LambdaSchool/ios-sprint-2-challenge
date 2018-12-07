@@ -19,10 +19,11 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else { fatalError("Could not load cell") }
-        cell.crayonLabel.text = CrayonHelper.shared.colorNameFor
-        cell.swatchView01 = CrayonHelper.shared.
-        cell.swatchView02 =
- 
+        cell.crayonLabel.text = CrayonHelper.shared.colorNameFor(indexPath: indexPath)
+        cell.swatchView01.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
+        cell.swatchView02.backgroundColor = CrayonHelper.shared.colorFor(indexPath: indexPath)
+        let image = UIImage(named: cell.crayonLabel.text!)
+        cell.imageView?.image = image
         
         return cell
     }

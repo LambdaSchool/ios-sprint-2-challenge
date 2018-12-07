@@ -7,10 +7,10 @@ class ViewController: UIViewController {
     var heartEmoji: String = ""
     var thinkEmoji: String = ""
     var thinkOrHeart: String = ""
-    
-    override func viewWillAppear(_ animated: Bool) {
-        <#code#>
-    }
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        
+//    }
     
     @IBOutlet weak var swatchVIew01: UIView!
     @IBOutlet weak var swatchView02: UIView!
