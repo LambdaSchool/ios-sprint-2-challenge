@@ -66,13 +66,13 @@
 			children = (
 				845AEFD921BAD1A000944CA7 /* AppDelegate.swift */,
 				845AEFDB21BAD1A000944CA7 /* ViewController.swift */,
-				845AEFED21BAD66B00944CA7 /* Crayon.swift */,
-				845AEFF121BAD72800944CA7 /* TableViewController.swift */,
 				845AEFF321BAD73500944CA7 /* TableViewCell.swift */,
+				845AEFF121BAD72800944CA7 /* TableViewController.swift */,
+				845AEFEB21BAD65E00944CA7 /* CrayonModel.swift */,
 				845AEFDD21BAD1A000944CA7 /* Main.storyboard */,
+				845AEFED21BAD66B00944CA7 /* Crayon.swift */,
 				845AEFE021BAD1A100944CA7 /* Assets.xcassets */,
 				845AEFEF21BAD68100944CA7 /* Crayons.xcassets */,
-				845AEFEB21BAD65E00944CA7 /* CrayonModel.swift */,
 				845AEFE221BAD1A100944CA7 /* LaunchScreen.storyboard */,
 				845AEFE521BAD1A100944CA7 /* Info.plist */,
 			);

@@ -105,6 +105,18 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-eJ-dPA">
                                                 <rect key="frame" x="32" y="25" width="241" height="45"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-pI-swh">
+                                                        <rect key="frame" x="97" y="8" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="likeAction01:" destination="6RR-jU-RYD" eventType="touchUpInside" id="LBC-Jw-QKb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="e3F-7l-u6p"/>
@@ -113,6 +125,18 @@
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahW-1u-ISm">
                                                 <rect key="frame" x="32" y="367" width="240" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrJ-u7-ucn">
+                                                        <rect key="frame" x="97" y="15" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="likeAction02:" destination="6RR-jU-RYD" eventType="touchUpInside" id="lfi-J8-Xyf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGQ-3D-yQ2">
@@ -170,10 +194,13 @@
                         <viewLayoutGuide key="safeArea" id="tYq-lC-RTN"/>
                     </view>
                     <connections>
+                        <outlet property="likeButton01" destination="5Bg-pI-swh" id="gQB-MD-fd4"/>
+                        <outlet property="likeButton02" destination="PrJ-u7-ucn" id="1n8-Bm-kab"/>
                         <outlet property="swatchVIew01" destination="Uci-XP-W5W" id="wwr-86-2NT"/>
                         <outlet property="swatchView02" destination="r5H-eJ-dPA" id="ae9-jh-EZN"/>
                         <outlet property="swatchView03" destination="Fu7-f8-JvV" id="sny-82-j7f"/>
                         <outlet property="swatchView04" destination="ahW-1u-ISm" id="PcP-MO-87q"/>
+                        <outlet property="viewImage" destination="lGQ-3D-yQ2" id="uxF-pd-mtF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idd-GJ-DVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
