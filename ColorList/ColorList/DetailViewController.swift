@@ -27,6 +27,13 @@ class DetailViewController: UIViewController {
     var liked: String =  "❤️"
     var likeOrNot: String = ""
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("In detail")
+        likeOrNot = (theCrayon?.isLiked)! ? liked : notLiked
+        topLikeButton.setTitle(likeOrNot, for: .normal)
+        bottomLikeButton.setTitle(likeOrNot, for: .normal)
+    }
     
     override func viewWillAppear (_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,5 +56,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func bottomLikeButtonClicked(_ sender: Any) {
+        theCrayon?.isLiked.toggle()
+        likeOrNot = (theCrayon?.isLiked)! ? liked : notLiked
+        topLikeButton.setTitle(likeOrNot, for: .normal)
+        bottomLikeButton.setTitle(likeOrNot, for: .normal)
     }
 }

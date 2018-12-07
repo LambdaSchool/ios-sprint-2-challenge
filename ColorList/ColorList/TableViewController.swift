@@ -59,4 +59,14 @@ class TableViewController: UITableViewController {
         return label
     }
     
+    //Perform the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let destination = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        let crayon = CrayonHelper.shared.crayonFor(indexPath: indexPath)
+        destination.theCrayon = crayon
+    }
+    
 }
