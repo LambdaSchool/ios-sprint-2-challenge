@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMr-yM-rkv" userLabel="Detail Outside View">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="376" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-Gf-bs6" userLabel="Detail Inside View">
                                         <rect key="frame" x="8" y="30" width="360" height="450"/>
@@ -107,7 +107,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brg-8Y-rKO" userLabel="Detail Bottom Button">
-                                                <rect key="frame" x="10" y="292" width="340" height="30"/>
+                                                <rect key="frame" x="10" y="400" width="340" height="30"/>
                                                 <color key="backgroundColor" red="0.38511451060000002" green="0.77732268920000003" blue="0.53312187310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="340" id="Nai-tj-Ruj"/>
@@ -125,26 +125,31 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER4-m0-HR9" userLabel="Detail Color Name">
-                                                <rect key="frame" x="156" y="168" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="155.5" y="168" width="49" height="26"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jz-gS-ui1" userLabel="Detail Swatch">
-                                                <rect key="frame" x="73" y="183" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Jz-gS-ui1" userLabel="Detail Swatch">
+                                                <rect key="frame" x="142.5" y="214" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="nTf-v6-BEG"/>
+                                                    <constraint firstAttribute="height" constant="75" id="yHC-Zl-eFk"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="bXs-sc-2Vo" firstAttribute="top" secondItem="Q4b-Gf-bs6" secondAttribute="top" constant="8" id="04h-yN-b3i"/>
-                                            <constraint firstItem="Brg-8Y-rKO" firstAttribute="top" secondItem="ER4-m0-HR9" secondAttribute="bottom" constant="100" id="CrL-UF-ZN6"/>
                                             <constraint firstItem="ER4-m0-HR9" firstAttribute="top" secondItem="gUH-b9-dzg" secondAttribute="bottom" constant="20" id="FQp-SN-4OJ"/>
+                                            <constraint firstItem="2Jz-gS-ui1" firstAttribute="centerX" secondItem="Q4b-Gf-bs6" secondAttribute="centerX" id="Hxd-yW-vHr"/>
+                                            <constraint firstAttribute="bottom" secondItem="Brg-8Y-rKO" secondAttribute="bottom" constant="20" id="M5m-4r-GHu"/>
                                             <constraint firstItem="ER4-m0-HR9" firstAttribute="centerX" secondItem="Q4b-Gf-bs6" secondAttribute="centerX" id="Q9j-wg-Fud"/>
                                             <constraint firstItem="gUH-b9-dzg" firstAttribute="top" secondItem="bXs-sc-2Vo" secondAttribute="bottom" constant="20" id="RaX-fR-PPI"/>
                                             <constraint firstItem="gUH-b9-dzg" firstAttribute="centerX" secondItem="Q4b-Gf-bs6" secondAttribute="centerX" id="SNB-bv-tbv"/>
                                             <constraint firstAttribute="height" constant="450" id="gbs-Qk-vip"/>
                                             <constraint firstItem="Brg-8Y-rKO" firstAttribute="centerX" secondItem="Q4b-Gf-bs6" secondAttribute="centerX" id="sU8-f5-f3i"/>
+                                            <constraint firstItem="2Jz-gS-ui1" firstAttribute="top" secondItem="ER4-m0-HR9" secondAttribute="bottom" constant="20" id="uXe-8h-wcI"/>
                                             <constraint firstAttribute="width" constant="360" id="yp8-Z0-V1U"/>
                                             <constraint firstItem="bXs-sc-2Vo" firstAttribute="centerX" secondItem="Q4b-Gf-bs6" secondAttribute="centerX" id="zxX-1X-VyU"/>
                                         </constraints>
@@ -161,6 +166,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kBP-Sc-jdQ" firstAttribute="bottom" secondItem="aMr-yM-rkv" secondAttribute="bottom" id="8ev-XC-175"/>
+                            <constraint firstItem="aMr-yM-rkv" firstAttribute="centerX" secondItem="dDH-UE-n2v" secondAttribute="centerX" id="WLL-FZ-5Da"/>
                             <constraint firstItem="aMr-yM-rkv" firstAttribute="leading" secondItem="kBP-Sc-jdQ" secondAttribute="leading" id="Z5Q-Xs-HLT"/>
                             <constraint firstItem="aMr-yM-rkv" firstAttribute="centerX" secondItem="dDH-UE-n2v" secondAttribute="centerX" id="ghH-Xj-dkh"/>
                             <constraint firstItem="aMr-yM-rkv" firstAttribute="top" secondItem="kBP-Sc-jdQ" secondAttribute="top" id="w0k-Ig-LlU"/>
