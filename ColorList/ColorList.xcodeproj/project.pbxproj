@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		379521F321BAE0150098B2C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379521F221BAE0150098B2C5 /* DetailViewController.swift */; };
 		3798B9A021BAD1A50023CC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798B99F21BAD1A50023CC54 /* AppDelegate.swift */; };
 		3798B9A521BAD1A50023CC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3798B9A321BAD1A50023CC54 /* Main.storyboard */; };
 		3798B9A721BAD1A60023CC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3798B9A621BAD1A60023CC54 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		379521F221BAE0150098B2C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3798B99C21BAD1A50023CC54 /* ColorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3798B99F21BAD1A50023CC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3798B9A421BAD1A50023CC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				3798B99F21BAD1A50023CC54 /* AppDelegate.swift */,
 				3798B9B121BAD24D0023CC54 /* TableViewController.swift */,
 				3798B9B321BAD2DF0023CC54 /* TableViewCell.swift */,
+				379521F221BAE0150098B2C5 /* DetailViewController.swift */,
 				3798B9B921BAD4580023CC54 /* Crayon.swift */,
 				3798B9B521BAD41E0023CC54 /* CrayonModel.swift */,
 				3798B9A321BAD1A50023CC54 /* Main.storyboard */,
@@ -161,6 +164,7 @@
 				3798B9B621BAD41E0023CC54 /* CrayonModel.swift in Sources */,
 				3798B9A021BAD1A50023CC54 /* AppDelegate.swift in Sources */,
 				3798B9B221BAD24D0023CC54 /* TableViewController.swift in Sources */,
+				379521F321BAE0150098B2C5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
