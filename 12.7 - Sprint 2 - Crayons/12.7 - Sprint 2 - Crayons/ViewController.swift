@@ -7,6 +7,21 @@ class ViewController: UIViewController {
      var heartEmoji: String = "❤️"
      var thinkEmoji: String = "🤔"
      var thinkOrHeart: String = ""
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        thinkOrHeart = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
+        likeButton01.setTitle(thinkOrHeart, for: .normal)
+        likeButton02.setTitle(thinkOrHeart, for: .normal)
+    }
+    
+    
+    
+    
+    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -20,7 +35,10 @@ class ViewController: UIViewController {
         
         
         
+        
+        
     }
+ 
     
     @IBOutlet weak var swatchVIew01: UIView!
     @IBOutlet weak var swatchView02: UIView!
@@ -34,15 +52,15 @@ class ViewController: UIViewController {
     
     @IBAction func likeAction01(_ sender: Any) {
         crayon?.isLiked.toggle()
-        thinkOrHeart.self = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
-        likeButton01.setTitle(heartEmoji, for: .normal)
+        thinkOrHeart = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
+        likeButton01.setTitle(thinkOrHeart, for: .normal)
         likeButton02.setTitle(thinkOrHeart, for: .normal)
     }
     
     @IBAction func likeAction02(_ sender: Any) {
         crayon?.isLiked.toggle()
-        thinkOrHeart.self = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
-        likeButton01.setTitle(heartEmoji, for: .normal)
+        thinkOrHeart = (crayon?.isLiked)! ? heartEmoji : thinkEmoji
+        likeButton01.setTitle(thinkOrHeart, for: .normal)
         likeButton02.setTitle(thinkOrHeart, for: .normal)
     }
     
