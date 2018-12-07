@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		27B9A40821BAD35500693D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A40721BAD35500693D29 /* AppDelegate.swift */; };
-		27B9A40A21BAD35500693D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A40921BAD35500693D29 /* ViewController.swift */; };
 		27B9A40D21BAD35500693D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A40B21BAD35500693D29 /* Main.storyboard */; };
 		27B9A40F21BAD35700693D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A40E21BAD35700693D29 /* Assets.xcassets */; };
 		27B9A41221BAD35700693D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A41021BAD35700693D29 /* LaunchScreen.storyboard */; };
 		27B9A41A21BAD36E00693D29 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A41921BAD36E00693D29 /* Crayons.xcassets */; };
 		27B9A41C21BAD37700693D29 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A41B21BAD37700693D29 /* Crayon.swift */; };
 		27B9A41E21BAD37F00693D29 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A41D21BAD37F00693D29 /* CrayonModel.swift */; };
+		27B9A42221BADF9500693D29 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A42121BADF9500693D29 /* TableViewController.swift */; };
+		27B9A42421BADFB500693D29 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A42321BADFB500693D29 /* DetailViewController.swift */; };
+		27B9A42821BADFE000693D29 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A42721BADFE000693D29 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27B9A40421BAD35500693D29 /* ColorList Challenge 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorList Challenge 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B9A40721BAD35500693D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27B9A40921BAD35500693D29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27B9A40C21BAD35500693D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27B9A40E21BAD35700693D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27B9A41121BAD35700693D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +29,9 @@
 		27B9A41921BAD36E00693D29 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crayons.xcassets; path = ../../Crayons.xcassets; sourceTree = "<group>"; };
 		27B9A41B21BAD37700693D29 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crayon.swift; path = ../../Crayon.swift; sourceTree = "<group>"; };
 		27B9A41D21BAD37F00693D29 /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonModel.swift; path = ../../CrayonModel.swift; sourceTree = "<group>"; };
+		27B9A42121BADF9500693D29 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		27B9A42321BADFB500693D29 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		27B9A42721BADFE000693D29 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				27B9A40721BAD35500693D29 /* AppDelegate.swift */,
-				27B9A40921BAD35500693D29 /* ViewController.swift */,
 				27B9A40B21BAD35500693D29 /* Main.storyboard */,
 				27B9A40E21BAD35700693D29 /* Assets.xcassets */,
 				27B9A41921BAD36E00693D29 /* Crayons.xcassets */,
+				27B9A42121BADF9500693D29 /* TableViewController.swift */,
+				27B9A42321BADFB500693D29 /* DetailViewController.swift */,
+				27B9A42721BADFE000693D29 /* TableViewCell.swift */,
 				27B9A41B21BAD37700693D29 /* Crayon.swift */,
 				27B9A41D21BAD37F00693D29 /* CrayonModel.swift */,
 				27B9A41021BAD35700693D29 /* LaunchScreen.storyboard */,
@@ -147,8 +153,10 @@
 			files = (
 				27B9A41C21BAD37700693D29 /* Crayon.swift in Sources */,
 				27B9A41E21BAD37F00693D29 /* CrayonModel.swift in Sources */,
-				27B9A40A21BAD35500693D29 /* ViewController.swift in Sources */,
+				27B9A42421BADFB500693D29 /* DetailViewController.swift in Sources */,
+				27B9A42821BADFE000693D29 /* TableViewCell.swift in Sources */,
 				27B9A40821BAD35500693D29 /* AppDelegate.swift in Sources */,
+				27B9A42221BADF9500693D29 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
