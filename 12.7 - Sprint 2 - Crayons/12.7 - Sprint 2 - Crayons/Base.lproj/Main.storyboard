@@ -194,6 +194,7 @@
                         <viewLayoutGuide key="safeArea" id="tYq-lC-RTN"/>
                     </view>
                     <connections>
+                        <outlet property="colorLabel" destination="JHA-fA-eoY" id="G8q-lS-qBs"/>
                         <outlet property="likeButton01" destination="5Bg-pI-swh" id="gQB-MD-fd4"/>
                         <outlet property="likeButton02" destination="PrJ-u7-ucn" id="1n8-Bm-kab"/>
                         <outlet property="swatchVIew01" destination="Uci-XP-W5W" id="wwr-86-2NT"/>
