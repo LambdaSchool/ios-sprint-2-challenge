@@ -178,4 +178,29 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    func colorNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = sectionDictionary[key] ?? []
+        return values[indexPath.row]
+    }
+    
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let values = sectionDictionary[key] ?? []
+        let name = values[indexPath.row]
+        return crayonDictionary[name, default: .clear]
+    }
+    
+    var crayon: Crayon?
+    // maybe from vc
+    
+    func likeButton() {
+        crayon?.isLiked.toggle()
+    //    ViewController.thinkOrHeart = (crayon?.isLiked)! ? ViewController.heartEmoji : ViewController.thinkEmoji
+   //     ViewController.likeAction01.setTitle(ViewController.thinkOrHeart, for: .normal)
+//        likeButton2Outlet.setTitle(likeOrNot, for: .normal)
+//
+//
+    }
 }
