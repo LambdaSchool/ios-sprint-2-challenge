@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         swatchView02.backgroundColor = crayon.color
         swatchView03.backgroundColor = crayon.color
         swatchView04.backgroundColor = crayon.color
+        swatchView05.backgroundColor = crayon.color
         colorLabel.text = crayon.name
         
         
@@ -48,6 +49,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var likeButton02: UIButton!
     @IBOutlet weak var viewImage: UIImageView!
     @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet var swatchView05: UIView!
     
     
     @IBAction func likeAction01(_ sender: Any) {

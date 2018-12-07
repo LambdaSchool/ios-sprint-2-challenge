@@ -211,6 +211,7 @@
                         <outlet property="swatchView02" destination="r5H-eJ-dPA" id="ae9-jh-EZN"/>
                         <outlet property="swatchView03" destination="Fu7-f8-JvV" id="sny-82-j7f"/>
                         <outlet property="swatchView04" destination="ahW-1u-ISm" id="PcP-MO-87q"/>
+                        <outlet property="swatchView05" destination="6AS-Bq-s8i" id="Vst-Qk-KLS"/>
                         <outlet property="viewImage" destination="lGQ-3D-yQ2" id="vVH-ur-C6H"/>
                     </connections>
                 </viewController>
