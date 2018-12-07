@@ -34,4 +34,22 @@ class DetailViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        guard let crayon = crayon else { return }
+        
+        likeTopButton?.backgroundColor = crayon.color
+        likeBottonButton?.backgroundColor = crayon.color
+        
+        
+        detailBorder?.backgroundColor = crayon.color
+        colorView?.backgroundColor = .white
+        colorName?.text = crayon.name
+        crayonImage?.image = crayon.image
+        swatchView?.backgroundColor = crayon.color
+         
+    }
+    
 }
