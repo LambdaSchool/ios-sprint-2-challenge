@@ -10,6 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    
+    var crayon: Crayon?
+    
     @IBOutlet weak var detailBorder: UIView!
     @IBOutlet weak var colorView: UIView!
     
