@@ -178,4 +178,28 @@ class CrayonHelper {
         let colorName = values[indexPath.row]
         return crayons[colorName]!
     }
+    
+    //Get the name of the crayon
+    func crayonNameFor(indexPath: IndexPath) -> String {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        return items[indexPath.row]
+    }
+    
+    //Get a crayon color
+    func colorFor(indexPath: IndexPath) -> UIColor {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        let name = items[indexPath.row]
+        return crayonDictionary[name, default: .clear]
+    }
+    
+    
+    func crayonImage(indexPath: IndexPath) -> UIImage {
+        let key = sectionNameFor(indexPath: indexPath)
+        let items = sectionDictionary[key] ?? []
+        let name = items[indexPath.row]
+        let crayonImage = UIImage(named: name)
+        return crayonImage!
+    }
 }
