@@ -9,15 +9,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var topColorBar: UIView!
-    @IBOutlet weak var topLikeButton: UIButton!
+    @IBOutlet var detailView: UIView!
     
-    @IBOutlet weak var bottomColorBar: UIView!
-    @IBOutlet weak var bottomLikeButton: UIButton!
+    //Top and bottom ike buttons
+    @IBOutlet var likeButtons: [UIButton]!
     
+    //Crayon attributes
     @IBOutlet weak var crayonDetailImage: UIImageView!
     @IBOutlet weak var crayonDetailName: UILabel!
     @IBOutlet weak var colorSwatch: UIImageView!
+
     
     //Create a variable to hold the values passed from the segue
     var theCrayon: Crayon?
@@ -29,36 +30,35 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("In detail")
-        likeOrNot = (theCrayon?.isLiked)! ? liked : notLiked
-        topLikeButton.setTitle(likeOrNot, for: .normal)
-        bottomLikeButton.setTitle(likeOrNot, for: .normal)
+        toggleLike()
     }
     
     override func viewWillAppear (_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //Set the background color for the view
+        detailView.backgroundColor = theCrayon?.color
+        
         //Display the crayon
         let crayonName = theCrayon?.name
         
-        topColorBar.backgroundColor = theCrayon?.color
         crayonDetailImage.image = UIImage(named: crayonName!)
         crayonDetailName.text = crayonName
         colorSwatch.backgroundColor = theCrayon?.color
-        bottomColorBar.backgroundColor = theCrayon?.color
     }
-    
-    @IBAction func topLikeButtonClicked(_ sender: Any) {
+
+    //Update like buttons
+    @IBAction func likeButtonClicked(_ sender: Any) {
         theCrayon?.isLiked.toggle()
-        likeOrNot = (theCrayon?.isLiked)! ? liked : notLiked
-        topLikeButton.setTitle(likeOrNot, for: .normal)
-        bottomLikeButton.setTitle(likeOrNot, for: .normal)
+        toggleLike()
     }
-    
-    @IBAction func bottomLikeButtonClicked(_ sender: Any) {
-        theCrayon?.isLiked.toggle()
+
+    func toggleLike() {
         likeOrNot = (theCrayon?.isLiked)! ? liked : notLiked
-        topLikeButton.setTitle(likeOrNot, for: .normal)
-        bottomLikeButton.setTitle(likeOrNot, for: .normal)
+        for likeButton in likeButtons {
+            likeButton.backgroundColor = theCrayon?.color
+            likeButton.setTitle(likeOrNot, for: .normal)
+        }
     }
+
 }
