@@ -14,9 +14,9 @@
 		F832BF5921B051C500BC9CD2 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5621B051C400BC9CD2 /* Crayon.swift */; };
 		F832BF5A21B051C500BC9CD2 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5721B051C400BC9CD2 /* CrayonModel.swift */; };
 		F832BF5B21B051C500BC9CD2 /* Crayons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F832BF5821B051C400BC9CD2 /* Crayons.xcassets */; };
-		F832BF5D21B055FC00BC9CD2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */; };
-		F832BF5F21B0561000BC9CD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */; };
-		F832BF6121B0571A00BC9CD2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */; };
+		F832BF5D21B055FC00BC9CD2 /* CrayonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5C21B055FC00BC9CD2 /* CrayonTableViewController.swift */; };
+		F832BF5F21B0561000BC9CD2 /* CrayonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF5E21B0561000BC9CD2 /* CrayonDetailViewController.swift */; };
+		F832BF6121B0571A00BC9CD2 /* CrayonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832BF6021B0571A00BC9CD2 /* CrayonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		F832BF5621B051C400BC9CD2 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
 		F832BF5721B051C400BC9CD2 /* CrayonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
 		F832BF5821B051C400BC9CD2 /* Crayons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Crayons.xcassets; sourceTree = "<group>"; };
-		F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F832BF5C21B055FC00BC9CD2 /* CrayonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonTableViewController.swift; sourceTree = "<group>"; };
+		F832BF5E21B0561000BC9CD2 /* CrayonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonDetailViewController.swift; sourceTree = "<group>"; };
+		F832BF6021B0571A00BC9CD2 /* CrayonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +64,51 @@
 		F832BF3D21AFAB8100BC9CD2 /* Sprint 3 Practice */ = {
 			isa = PBXGroup;
 			children = (
-				F832BF5621B051C400BC9CD2 /* Crayon.swift */,
-				F832BF5721B051C400BC9CD2 /* CrayonModel.swift */,
-				F832BF5821B051C400BC9CD2 /* Crayons.xcassets */,
-				F832BF4221AFAB8100BC9CD2 /* Main.storyboard */,
-				F832BF5C21B055FC00BC9CD2 /* TableViewController.swift */,
-				F832BF6021B0571A00BC9CD2 /* TableViewCell.swift */,
-				F832BF5E21B0561000BC9CD2 /* DetailViewController.swift */,
+				F83A226521CA1ABE00EB5E8B /* Model and Data */,
+				F83A226421CA1AA300EB5E8B /* View */,
+				F83A226621CA1AD900EB5E8B /* View Controllers and Cell(s) */,
+				F83A226321CA1A8F00EB5E8B /* Set and Forget */,
+			);
+			path = "Sprint 3 Practice";
+			sourceTree = "<group>";
+		};
+		F83A226321CA1A8F00EB5E8B /* Set and Forget */ = {
+			isa = PBXGroup;
+			children = (
 				F832BF4721AFAB8100BC9CD2 /* LaunchScreen.storyboard */,
 				F832BF4A21AFAB8100BC9CD2 /* Info.plist */,
 				F832BF4521AFAB8100BC9CD2 /* Assets.xcassets */,
 				F832BF3E21AFAB8100BC9CD2 /* AppDelegate.swift */,
 			);
-			path = "Sprint 3 Practice";
+			path = "Set and Forget";
+			sourceTree = "<group>";
+		};
+		F83A226421CA1AA300EB5E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F832BF4221AFAB8100BC9CD2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F83A226521CA1ABE00EB5E8B /* Model and Data */ = {
+			isa = PBXGroup;
+			children = (
+				F832BF5621B051C400BC9CD2 /* Crayon.swift */,
+				F832BF5721B051C400BC9CD2 /* CrayonModel.swift */,
+				F832BF5821B051C400BC9CD2 /* Crayons.xcassets */,
+			);
+			path = "Model and Data";
+			sourceTree = "<group>";
+		};
+		F83A226621CA1AD900EB5E8B /* View Controllers and Cell(s) */ = {
+			isa = PBXGroup;
+			children = (
+				F832BF5C21B055FC00BC9CD2 /* CrayonTableViewController.swift */,
+				F832BF6021B0571A00BC9CD2 /* CrayonTableViewCell.swift */,
+				F832BF5E21B0561000BC9CD2 /* CrayonDetailViewController.swift */,
+			);
+			path = "View Controllers and Cell(s)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +185,10 @@
 			files = (
 				F832BF3F21AFAB8100BC9CD2 /* AppDelegate.swift in Sources */,
 				F832BF5A21B051C500BC9CD2 /* CrayonModel.swift in Sources */,
-				F832BF5F21B0561000BC9CD2 /* DetailViewController.swift in Sources */,
-				F832BF6121B0571A00BC9CD2 /* TableViewCell.swift in Sources */,
+				F832BF5F21B0561000BC9CD2 /* CrayonDetailViewController.swift in Sources */,
+				F832BF6121B0571A00BC9CD2 /* CrayonTableViewCell.swift in Sources */,
 				F832BF5921B051C500BC9CD2 /* Crayon.swift in Sources */,
-				F832BF5D21B055FC00BC9CD2 /* TableViewController.swift in Sources */,
+				F832BF5D21B055FC00BC9CD2 /* CrayonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Y6994DAGM;
-				INFOPLIST_FILE = "Sprint 3 Practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sprint 3 Practice/Set and Forget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Y6994DAGM;
-				INFOPLIST_FILE = "Sprint 3 Practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sprint 3 Practice/Set and Forget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
