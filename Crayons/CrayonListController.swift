@@ -20,6 +20,10 @@ class CrayonListController: UITableViewController {
         return crayola.sectionCount
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return crayola.sectionTitles()[section]
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return crayola.rowCountFor(section: section)
     }
@@ -34,6 +38,13 @@ class CrayonListController: UITableViewController {
         cell.contentView.backgroundColor = cellCrayon.color
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "viewSegue" {
+            let detailVC = segue.destination as! CrayonDetailController
+            detailVC.currentCrayon = crayola.crayonFor(indexPath: tableView.indexPathForSelectedRow!)
+        }
     }
 }
 
