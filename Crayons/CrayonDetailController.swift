@@ -13,6 +13,7 @@ class CrayonDetailController: UIViewController {
     var currentCrayon: Crayon?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         updateViews()
     }
     
@@ -32,6 +33,21 @@ class CrayonDetailController: UIViewController {
     
     @IBOutlet weak var hexLabel: UILabel!
     
+    func extractColours(){
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        
+        currentCrayon!.color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        
+        rgbDoubleLabel.text = "R: \(red.rounded(.toNearestOrAwayFromZero)), G: \(green), B: \(blue)"
+        rgbIntLabel.text = "R: \(red), G: \(green), B: \(blue)"
+        hexLabel.text = "Hex: "
+        
+    
+    }
+    
     func updateViews(){
         guard currentCrayon != nil else { return }
         
@@ -42,18 +58,35 @@ class CrayonDetailController: UIViewController {
         crayonImageView.image = currentCrayon?.image
         swatchImageView.backgroundColor = currentCrayon?.color
         nameLabel.text = currentCrayon?.name
-        rgbDoubleLabel.text = "R: , G: , B: "
-        rgbDoubleLabel.text = "R: , G: , B: \(currentCrayon?.color.cgColor.components?.first)"
-        hexLabel.text = "Hex: "
+        
+        extractColours()
+        
+        switch currentCrayon?.isLiked  {
+        case true : buttonOne.titleLabel?.text = "❤️"; buttonTwo.titleLabel?.text = "❤️"
+        default : buttonOne.titleLabel?.text = "🤔"; buttonTwo.titleLabel?.text = "🤔"
+        }
         
     }
     
     @IBAction func buttonOneClicked(_ sender: Any) {
         
+        if currentCrayon?.isLiked == false {
+            currentCrayon?.isLiked = true
+        } else if currentCrayon?.isLiked == true {
+            currentCrayon?.isLiked = false
+        }
+        
+        updateViews()
+        
     }
     
     @IBAction func buttonTwoClicked(_ sender: Any) {
+        if currentCrayon?.isLiked == false {
+            currentCrayon?.isLiked = true
+        } else if currentCrayon?.isLiked == true {
+            currentCrayon?.isLiked = false
+        }
+        updateViews()
     }
-    
     
 }
