@@ -70,22 +70,13 @@ class CrayonDetailController: UIViewController {
     
     @IBAction func buttonOneClicked(_ sender: Any) {
         
-        if currentCrayon?.isLiked == false {
-            currentCrayon?.isLiked = true
-        } else if currentCrayon?.isLiked == true {
-            currentCrayon?.isLiked = false
-        }
-        
+      currentCrayon?.isLiked.toggle()
         updateViews()
         
     }
     
     @IBAction func buttonTwoClicked(_ sender: Any) {
-        if currentCrayon?.isLiked == false {
-            currentCrayon?.isLiked = true
-        } else if currentCrayon?.isLiked == true {
-            currentCrayon?.isLiked = false
-        }
+       currentCrayon?.isLiked.toggle()
         updateViews()
     }
     
